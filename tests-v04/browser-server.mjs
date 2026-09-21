@@ -8,13 +8,15 @@ import {onRequest as authorRoute} from '../functions/author/[[path]].js';
 import {onRequest as healthRoute} from '../functions/api/health.js';
 import {onRequest as mapsRoute} from '../functions/api/maps.js';
 import {onRequest as reviewsRoute} from '../functions/api/reviews.js';
+import {onRequest as placesRoute} from '../functions/api/places.js';
+import {onRequest as photosRoute} from '../functions/api/photos/[id].js';
 import {serveTile} from '../server/tiles.mjs';import {SECURITY_HEADERS} from '../server/http.mjs';
 const auth=await testAuth(),jwt=await auth.token(),db=testDB();
 const originalFetch=globalThis.fetch;
 globalThis.fetch=async(url,options)=>String(url).includes('local-test-team.cloudflareaccess.com/cdn-cgi/access/certs')?auth.fetcher(url,options):originalFetch(url,options);
 const root=fileURLToPath(new URL('../public/',import.meta.url));
 const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.geojson':'application/geo+json','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml'};
-async function assets(request){let pathname=decodeURIComponent(new URL(request.url).pathname);let file=path.resolve(root,'.'+pathname);if(!file.startsWith(root)||pathname.includes('..'))return new Response('not found',{status:404});try{if((await stat(file)).isDirectory())file=path.join(file,'index.html');const bytes=await readFile(file);return new Response(bytes,{headers:{...SECURITY_HEADERS,'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache'}});}catch{return new Response('not found',{status:404});}}
+async function assets(request){let pathname=decodeURIComponent(new URL(request.url).pathname);let file=path.resolve(root,'.'+pathname);if((file!==path.resolve(root)&&!file.startsWith(root))||pathname.includes('..'))return new Response('not found',{status:404});try{if((await stat(file)).isDirectory())file=path.join(file,'index.html');const bytes=await readFile(file);return new Response(bytes,{headers:{...SECURITY_HEADERS,'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-cache'}});}catch{return new Response('not found',{status:404});}}
 const env={...envBase,DB:db,ASSETS:{fetch:assets}};
 const png=await readFile(new URL('./fixtures/tile.png',import.meta.url));
 http.createServer(async(req,res)=>{
@@ -30,6 +32,8 @@ http.createServer(async(req,res)=>{
   if(pathname==='/api/health')response=await healthRoute(context);
   else if(pathname==='/api/maps')response=await mapsRoute(context);
   else if(pathname==='/api/reviews')response=await reviewsRoute(context);
+  else if(pathname==='/api/places')response=await placesRoute(context);
+  else if(pathname.startsWith('/api/photos/'))response=await photosRoute({...context,params:{id:pathname.split('/').at(-1)}});
   else if(pathname.startsWith('/api/tiles/'))response=await serveTile(context,{cache:null,fetcher:async()=>new Response(png,{headers:{'Content-Type':'image/png','Cache-Control':'public, max-age=604800'}})});
   else if(pathname==='/author'||pathname.startsWith('/author/'))response=await authorRoute(context);
   else response=await assets(request);

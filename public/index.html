@@ -9,7 +9,8 @@
   <title>谢老师的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.v0.4.css">
-  <script type="module" src="./assets/app.v0.4.js"></script>
+  <script type="module" src="./assets/app.v0.5.js"></script>
+  <link rel="stylesheet" href="./assets/collection.v0.5.css">
 </head>
 <body>
   <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -44,6 +45,7 @@
       </section>
       <section class="collection" aria-labelledby="collection-title">
         <div class="collection-heading"><h2 id="collection-title">地点收藏册</h2><span id="result-count">正在翻开…</span></div>
+        <label class="sort-control" for="rating-sort">排列方式 <select id="rating-sort"><option value="default">默认顺序</option><option value="rating-desc">星级从高到低</option><option value="rating-asc">星级从低到高</option></select></label>
         <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="place-search" type="search" autocomplete="off" placeholder="寻找一个城市，或一段故事" aria-label="搜索已收录的地点和故事"><kbd aria-hidden="true">/</kbd></div>
         <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button><button type="button" data-region="wales" aria-pressed="false">威尔士</button><button type="button" data-region="northernIreland" aria-pressed="false">北爱尔兰</button></div>
         <div class="memory-list" id="memory-list" aria-label="可点开的地点"></div>
@@ -98,7 +100,7 @@
       <noscript><div class="no-script">请开启 JavaScript，才能拖动地图和阅读故事。</div></noscript>
     </section>
   </main>
-  <footer class="site-footer"><span id="cloud-read-status" class="cloud-read-status">评价 · 正在检查云端</span><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.4 街道与云端评价</span></footer>
+  <footer class="site-footer"><span id="cloud-read-status" class="cloud-read-status">地点与评价 · 正在检查云端</span><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.5 多地点与星级排序</span></footer>
   <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
     <div class="dialog-top"><span class="eyebrow">A GIFT, NOT A GUIDE.</span><button id="close-about" class="icon-button" type="button" aria-label="关闭介绍"><svg class="icon"><use href="#i-close"/></svg></button></div>
     <h2 id="about-title">一张地图，<br>装下那些小小的日子。</h2>

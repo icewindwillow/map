@@ -11,6 +11,18 @@ const originalFetch=globalThis.fetch;
 globalThis.fetch=async(url,options)=>String(url).includes('local-test-team.cloudflareaccess.com/cdn-cgi/access/certs')?auth.fetcher(url,options):originalFetch(url,options);
 const req=(path,options={})=>new Request(envBase.AUTHOR_ORIGIN+path,options);
 const environment=()=>({...envBase,DB:testDB(),ASSETS:{fetch:async r=>new Response('<!doctype html><title>Author shell</title>',{headers:{'Content-Type':'text/html'}})}});
+test('new place and photo routes enforce signed identity, origin and CSRF',async()=>{
+  const env=environment(),jwt=await auth.token();
+  for(const path of ['/author/api/place','/author/api/photo']) {
+    assert.equal((await authorRoute({env,request:req(path,{method:'POST'})})).status,401);
+    assert.equal((await authorRoute({env,request:req(path,{method:'POST',headers:{'Cf-Access-Jwt-Assertion':jwt,Origin:envBase.AUTHOR_ORIGIN,'Content-Type':'application/json'},body:'{}'})})).status,403);
+  }
+  assert.equal((await authorRoute({env,request:req('/author/api/places')})).status,401);
+  assert.equal((await authorRoute({env,request:req('/author/api/photo?id=anything')})).status,401);
+  const place={id:'test-place',place:'测试地点',region:'england',coordinates:[-2,54],photos:[],review:{author:'作者',rating:0,comment:'测试'}};
+  const response=await authorRoute({env,request:req('/author/api/place',{method:'POST',headers:{'Cf-Access-Jwt-Assertion':jwt,Origin:envBase.AUTHOR_ORIGIN,'Content-Type':'application/json','X-Atlas-CSRF':await csrfFor(jwt)},body:JSON.stringify({id:place.id,revision:0,action:'draft',place})})});
+  assert.equal(response.status,200);assert.equal((await response.json()).record.draft.review.rating,0);
+});
 test('unconfigured page fails closed instead of showing a pretend login',async()=>{const r=await authorRoute({request:req('/author/'),env:{}});assert.equal(r.status,503);assert.equal(r.headers.get('Cache-Control'),'no-store');assert.match(await r.text(),/匿名写入/);});
 test('anonymous author API denies access, and public reviews remain readable',async()=>{const env=environment();const r=await authorRoute({request:req('/author/api/session'),env});assert.equal(r.status,401);const pub=await publicRoute({request:req('/api/reviews'),env});assert.equal(pub.status,200);assert.equal(pub.headers.get('Cache-Control'),'no-store');});
 test('protected author shell uses directory URL, not a pretty-URL redirect target',async()=>{let fetched;const env=environment();env.ASSETS.fetch=async r=>{fetched=r.url;return new Response('Author shell');};const r=await authorRoute({env,request:req('/author/',{headers:{'Cf-Access-Jwt-Assertion':await auth.token()}})});assert.equal(r.status,200);assert.equal(fetched,envBase.AUTHOR_ORIGIN+'/author/');assert.equal(await r.text(),'Author shell');assert.equal(r.headers.get('Cloudflare-CDN-Cache-Control'),'no-store');});
