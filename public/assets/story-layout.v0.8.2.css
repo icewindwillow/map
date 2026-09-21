@@ -1,0 +1,33 @@
+/* Keep the journal directly beneath its photographs, independent of sidebar height. */
+.story-main{min-width:0;align-self:start}
+.story-scroll .story-layout{align-items:start}
+.story-scroll .story-gallery{padding-bottom:20px}
+.story-scroll .story-art{height:auto;aspect-ratio:var(--photo-ratio,4/3);max-height:56dvh;min-height:220px}
+.story-main .album-note{display:none}
+.story-scroll .story-main .story-writing,.story-scroll .story-main .story-extras{margin:0 26px 24px;padding:24px 0 0}
+.story-scroll .story-body{padding:24px;gap:0;align-self:start}
+.story-body .story-category{margin-bottom:8px}
+.story-body .story-region{margin-bottom:10px}
+.story-body .city-tag{align-self:flex-start;margin-bottom:12px}
+.story-body h2{font-size:29px;line-height:1.4;margin-bottom:20px;letter-spacing:.5px}
+.story-body h2 small{font-size:20px;margin-top:6px}
+.story-body .author-review{padding:18px 0;margin-bottom:14px}
+.story-body .review-heading{margin-bottom:12px}
+.story-body .author-review blockquote{font-size:17px;line-height:1.85;margin-top:16px}
+.story-body .story-jumps{gap:4px 16px;margin-bottom:16px}
+.story-body .story-jumps button{font-size:12px;padding:7px 0}
+.story-body .story-actions{margin-top:0;padding-top:18px;gap:6px}
+.story-body .story-disclaimer{margin:8px 0}
+.story-scroll #guest-section{margin-top:0}
+@media(max-width:760px){
+ .story-scroll .story-layout{display:flex;flex-direction:column;padding-bottom:0}
+ .story-main{display:contents}
+ .story-scroll .story-gallery{order:0;width:100%;box-sizing:border-box;padding:14px 14px 6px}
+ .story-scroll .story-body{order:1;width:100%;box-sizing:border-box;padding:18px 20px}
+ .story-scroll .story-main .story-writing{order:2}
+ .story-scroll .story-main .story-extras{order:3}
+ .story-scroll .story-main .story-writing,.story-scroll .story-main .story-extras{margin:0 20px 24px;padding-top:22px;align-self:stretch}
+ .story-scroll .story-art{min-height:180px;max-height:52dvh}
+ .story-body h2{font-size:27px}
+ .story-body h2 small{display:block;font-size:19px;margin-left:0}
+}
