@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./assets/style.v0.4.css">
   <script type="module" src="./assets/app.v0.7.js?v=0.7.1"></script>
   <link rel="stylesheet" href="./assets/collection.v0.5.css">
+  <link rel="stylesheet" href="./assets/collection.v0.7.1.css">
   <link rel="stylesheet" href="./assets/place-style.v0.6.css">
 <link rel="stylesheet" href="./assets/reviews.v0.7.css">
 </head>
@@ -48,7 +49,7 @@
       <section class="collection" aria-labelledby="collection-title">
         <div class="collection-heading"><h2 id="collection-title">地点收藏册</h2><span id="result-count">正在翻开…</span></div>
         <label class="sort-control" for="rating-sort">排列方式 <select id="rating-sort"><option value="default">默认顺序</option><option value="rating-desc">星级从高到低</option><option value="rating-asc">星级从低到高</option></select></label>
-        <label class="sort-control" for="category-filter">地点分类 <select id="category-filter"><option value="all">全部分类</option><option value="博物馆">博物馆</option><option value="修道院">修道院</option><option value="城堡">城堡</option><option value="教堂">教堂</option><option value="美术馆">美术馆</option><option value="其他">其他</option></select></label>
+        <label class="sort-control" for="category-filter">地点分类 <select id="category-filter"><option value="all">全部分类</option><option value="修道院">修道院</option><option value="教堂">教堂</option><option value="墓地">墓地</option><option value="城堡">城堡</option><option value="宫殿">宫殿</option><option value="城市">城市</option><option value="博物馆">博物馆</option><option value="展览">展览</option></select></label>
         <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="place-search" type="search" autocomplete="off" placeholder="寻找一个城市，或一段故事" aria-label="搜索已收录的地点和故事"><kbd aria-hidden="true">/</kbd></div>
         <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button></div>
         <div class="memory-list" id="memory-list" aria-label="可点开的地点"></div>

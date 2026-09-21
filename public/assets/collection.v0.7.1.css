@@ -1,0 +1,4 @@
+/* Keep collection controls on one calm, aligned grid instead of sizing to their option text. */
+.sort-control{display:grid;grid-template-columns:minmax(0,1fr) minmax(7.75rem,62%);align-items:center;gap:12px}
+.sort-control select{box-sizing:border-box;width:100%;max-width:none;min-width:0}
+@media(max-width:360px){.sort-control{grid-template-columns:minmax(0,1fr) minmax(7.25rem,62%)}}
