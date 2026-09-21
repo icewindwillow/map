@@ -1,7 +1,7 @@
 .collection>.filter-pair{grid-column:1/-1;grid-row:5;width:100%;box-sizing:border-box;justify-content:space-between;gap:10px;padding-top:0;border-top:0}
 .collection>.memory-list{grid-row:6}
-.filter-pair label{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:1;min-width:0;font-size:11px;color:#7d8579}
-.filter-pair select{width:132px;min-width:0}
+.filter-pair label{display:flex;align-items:center;justify-content:space-between;gap:7px;flex:0 0 auto;min-width:0;white-space:nowrap;font-size:11px;color:#7d8579}
+.filter-pair select{width:112px;min-width:0}
 .header-actions{align-items:center}
 .header-author,.about-button{height:38px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
 .header-author{padding:0 12px}
@@ -22,4 +22,4 @@
 .legend-dialog .legend-ratings{display:flex;flex-wrap:wrap;gap:14px;padding-top:18px}
 .legend-dialog .legend-ratings i{width:12px;height:12px;border-radius:50%;background:var(--accent)}
 .legend-dialog p{margin:22px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
-@media(max-width:760px){.sidebar-intro{margin-top:0}.sidebar-intro h1{font-size:24px;line-height:1.5}.collection>.category-filters{order:3}.collection>.filter-pair{order:4;padding-top:0;gap:8px}.collection>.filter-pair label{display:block;font-size:11px}.collection>.filter-pair select{display:block;width:100%;height:36px;margin-top:5px;font-size:12px}.collection>.memory-list{order:5}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
+@media(max-width:760px){.sidebar-intro{margin-top:0}.sidebar-intro h1{font-size:24px;line-height:1.5}.collection>.category-filters{order:3}.collection>.filter-pair{order:4;padding-top:0;gap:8px}.collection>.filter-pair label{display:block;white-space:nowrap;font-size:11px}.collection>.filter-pair select{display:block;width:100%;height:36px;margin-top:5px;font-size:12px}.collection>.memory-list{order:5}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
