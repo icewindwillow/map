@@ -53,7 +53,8 @@ export async function serveTile(context, {fetcher=fetch, cache=globalThis.caches
     };
     for(const h of ['If-None-Match','If-Modified-Since'])if(request.headers.has(h))upstreamHeaders[h]=request.headers.get(h);
     let upstream;
-    try { upstream=await fetcher(`${TILE_ORIGIN}/${tile.path}`,{headers:upstreamHeaders,signal:AbortSignal.timeout(12000),redirect:'error'}); }
+    // Do not follow redirects away from the fixed tile origin; reject 3xx below.
+    try { upstream=await fetcher(`${TILE_ORIGIN}/${tile.path}`,{headers:upstreamHeaders,signal:AbortSignal.timeout(12000),redirect:'manual'}); }
     catch(e){throw new HttpError(e.name==='TimeoutError'?504:502,'MAP_UPSTREAM_UNREACHABLE','网站暂时无法连接街道图源。可保留手账总览，稍后重试。');}
     if(upstream.status===304)return new Response(null,{status:304,headers:cacheHeaders(upstream)});
     if(!upstream.ok){

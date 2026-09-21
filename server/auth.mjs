@@ -29,7 +29,8 @@ async function keysFor(issuer, kid, fetcher) {
     let response;
     // Access certificate endpoints can be slow to respond on a cold or distant edge.
     // Keep this bounded, but do not reject an otherwise valid author session too eagerly.
-    try { response = await fetcher(`${issuer}/cdn-cgi/access/certs`, {signal: AbortSignal.timeout(20000), redirect: 'error'}); }
+    // Workers supports manual redirects; the !response.ok check below rejects 3xx.
+    try { response = await fetcher(`${issuer}/cdn-cgi/access/certs`, {signal: AbortSignal.timeout(20000), redirect: 'manual'}); }
     catch { throw new HttpError(503, 'AUTH_UNAVAILABLE', '暂时无法验证登录，请稍后重试。'); }
     if (!response.ok) throw new HttpError(503, 'AUTH_UNAVAILABLE', '暂时无法读取登录验证公钥。');
     const body = await response.json();
