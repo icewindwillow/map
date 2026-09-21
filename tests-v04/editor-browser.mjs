@@ -45,6 +45,8 @@ await page.locator('#overview-mode').click();
 for(const width of [390,768,1024]){await page.setViewportSize({width,height:900});await page.screenshot({path:output+`/editor-${width}.png`,fullPage:true});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));}
 const reader=await browser.newContext({viewport:{width:1440,height:1000}}),home=await reader.newPage();home.on('pageerror',e=>errors.push(e.message));
 await home.goto(`http://127.0.0.1:8794/#place=${id}`);
+assert.equal(await home.locator('#show-demos').count(),0);
+assert.equal(await home.locator('.memory-row[data-id^="demo-"]').count(),0);
 try{await home.locator('#story-panel[open]').waitFor({timeout:12000});}catch(e){console.log('HOME DEBUG',errors,await home.locator('body').innerText());await browser.close();throw e;}
 assert.equal(await home.locator('#story-place').innerText(),'浏览器测试城堡\nEdinburgh Castle');
 await home.waitForFunction(()=>{const i=document.querySelector('#story-photo');return i.complete&&i.naturalWidth>0;});
