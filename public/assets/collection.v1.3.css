@@ -1,5 +1,5 @@
-.collection>.filter-pair{grid-column:1/-1;grid-row:5;width:100%;box-sizing:border-box;justify-content:flex-end;padding-top:8px;border-top:0}
-.collection>.memory-list{grid-row:6}
+.collection>.filter-pair{grid-column:1/-1;grid-row:6;width:100%;box-sizing:border-box;justify-content:flex-end;padding-top:8px;border-top:0}
+.collection>.memory-list{grid-row:5}
 .filter-pair label{font-size:11px}
 .header-actions{align-items:center}
 .header-author,.about-button{height:38px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
@@ -14,4 +14,4 @@
 .legend-dialog .legend-ratings{display:flex;flex-wrap:wrap;gap:14px;padding-top:18px}
 .legend-dialog .legend-ratings i{width:12px;height:12px;border-radius:50%;background:var(--accent)}
 .legend-dialog p{margin:22px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
-@media(max-width:760px){.collection>.filter-pair{grid-row:5;padding-top:7px}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
+@media(max-width:760px){.collection>.memory-list{order:6}.collection>.filter-pair{order:7;padding-top:7px}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
