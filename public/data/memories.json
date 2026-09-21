@@ -1,4 +1,1164 @@
 {
   "schemaVersion": 1,
-  "memories": []
+  "memories": [
+    {
+      "id": "greyfriars-kirkyard",
+      "placeId": "greyfriars-kirkyard",
+      "place": "灰衣修士教堂墓地",
+      "placeEn": "Greyfriars Kirkyard",
+      "title": "灰衣修士教堂墓地",
+      "region": "scotland",
+      "category": "墓地",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1928949,
+        55.9468282
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/298677"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "st-marys-episcopal-cathedral",
+      "placeId": "st-marys-episcopal-cathedral",
+      "place": "圣玛丽圣公会大教堂",
+      "placeEn": "St Mary's Episcopal Cathedral",
+      "title": "圣玛丽圣公会大教堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.2161459,
+        55.9486119
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/225470834"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "rosslyn-chapel",
+      "placeId": "rosslyn-chapel",
+      "place": "罗斯林礼拜堂",
+      "placeEn": "Rosslyn Chapel",
+      "title": "罗斯林礼拜堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Roslin",
+      "coordinates": [
+        -3.1599363,
+        55.8553873
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/245945607"
+      },
+      "aliases": [
+        "Roslin"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "glasgow-necropolis",
+      "placeId": "glasgow-necropolis",
+      "place": "大墓地",
+      "placeEn": "Glasgow Necropolis",
+      "title": "大墓地",
+      "region": "scotland",
+      "category": "墓地",
+      "locationLabel": "Glasgow",
+      "coordinates": [
+        -4.230764,
+        55.8627117
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/4991193"
+      },
+      "aliases": [
+        "Glasgow"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "edinburgh-castle",
+      "placeId": "edinburgh-castle",
+      "place": "爱丁堡城堡",
+      "placeEn": "Edinburgh Castle",
+      "title": "爱丁堡城堡",
+      "region": "scotland",
+      "category": "城堡",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.2004184,
+        55.9486884
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/4301292"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "stirling-castle",
+      "placeId": "stirling-castle",
+      "place": "斯特灵城堡",
+      "placeEn": "Stirling Castle",
+      "title": "斯特灵城堡",
+      "region": "scotland",
+      "category": "城堡",
+      "locationLabel": "Stirling",
+      "coordinates": [
+        -3.9480115,
+        56.1240308
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/100542995"
+      },
+      "aliases": [
+        "Stirling"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "tantallon-castle",
+      "placeId": "tantallon-castle",
+      "place": "坦塔伦城堡",
+      "placeEn": "Tantallon Castle",
+      "title": "坦塔伦城堡",
+      "region": "scotland",
+      "category": "城堡",
+      "locationLabel": "North Berwick",
+      "coordinates": [
+        -2.6591112,
+        56.0541945
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/502531289"
+      },
+      "aliases": [
+        "North Berwick"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "scottish-national-portrait-gallery",
+      "placeId": "scottish-national-portrait-gallery",
+      "place": "苏格兰肖像博物馆",
+      "placeEn": "Scottish National Portrait Gallery",
+      "title": "苏格兰肖像博物馆",
+      "region": "scotland",
+      "category": "美术馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1935919,
+        55.9554655
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/73090302"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "national-museum-of-scotland",
+      "placeId": "national-museum-of-scotland",
+      "place": "苏格兰国家博物馆",
+      "placeEn": "National Museum of Scotland",
+      "title": "苏格兰国家博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1893355,
+        55.9470714
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/467226683"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "scottish-national-gallery",
+      "placeId": "scottish-national-gallery",
+      "place": "苏格兰国家美术馆",
+      "placeEn": "Scottish National Gallery",
+      "title": "苏格兰国家美术馆",
+      "region": "scotland",
+      "category": "美术馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1956117,
+        55.950885
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/5182746"
+      },
+      "aliases": [
+        "National Gallery",
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "peoples-story-museum",
+      "placeId": "peoples-story-museum",
+      "place": "人民故事博物馆",
+      "placeEn": "The People's Story Museum",
+      "title": "人民故事博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1799468,
+        55.9514784
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/70954995"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "royal-yacht-britannia",
+      "placeId": "royal-yacht-britannia",
+      "place": "皇家游艇不列颠尼亚号",
+      "placeEn": "Royal Yacht Britannia",
+      "title": "皇家游艇不列颠尼亚号",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1773092,
+        55.9821463
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/99889822"
+      },
+      "aliases": [
+        "HMY Britannia",
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "surgeons-hall-museums",
+      "placeId": "surgeons-hall-museums",
+      "place": "外科医生大厅博物馆",
+      "placeEn": "Surgeons' Hall Museums",
+      "title": "外科医生大厅博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1846803,
+        55.9467674
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/3072411821"
+      },
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "wallace-monument",
+      "placeId": "wallace-monument",
+      "place": "华莱士纪念碑",
+      "placeEn": "Wallace Monument",
+      "title": "华莱士纪念碑",
+      "region": "scotland",
+      "category": "纪念碑",
+      "locationLabel": "Stirling",
+      "coordinates": [
+        -3.9176162,
+        56.1387387
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/86304919"
+      },
+      "aliases": [
+        "National Wallace Monument",
+        "Stirling"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "oxford-castle",
+      "placeId": "oxford-castle",
+      "place": "牛津城堡",
+      "placeEn": "Oxford Castle",
+      "title": "牛津城堡",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2627259,
+        51.7515851
+      ],
+      "locationPrecision": "城堡园区参考位置",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/29089712"
+      },
+      "aliases": [
+        "Oxford Castle Quarter",
+        "Oxford"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "blenheim-palace",
+      "placeId": "blenheim-palace",
+      "place": "丘吉尔庄园",
+      "placeEn": "Blenheim Palace",
+      "title": "丘吉尔庄园",
+      "region": "england",
+      "category": "宫殿",
+      "locationLabel": "Woodstock",
+      "coordinates": [
+        -1.3626293,
+        51.8419448
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/303066"
+      },
+      "aliases": [
+        "Woodstock"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "sheldonian-theatre",
+      "placeId": "sheldonian-theatre",
+      "place": "谢尔登剧院",
+      "placeEn": "Sheldonian Theatre",
+      "title": "谢尔登剧院",
+      "region": "england",
+      "category": "剧院",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.255022,
+        51.7543209
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/27582068"
+      },
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "bodleian-bibliographical-press",
+      "placeId": "bodleian-bibliographical-press",
+      "place": "书目印刷工坊",
+      "placeEn": "Bodleian Bibliographical Press",
+      "title": "书目印刷工坊",
+      "region": "england",
+      "category": "印刷工坊",
+      "locationLabel": "Schola Musicae · Bodleian Old Library · Oxford",
+      "coordinates": [
+        -1.2546962,
+        51.7540615
+      ],
+      "locationPrecision": "Bodleian Old Library 场馆参考位置 · 非工坊房间精确位置",
+      "coordinateSource": {
+        "name": "牛津大学：工坊位于旧图书馆 Schola Musicae；坐标采用图书馆场馆参考点",
+        "url": "https://historyofthebook.mml.ox.ac.uk/pressing-matters/",
+        "mapUrl": "https://www.openstreetmap.org/relation/62123"
+      },
+      "aliases": [
+        "Bibliographical Press",
+        "Oxford"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "agatha-christie-house",
+      "placeId": "agatha-christie-house",
+      "place": "阿加莎故居",
+      "title": "阿加莎故居",
+      "placeEn": "Agatha Christie House",
+      "region": "england",
+      "category": "故居",
+      "locationLabel": "清单分组：牛津及周边 · 具体场馆待确认",
+      "coordinates": null,
+      "locationPrecision": "位置待确认 · 暂不放置图钉",
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "bodleian-library",
+      "placeId": "bodleian-library",
+      "place": "博德利图书馆",
+      "placeEn": "Bodleian Library",
+      "title": "博德利图书馆",
+      "region": "england",
+      "category": "图书馆",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2546962,
+        51.7540615
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/62123"
+      },
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "history-of-science-museum",
+      "placeId": "history-of-science-museum",
+      "place": "牛津科学博物馆",
+      "placeEn": "History of Science Museum",
+      "title": "牛津科学博物馆",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2554711,
+        51.7542645
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/60903336"
+      },
+      "aliases": [
+        "Museum of the History of Science",
+        "Oxford"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "york-minster",
+      "placeId": "york-minster",
+      "place": "约克座堂",
+      "placeEn": "York Minster",
+      "title": "约克座堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0820834,
+        53.9623561
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/28750371"
+      },
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "whitby-abbey",
+      "placeId": "whitby-abbey",
+      "place": "惠特比修道院",
+      "placeEn": "Whitby Abbey",
+      "title": "惠特比修道院",
+      "region": "england",
+      "category": "修道院",
+      "locationLabel": "Whitby",
+      "coordinates": [
+        -0.6065728,
+        54.4875836
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/25749613"
+      },
+      "aliases": [
+        "Whitby"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "ripon-cathedral",
+      "placeId": "ripon-cathedral",
+      "place": "里彭座堂",
+      "placeEn": "Ripon Cathedral",
+      "title": "里彭座堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "Ripon",
+      "coordinates": [
+        -1.5202502,
+        54.1351034
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/178242338"
+      },
+      "aliases": [
+        "Ripon"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "warwick-castle",
+      "placeId": "warwick-castle",
+      "place": "华威城堡",
+      "placeEn": "Warwick Castle",
+      "title": "华威城堡",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "Warwick",
+      "coordinates": [
+        -1.5844827,
+        52.2795271
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/553839"
+      },
+      "aliases": [
+        "Warwick"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "harewood-house",
+      "placeId": "harewood-house",
+      "place": "哈伍德庄园",
+      "placeEn": "Harewood House",
+      "title": "哈伍德庄园",
+      "region": "england",
+      "category": "庄园",
+      "locationLabel": "Harewood",
+      "coordinates": [
+        -1.5273143,
+        53.8969227
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/61215723"
+      },
+      "aliases": [
+        "Harewood"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "alnwick-castle",
+      "placeId": "alnwick-castle",
+      "place": "阿尼克城堡",
+      "placeEn": "Alnwick Castle",
+      "title": "阿尼克城堡",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "Alnwick",
+      "coordinates": [
+        -1.7064926,
+        55.4154664
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/129877528"
+      },
+      "aliases": [
+        "Alnwick"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "knaresborough-castle-viaduct",
+      "placeId": "knaresborough-castle-viaduct",
+      "place": "纳尔斯伯勒城堡及高架桥",
+      "placeEn": "Knaresborough Castle & Viaduct",
+      "title": "纳尔斯伯勒城堡及高架桥",
+      "region": "england",
+      "category": "城堡与桥梁",
+      "locationLabel": "Knaresborough",
+      "coordinates": [
+        -1.4692612,
+        54.0071819
+      ],
+      "locationPrecision": "城堡参考位置 · 清单合并收录城堡与高架桥",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/75280299"
+      },
+      "aliases": [
+        "Knaresborough Castle",
+        "Knaresborough"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "royal-armouries-leeds",
+      "placeId": "royal-armouries-leeds",
+      "place": "丽兹皇家兵器展",
+      "placeEn": "Royal Armouries Museum, Leeds",
+      "title": "丽兹皇家兵器展",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "Leeds",
+      "coordinates": [
+        -1.5322629,
+        53.7918315
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/78431237"
+      },
+      "aliases": [
+        "Royal Armouries",
+        "Leeds"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "york-castle-museum",
+      "placeId": "york-castle-museum",
+      "place": "约克城堡博物馆",
+      "placeEn": "York Castle Museum",
+      "title": "约克城堡博物馆",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0781286,
+        53.9552209
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/1125235305"
+      },
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "st-pauls-cathedral",
+      "placeId": "st-pauls-cathedral",
+      "place": "圣保罗大教堂",
+      "placeEn": "St Paul's Cathedral",
+      "title": "圣保罗大教堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.0984506,
+        51.5137872
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/369161987"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "westminster-abbey",
+      "placeId": "westminster-abbey",
+      "place": "西敏寺",
+      "placeEn": "Westminster Abbey",
+      "title": "西敏寺",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.127391,
+        51.499399
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/364313092"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "winchester-cathedral",
+      "placeId": "winchester-cathedral",
+      "place": "温切斯特大教堂",
+      "placeEn": "Winchester Cathedral",
+      "title": "温切斯特大教堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "Winchester",
+      "coordinates": [
+        -1.3132458,
+        51.0607326
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/41766672"
+      },
+      "aliases": [
+        "Winchester"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "windsor-castle",
+      "placeId": "windsor-castle",
+      "place": "温莎城堡",
+      "placeEn": "Windsor Castle",
+      "title": "温莎城堡",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "Windsor",
+      "coordinates": [
+        -0.6040419,
+        51.4837886
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/23580556"
+      },
+      "aliases": [
+        "Windsor"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "palace-of-westminster",
+      "placeId": "palace-of-westminster",
+      "place": "国会大厦",
+      "placeEn": "Palace of Westminster",
+      "title": "国会大厦",
+      "region": "england",
+      "category": "历史建筑",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.1244812,
+        51.499387
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/1567699"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "tower-of-london",
+      "placeId": "tower-of-london",
+      "place": "伦敦塔",
+      "placeEn": "Tower of London",
+      "title": "伦敦塔",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.0761879,
+        51.508217
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/370870741"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "british-museum",
+      "placeId": "british-museum",
+      "place": "大英博物馆",
+      "placeEn": "British Museum",
+      "title": "大英博物馆",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.1267051,
+        51.5193118
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/177044"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "national-gallery",
+      "placeId": "national-gallery",
+      "place": "国家美术馆",
+      "placeEn": "National Gallery",
+      "title": "国家美术馆",
+      "region": "england",
+      "category": "美术馆",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.1283826,
+        51.508881
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/4372002"
+      },
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    },
+    {
+      "id": "queens-wardrobe-exhibition",
+      "placeId": "queens-wardrobe-exhibition",
+      "place": "女王的衣橱展",
+      "title": "女王的衣橱展",
+      "placeEn": "The Queen's Wardrobe",
+      "region": "england",
+      "category": "展览",
+      "locationLabel": "清单分组：伦敦及南部 · 具体场馆待确认",
+      "coordinates": null,
+      "locationPrecision": "位置待确认 · 暂不放置图钉",
+      "description": "",
+      "date": "",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      }
+    }
+  ]
 }
