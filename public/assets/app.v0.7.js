@@ -107,8 +107,6 @@ class OverviewMap{
 const labelData=[
   {point:[-4.35,56.55],zh:'苏格兰',en:'SCOTLAND',kind:'region'},
   {point:[-1.75,52.8],zh:'英格兰',en:'ENGLAND',kind:'region'},
-  {point:[-4.3,52.35],zh:'威尔士',en:'WALES',kind:'region'},
-  {point:[-7.1,54.93],zh:'北爱尔兰',en:'NORTHERN IRELAND',kind:'region'},
   {point:[-8.15,53.2],zh:'爱尔兰',en:'IRELAND',kind:'neighbour'},
   {point:[-1.15,60.73],zh:'设得兰群岛',en:'Shetland',kind:'island'},
   {point:[-2.65,59.28],zh:'奥克尼群岛',en:'Orkney',kind:'island'},

@@ -9,7 +9,7 @@
   <title>谢曼殊的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.v0.4.css">
-  <script type="module" src="./assets/app.v0.7.js"></script>
+  <script type="module" src="./assets/app.v0.7.js?v=0.7.1"></script>
   <link rel="stylesheet" href="./assets/collection.v0.5.css">
   <link rel="stylesheet" href="./assets/place-style.v0.6.css">
 <link rel="stylesheet" href="./assets/reviews.v0.7.css">
@@ -50,7 +50,7 @@
         <label class="sort-control" for="rating-sort">排列方式 <select id="rating-sort"><option value="default">默认顺序</option><option value="rating-desc">星级从高到低</option><option value="rating-asc">星级从低到高</option></select></label>
         <label class="sort-control" for="category-filter">地点分类 <select id="category-filter"><option value="all">全部分类</option><option value="博物馆">博物馆</option><option value="修道院">修道院</option><option value="城堡">城堡</option><option value="教堂">教堂</option><option value="美术馆">美术馆</option><option value="其他">其他</option></select></label>
         <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="place-search" type="search" autocomplete="off" placeholder="寻找一个城市，或一段故事" aria-label="搜索已收录的地点和故事"><kbd aria-hidden="true">/</kbd></div>
-        <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button><button type="button" data-region="wales" aria-pressed="false">威尔士</button><button type="button" data-region="northernIreland" aria-pressed="false">北爱尔兰</button></div>
+        <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button></div>
         <div class="memory-list" id="memory-list" aria-label="可点开的地点"></div>
         <p class="data-error" id="data-error" role="alert" hidden></p><button type="button" id="retry-data" class="link-button" hidden>重新读取故事 ↻</button>
       </section>
@@ -59,7 +59,7 @@
     </aside>
     <section class="map-frame" id="map-frame" aria-label="英国互动地图">
       <div class="map-surface" id="map-surface">
-        <svg id="atlas-svg" class="atlas-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="英国及周边真实海岸线总览，包括北爱尔兰和北部岛屿"><g id="geographic-layer"></g></svg>
+        <svg id="atlas-svg" class="atlas-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="英国及周边真实海岸线总览"><g id="geographic-layer"></g></svg>
         <div class="online-map" id="online-map" aria-label="在线街道地图" hidden></div>
         <div class="labels-layer" id="labels-layer" aria-hidden="true"></div>
         <div class="marker-layer" id="marker-layer" aria-label="地图上的故事地点"></div>
