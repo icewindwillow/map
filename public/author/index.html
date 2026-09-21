@@ -1,43 +1,44 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>地图编辑室 · 英国记忆地图</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/editor.v0.5.1.css"><script type="module" src="/assets/editor.v0.5.1.js"></script></head>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>地图编辑室 · 英国记忆地图</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/editor.v0.5.2.css"><script type="module" src="/assets/editor.v0.5.1.js"></script></head>
 <body>
 <header class="desk-header"><a class="desk-brand" href="/">x. 英国记忆地图 · 编辑室</a><nav><a href="/" target="_blank" rel="noopener">查看公开地图 ↗</a><a href="/cdn-cgi/access/logout">退出登录</a></nav></header>
 <main class="desk-shell">
-<div class="desk-heading"><div><span class="kicker">PLACES, PHOTOS & LITTLE STORIES</span><h1>搜到那个地方，写下你的故事。</h1><p>搜索地名 → 选择地点 → 添加照片与评价。不需要知道经纬度。</p></div><span id="identity-label">正在验证身份…</span></div>
+<div class="desk-heading"><div><span class="kicker">MEMORY ATLAS / STUDIO</span><h1>编辑你的旅行记忆</h1><p>选择一个地点，记录值得留下的瞬间。</p></div><span id="identity-label">正在验证身份…</span></div>
 <p id="message" class="message" role="status" aria-live="polite">正在读取云端…</p>
-<section class="place-search-panel" aria-labelledby="search-heading">
-<h2 id="search-heading">先找一个地方</h2>
+<div class="place-toolbar"><label for="place-select">当前记忆</label><select id="place-select" disabled></select><button id="new-place" class="button" disabled>＋ 新增地点</button><button id="reload" class="button" disabled>同步云端</button></div>
+<nav class="section-nav" aria-label="编辑区快捷导航"><a href="#details-section">01 地点信息</a><a href="#story-section">02 故事与评价</a><a href="#photos-section">03 照片相册</a></nav>
+<div class="workspace">
+<aside class="map-column" id="location-panel"><section class="place-search-panel" aria-labelledby="search-heading">
+<div class="panel-heading"><h2 id="search-heading">查找地点</h2><span>英国地名库</span></div>
 <form id="location-search-form"><label for="location-query">城市、景点、餐厅或街道名称</label><div class="search-input-row"><input id="location-query" type="search" minlength="2" maxlength="160" required placeholder="例如：爱丁堡城堡 / Edinburgh Castle" autocomplete="off" disabled><button id="location-search-button" class="button primary" disabled>搜索地名</button></div></form>
 <p class="search-hint">搜索英国地名库，不限于已收录地点。常见中文名可直接搜索；找不到时试试英文名＋城市。</p>
 <p id="location-search-status" role="status" aria-live="polite"></p><div id="location-results" class="location-results"></div>
-<small>点击搜索才会将搜索词发送至 Photon，结果在本站缓存 7 天。请勿输入私人敏感地址。地名数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · 搜索服务 <a href="https://photon.komoot.io" target="_blank" rel="noopener">Photon</a></small>
+<details class="search-disclosure"><summary>搜索服务与隐私说明</summary><small>点击搜索才会将搜索词发送至 Photon，结果在本站缓存 7 天。请勿输入私人敏感地址。地名数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · 搜索服务 <a href="https://photon.komoot.io" target="_blank" rel="noopener">Photon</a></small></details>
 </section>
-<div class="place-toolbar"><label for="place-select">编辑地点</label><select id="place-select" disabled></select><button id="new-place" class="button" disabled>＋ 新增地点</button><button id="reload" class="button" disabled>读取云端最新版</button></div>
-<div class="workspace">
-<aside class="map-column">
+<div class="map-card"><div class="panel-heading"><h2>位置预览</h2><span>搜索后自动定位</span></div>
 <div class="map-toolbar"><button id="overview-mode" class="button" aria-pressed="true">手账总览</button><button id="street-mode" class="button" aria-pressed="false">街道底图</button><button id="focus-pin" class="button">定位当前点</button></div>
 <div id="picker" class="picker" tabindex="0" role="region" aria-label="地点选点地图，点击设置坐标，拖动平移，加减号缩放"><svg id="overview" aria-label="英国地图"><g id="coast"></g><g id="other-pins"></g><circle id="current-pin" r="0.13" hidden></circle></svg><div id="street" hidden></div><span id="street-pin" hidden aria-hidden="true">●</span></div>
 <div class="map-toolbar"><button id="zoom-in" class="button" aria-label="放大地图">＋</button><button id="zoom-out" class="button" aria-label="缩小地图">−</button><button id="map-reset" class="button">英国全览</button><button id="center-pin" class="button">用地图中心作坐标</button></div>
 <p id="map-status" role="status">点击地图放置图钉；拖动平移，滚轮缩放。也可直接填写经纬度。</p>
 <p id="attribution" hidden>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></p>
-<section class="published-box"><span id="record-status">未选择地点</span><p id="published-summary"></p><a id="public-link" href="/" target="_blank" rel="noopener">在公开地图中查看 ↗</a></section>
+</div><section class="published-box"><span id="record-status">未选择地点</span><p id="published-summary"></p><a id="public-link" href="/" target="_blank" rel="noopener">在公开地图中查看 ↗</a></section>
 </aside>
 <section class="editing-sheet"><form id="place-form" novalidate><fieldset id="fields" disabled>
-<h2>地点与位置</h2>
+<section class="form-section" id="details-section"><div class="section-heading"><span class="step-number">01</span><div><h2>地点信息</h2><p>从右侧搜索地点，或修改已有记录。</p></div><a class="mobile-find" href="#location-panel">查找地点 ↗</a></div>
 <div class="two-col"><div><label for="place-name">地点名称 *</label><input id="place-name" maxlength="160" required placeholder="例如：爱丁堡城堡"></div><div><label for="place-en">英文名称</label><input id="place-en" maxlength="160" placeholder="Edinburgh Castle"></div></div>
 <div class="two-col"><div><label for="region">所属地区 *</label><select id="region" required><option value="">请选择所属地区</option><option value="england">英格兰</option><option value="scotland">苏格兰</option><option value="wales">威尔士</option><option value="northernIreland">北爱尔兰</option></select></div><div><label for="category">类别</label><input id="category" maxlength="80" placeholder="城堡、咖啡馆、散步…"></div></div>
 <label for="address">位置说明／地址</label><input id="address" maxlength="200" placeholder="城市、街道或地标（此项不会自动定位）">
 <p id="selected-location" class="selected-location">请先搜索并选择地点，也可以在地图上点选。</p>
 <details id="advanced-location"><summary>高级定位：查看／手动填写经纬度（备用）</summary><div class="two-col"><div><label for="longitude">经度（东西方向）*</label><input id="longitude" type="number" step="any" min="-15" max="12" required placeholder="-3.1999"></div><div><label for="latitude">纬度（南北方向）*</label><input id="latitude" type="number" step="any" min="46" max="65" required placeholder="55.9486"></div></div><p class="field-note">搜索选点会自动填写。只有需要校正时才手工修改。</p></details>
-<label for="trip-date">旅行日期（可不填）</label><input id="trip-date" type="date">
+</section><section class="form-section" id="story-section"><div class="section-heading"><span class="step-number">02</span><div><h2>故事与评价</h2><p>写下经历，为这次遇见打个分。</p></div></div><label for="trip-date">旅行日期（可不填）</label><input id="trip-date" type="date">
 <label for="description">地点故事</label><textarea id="description" rows="3" maxlength="10000" placeholder="这次遇见了什么？"></textarea>
-<h2>照片相册</h2><p class="field-note">最多 8 张。自动缩小至最长边 1280 像素、200 KB 以内，去除原照片元数据。原图请自己保留；未发布照片仅作者可见。</p>
-<label for="photos">添加照片（JPEG / PNG / WebP）</label><input id="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple><div id="photo-list" class="photo-list"></div>
-<h2>评分与感受</h2><label for="review-author">评价署名</label><input id="review-author" maxlength="80" placeholder="你希望显示的名字">
+<div class="review-divider"></div><label for="review-author">评价署名</label><input id="review-author" maxlength="80" placeholder="你希望显示的名字">
 <label for="rating">作者评分 <output id="rating-value">未评分</output></label><input id="rating" type="range" min="0" max="5" step="0.5" value="5"><label class="check-label"><input id="unrated" type="checkbox" checked> 暂不评分（不等于 0 星）</label>
 <label for="comment">留下你的感受</label><textarea id="comment" maxlength="10000" rows="5"></textarea>
-<p class="field-note">保存草稿不会改变公开地图；发布会更新此地点、坐标、照片和评价。</p>
-<div class="editor-actions"><button type="button" id="save-draft" class="button secondary">保存云端草稿</button><button type="submit" class="button primary">发布到地图 ↗</button></div>
-</fieldset></form><div class="editor-tools"><button id="backup">备份当前内容 ↓</button><button id="discard" disabled>丢弃云端草稿</button></div></section>
-</div><footer class="desk-footer">MEMORY ATLAS · v0.5.1 · 地名搜索与多地点编辑室</footer>
+</section><section class="form-section" id="photos-section"><div class="section-heading"><span class="step-number">03</span><div><h2>照片相册</h2><p>选一张封面，让记忆更鲜活。</p></div></div><p class="field-note">最多 8 张。自动缩小至最长边 1280 像素、200 KB 以内，去除原照片元数据。原图请自己保留；未发布照片仅作者可见。</p>
+<label for="photos">添加照片（JPEG / PNG / WebP）</label><input id="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple><div id="photo-list" class="photo-list"></div>
+</section>
+<div class="editor-actions"><div class="save-explainer"><strong>准备好分享了吗？</strong><span>草稿仅作者可见，发布后更新公开地图。</span></div><button type="button" id="save-draft" class="button secondary">保存云端草稿</button><button type="submit" class="button primary">发布到地图 ↗</button></div>
+</fieldset></form><details class="secondary-tools"><summary>备份与草稿管理</summary><div class="editor-tools"><button id="backup">备份当前内容 ↓</button><button id="discard" disabled>丢弃云端草稿</button></div></details></section>
+</div><footer class="desk-footer">MEMORY ATLAS · v0.5.2 · 旅行记忆工作台</footer>
 </main></body></html>
