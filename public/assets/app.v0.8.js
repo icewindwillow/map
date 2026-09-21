@@ -311,6 +311,7 @@ $('about-dialog').addEventListener('click',e=>{const r=$('about-dialog').getBoun
 $('place-search').addEventListener('input',e=>{state.query=e.target.value;refreshCollection();});
 $('category-filter').addEventListener('change',refreshCollection);$('city-filter').addEventListener('change',refreshCollection);
 document.querySelectorAll('#category-filters [data-category]').forEach(button=>button.addEventListener('click',()=>{$('category-filter').value=button.dataset.category;refreshCollection();}));
+document.addEventListener('click',e=>{const button=e.target.closest?.('#category-filters [data-category]');if(!button)return;e.preventDefault();$('category-filter').value=button.dataset.category;refreshCollection();},true);
 for(const [button,target]of [['read-official','official-section'],['read-guests','guest-section']])$(button).onclick=()=>$(target).scrollIntoView({behavior:'smooth',block:'start'});
 for(const category of CATEGORIES){const span=text('span','');span.append(categoryIcon(category),document.createTextNode(category));$('legend-categories').append(span);}
 $('rating-sort').addEventListener('change',()=>{refreshCollection();try{localStorage.setItem('atlas-sort',$('rating-sort').value);}catch{}});
