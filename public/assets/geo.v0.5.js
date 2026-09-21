@@ -41,7 +41,7 @@ export function validateMemories(data, demos=false) {
 }
 export function filterMemories(items, region='all', query='') {
   const q=query.trim().toLocaleLowerCase();
-  return items.filter(m=>(region==='all'||m.region===region)&&(!q||[m.title,m.place,m.placeEn,m.description,m.category,m.locationLabel,m.review?.comment,...(m.aliases||[]),REGIONS[m.region]].filter(Boolean).join(' ').toLocaleLowerCase().includes(q)));
+  return items.filter(m=>(region==='all'||m.region===region)&&(!q||[m.title,m.place,m.placeEn,m.description,m.category,m.city,m.locationLabel,m.review?.comment,...(m.aliases||[]),REGIONS[m.region]].filter(Boolean).join(' ').toLocaleLowerCase().includes(q)));
 }
 /** Stable greedy clustering in screen pixels. Original coordinates are never altered. */
 export function clusterPoints(items, screen, radius=31) {

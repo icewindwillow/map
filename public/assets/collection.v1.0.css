@@ -1,0 +1,14 @@
+.visually-hidden-filter{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+.collection{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;row-gap:10px}
+.collection>.collection-heading{grid-column:1/-1;grid-row:1}
+.collection>.search-field{grid-column:1/-1;grid-row:2;margin:0;height:38px}
+.collection>.region-filters{grid-column:1;grid-row:3;align-self:center;padding:0;gap:5px}
+.collection>.sort-inline{grid-column:2;grid-row:3;display:flex;align-items:center;gap:7px;color:#7d8579;font-size:10px;white-space:nowrap}
+.sort-inline select{height:32px;min-width:112px;padding:0 24px 0 9px;border:1px solid var(--line);border-radius:4px;background:#fffdf8;color:var(--ink);font-size:11px}
+.category-filters{grid-column:1/-1;grid-row:4;display:flex;align-items:center;gap:3px;padding:2px 0 8px;border-bottom:1px solid var(--line)}
+.category-filters button{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-width:30px;padding:5px 6px;border:1px solid transparent;border-radius:4px;color:#7d8579;background:transparent;cursor:pointer}
+.category-filters button span{font-size:17px;line-height:1;color:#738177}.category-filters button small{font-size:9px;white-space:nowrap}
+.category-filters button[aria-pressed=true]{background:var(--ink);color:var(--paper)}.category-filters button[aria-pressed=true] span{color:inherit}
+.category-filters button:hover{border-color:var(--line);background:#ebece3}
+.collection>.memory-list{grid-column:1/-1;grid-row:5}.collection>.collection-tail{grid-column:1/-1}
+@media(max-width:760px){.collection{grid-template-columns:minmax(0,1fr) auto;row-gap:9px}.collection>.search-field{height:42px}.collection>.sort-inline{gap:5px}.sort-inline select{min-width:100px;height:36px}.category-filters{overflow-x:auto;padding-bottom:8px}.category-filters button{flex:0 0 auto;padding:6px 7px}.category-filters button small{font-size:10px}}

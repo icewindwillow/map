@@ -198,6 +198,7 @@ function refreshCollection(){
     if(m.review||photos.length){const meta=text('span','row-review');if(m.review){const rating=text('span','rating-display');renderRating(rating,m.review.rating,{compact:true});meta.append(rating);}if(photos.length)meta.append(text('span','row-photo-count',`${photos.length} 张照片`));body.append(meta);}row.append(body);const arrow=icon('arrow');arrow.classList.add('row-arrow');row.append(arrow);row.addEventListener('click',()=>openStory(m,row));f.append(row);
   });
   if(!state.filtered.length){const e=text('div','empty-state');e.append(text('strong','',state.query?'还没找到这个地点。':'留白，是故事的开始。'),document.createTextNode(state.query?'试试别的名字。这里只搜索已经收录的内容。':state.items.length?'这个地区暂时没有记录。':'还没有公开的旅行记忆。'));f.append(e);}
+  document.querySelectorAll('#category-filters [data-category]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.category===($('category-filter').value||'all'))));
   $('memory-list').replaceChildren(f);
   if(state.selected&&!state.filtered.some(m=>m.id===state.selected.id))closeStory(false);
   renderOverlays();
@@ -308,6 +309,7 @@ $('about-button').addEventListener('click',()=>$('about-dialog').showModal());$(
 $('about-dialog').addEventListener('click',e=>{const r=$('about-dialog').getBoundingClientRect();if(e.target===$('about-dialog')&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))$('about-dialog').close();});
 $('place-search').addEventListener('input',e=>{state.query=e.target.value;refreshCollection();});
 $('category-filter').addEventListener('change',refreshCollection);$('city-filter').addEventListener('change',refreshCollection);
+document.querySelectorAll('#category-filters [data-category]').forEach(button=>button.addEventListener('click',()=>{$('category-filter').value=button.dataset.category;refreshCollection();}));
 for(const [button,target]of [['read-official','official-section'],['read-guests','guest-section']])$(button).onclick=()=>$(target).scrollIntoView({behavior:'smooth',block:'start'});
 for(const category of CATEGORIES){const span=text('span','');span.append(categoryIcon(category),document.createTextNode(category));$('legend-categories').append(span);}
 $('rating-sort').addEventListener('change',()=>{refreshCollection();try{localStorage.setItem('atlas-sort',$('rating-sort').value);}catch{}});
