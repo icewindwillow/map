@@ -5,7 +5,7 @@ export const officialIntroductions={
   "st-marys-episcopal-cathedral":["爱丁堡西区的哥特复兴式主教座堂，拥有高耸的尖顶、彩绘玻璃和持续至今的礼拜传统。","https://www.stmaryscathedral.co.uk/"],
   "rosslyn-chapel":["建于 15 世纪的石雕礼拜堂，以繁密的中世纪雕刻、象征图案和独特的家族历史著称。","https://www.rosslynchapel.com/"],
   "glasgow-necropolis":["坐落在格拉斯哥大教堂旁的维多利亚时代墓园，保存着纪念碑、雕塑与俯瞰城市的步道。","https://www.glasgow.gov.uk/necropolis"],
-  "edinburgh-castle":["建在城堡岩上的苏格兰王室要塞，汇集王冠珠宝、王室宫殿、军事展览和城市全景。","https://www.edinburghcastle.scot/"],
+  "edinburgh-castle":["爱丁堡城堡建在火山岩城堡岩上。这里最早可能是铁器时代的山地聚落，到了中世纪，陡峭的岩壁让它成为苏格兰王室最重要的据点之一。15、16 世纪的君主不断扩建王宫、城墙和礼拜空间，城堡也因此同时拥有王居、要塞和国家象征三重身份。\n\n1571—1573 年的长期围城改变了它的命运。此后城堡逐渐转为军事基地，半月炮台、驻军营房和战俘牢房都在这一时期留下。城内的大炮 Mons Meg 也是一段很有戏剧性的历史：它由勃艮第地区铸造，1457 年作为礼物送给詹姆斯二世，后来被运到伦敦；19 世纪在沃尔特·司各特等人的推动下，它才重新回到城堡。今天站在城墙上看到的城市全景，背后其实是一座经历过王朝更替、围城和军事现代化的活历史遗址。","https://www.historicenvironment.scot/visit/all/edinburgh-castle/history-and-stories/"],
   "stirling-castle":["苏格兰文艺复兴王宫与重要军事据点，拥有王室大厅、礼拜堂和俯瞰福斯河谷的城墙。","https://www.stirlingcastle.scot/"],
   "tantallon-castle":["北贝里克海岸边的悬崖城堡遗址，三面临海，展现中世纪要塞与海岸景观的结合。","https://www.historicenvironment.scot/visit-a-place/places/tantallon-castle/"],
   "scottish-national-portrait-gallery":["以苏格兰人物肖像为核心的国家级美术馆，收藏从历史人物到当代艺术家的作品。","https://www.nationalgalleries.org/visit/scottish-national-portrait-gallery"],
@@ -21,8 +21,8 @@ export const officialIntroductions={
   "bodleian-bibliographical-press":["博德利图书馆保存的传统印刷工作坊，展示活字排版、手工印刷与书籍制作过程。","https://www.bodleian.ox.ac.uk/visit"],
   "bodleian-library":["牛津大学的历史图书馆体系，收藏珍本、手稿和学术档案，并提供导览参观。","https://www.bodleian.ox.ac.uk/visit"],
   "history-of-science-museum":["牛津大学科学史博物馆，展示科学仪器、天文设备和科学思想发展的实物。","https://hsm.ox.ac.uk/"],
-  "york-minster":["英国北部最重要的哥特式大教堂之一，以彩绘玻璃、石雕和可登高塔的城市景观闻名。","https://yorkminster.org/"],
-  "whitby-abbey":["俯瞰北海的本笃会修道院遗址，废墟、海岸与《德古拉》相关的文学传统共同构成其特色。","https://www.english-heritage.org.uk/visit/places/whitby-abbey/"],
+  "york-minster":["约克座堂所在位置自 7 世纪已有教堂：传说 627 年，诺森布里亚国王 Edwin 在这里受洗。今天的哥特式主体由 13 世纪大主教 Walter de Gray 推动建造，工程延续约 250 年；东立面上的 Great East Window 记录着中世纪玻璃工艺与约克的宗教史。","https://yorkminster.org/discover/timeline/"],
+  "whitby-abbey":["惠特比修道院所在的海岬，几千年来一直是避风、瞭望和举行宗教活动的地方。约在 657 年，诺森布里亚国王 Oswiu 把土地交给女院长 Hild，她在这里建立了男女分区生活的双修道院。这个小小的海岬很快成为北方最重要的宗教与学习中心之一，早期英语诗人 Cædmon 也在这里留下了自己的名字。\n\n664 年的惠特比会议让这里进入英格兰教会史：来自不同传统的教会领袖在此讨论复活节日期和礼仪，最后诺森布里亚选择跟随罗马传统。丹麦人袭击后，诺曼征服时期又在原址重建本笃会修道院；今天看到的高耸东端和北耳堂，主要来自 13、14 世纪的哥特式重建。1539 年修道院解散，屋顶和内部逐渐消失，只留下被海风包围的石壳。后来布拉姆·斯托克来到惠特比，海岬、沉船和修道院的阴影进入了《德古拉》，使这个地方又多了一层文学传说。","https://www.english-heritage.org.uk/visit/places/whitby-abbey/history-and-stories"],
   "ripon-cathedral":["拥有近千年历史的主教座堂，融合诺曼、哥特与维多利亚时期建筑，并保存古老地下室。","https://riponcathedral.org.uk/"],
   "warwick-castle":["建于中世纪城堡遗址上的历史景点，结合城墙、塔楼、王室故事和园林活动。","https://www.warwick-castle.com/"],
   "harewood-house":["约克郡的乔治亚时期庄园与艺术收藏地，拥有 Robert Adam 室内设计、景观园林和动物园。","https://harewood.org/"],
@@ -66,6 +66,6 @@ export const officialIntroductions={
   "st-sepulchres-cemetery":["牛津历史墓园，安葬着当地居民与大学相关人物，保留城市近代社会史的痕迹。","https://www.oxford.gov.uk/directory-record/1022/st-sepulchres-cemetery"],
   "wallingford-castle":["泰晤士河畔的诺曼城堡遗址与公共花园，城墙、塔楼和土垒见证了沃灵福德的中世纪历史。","https://www.wallingfordmuseum.org.uk/"],
   "st-cross-church":["温切斯特郊外的中世纪教堂，保留石砌建筑和安静的乡村教区环境。","https://www.stcrosshospital.org.uk/"],
-  "fountains-abbey":["约克郡保存壮观的西多会修道院遗址，与 Studley Royal 水园共同构成世界遗产景观。","https://www.nationaltrust.org.uk/visit/yorkshire/fountains-abbey-and-studley-royal"],
+  "fountains-abbey":["喷泉修道院的故事从 1132 年开始。那一年，13 名离开约克圣玛丽修道院的本笃会修士来到 Skell 山谷，希望过一种更严格、更远离尘世的隐修生活。这里有水、木材、石料和耕地，位置偏僻却足以支撑一个长期发展的社区；三年后，修道院加入西多会。\n\n几个世纪里，喷泉修道院从山谷中的小型团体成长为英格兰北部最大、最富有的修道院之一。修士经营农场、羊群和矿产，也接待旅人、管理土地。1539 年亨利八世解散修道院，建筑被拆取石料，剩下的拱券和高墙逐渐变成一座巨大废墟。\n\n真正特别的是它后来与 Studley Royal 的相遇。18 世纪，John Aislabie 和他的儿子 William 把河流、湖面、林地和废墟组织成一座“借景”花园：走在园路上，景物会一层层展开，修道院不是被单独围起来的古迹，而是整个景观的高潮。今天看到的美感，正是中世纪宗教遗址与 18 世纪园林想象叠加后的结果。1986 年，喷泉修道院与 Studley Royal 一起列入世界遗产。","https://www.nationaltrust.org.uk/visit/yorkshire/fountains-abbey-and-studley-royal-water-garden/history-of-fountains-abbey-and-studley-royal"],
   "ripon-cathedral":["里彭主教座堂拥有近千年礼拜历史，融合诺曼、哥特与维多利亚时期建筑。","https://riponcathedral.org.uk/"]
 };
