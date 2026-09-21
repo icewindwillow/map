@@ -2,75 +2,89 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="把在英国遇见的人、走过的路，和舍不得忘记的小事，慢慢放回地图上。">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#f7f5ef">
-  <title>英国 · 记忆地图</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="不是攻略，是一份关于她的地图。把英国的日子，一点一点收好。">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f6f3ec">
+  <title>谢老师的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.css">
-  <script src="./assets/app.js" defer></script>
+  <script type="module" src="./assets/app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="./" aria-label="记忆地图首页">
-        <span class="brand-symbol" aria-hidden="true">m.</span>
-        <span><strong>英国 · 记忆地图</strong><small>MEMORY ATLAS</small></span>
-      </a>
-      <div class="header-right"><span class="edition">序章 / 001</span><button class="text-button" id="about-button" type="button" hidden>关于这份礼物 <span aria-hidden="true">↗</span></button></div>
-    </header>
-
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="short-rule" aria-hidden="true"></span>写给那段英国时光</p>
-          <h1 id="hero-title">有些日子，<br>值得<span>再走一遍。</span></h1>
-          <p class="hero-description">把遇见的人、走过的路，<br>和那些舍不得忘记的小事，慢慢放回地图上。</p>
-          <a class="primary-button" href="#atlas">从这里开始 <span aria-hidden="true">↘</span></a>
-          <p class="hero-note">先留一张空白地图，再把故事慢慢写进去。</p>
-        </div>
-        <div class="keepsake" aria-label="记忆卡片：一段时光，许多坐标。">
-          <div class="paper-back" aria-hidden="true"></div>
-          <div class="postcard">
-            <div class="postcard-top"><span>TO THE DAYS<br>WE KEEP.</span><span class="stamp" aria-hidden="true">UK<br><small>MEMORIES</small></span></div>
-            <div class="postcard-center"><span class="chapter-no">01</span><p>一段时光，<br>许多坐标。</p></div>
-            <div class="postcard-bottom"><span>故事从这里开始</span><span aria-hidden="true">✳</span></div>
-          </div>
-          <span class="card-caption">A small atlas of unforgettable things.</span>
-        </div>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5C8 2 4 3 2 4v15c4-1.5 7-1 10 1 3-2 6-2.5 10-1V4c-2-1-6-2-10 1Zm0 0v15"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 1 8M4 4v6h6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m2 5 6-2 8 3 6-2v15l-6 2-8-3-6 2Zm6-2v15M16 6v15"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4ZM14 4h6v6h-6ZM4 14h6v6H4ZM14 14h6v6h-6Z"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 10v7M12 7v.1"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 6-6 4 4 3-3 5 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-letter" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 5 10 8L22 5"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#map-frame">跳到地图</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="记忆地图首页"><span class="brand-mark">x<span>.</span></span><span class="brand-copy"><strong>谢老师的英国旅行</strong><small>A LITTLE ATLAS OF BRITISH DAYS</small></span></a>
+    <div class="header-center"><span class="header-rule"></span><span>把日子，慢慢收好。</span><span class="header-rule"></span></div>
+    <div class="header-actions"><span class="edition">VOL. 01 <i></i> 地图篇</span><button id="about-button" class="about-button" type="button"><svg class="icon"><use href="#i-letter"/></svg><span>关于这份礼物</span></button></div>
+  </header>
+  <main class="workspace" id="main">
+    <aside class="sidebar" aria-label="地点与故事收藏册">
+      <section class="sidebar-intro">
+        <p class="eyebrow"><span class="tiny-star">✳</span> FOR THE DAYS WE KEEP</p>
+        <h1>有些日子，<br>值得<span>再走一遍。</span></h1>
+        <p class="intro-description">把遇见的人、走过的路，<br>和舍不得忘记的小事，慢慢放回地图上。</p>
+        <div class="ledger"><div><strong id="place-count">—</strong><span>示范地点</span></div><i></i><div><strong id="memory-count">00</strong><span>真实故事</span></div><svg class="ledger-icon icon"><use href="#i-book"/></svg></div>
       </section>
-
-      <section class="atlas-section" id="atlas" aria-labelledby="atlas-title">
-        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="atlas-title">留给回忆的位置</h2></div><p class="section-caption">尚未写下，也是一种开始。</p></div>
-        <div class="atlas-grid">
-          <div class="map-placeholder">
-            <div class="placeholder-header"><span>地图画布</span><span>下一章展开</span></div>
-            <div class="placeholder-content"><span class="location-mark" aria-hidden="true"><i></i></span><h3>每一个地点，都可以是故事的入口。</h3><p>这里将放上英国地图。<br>下一步，再一起标记那些值得记住的地方。</p></div>
-            <div class="placeholder-footer"><span>MAP / NOT YET DRAWN</span><span aria-hidden="true">＋</span></div>
-          </div>
-          <aside class="collection-card" aria-labelledby="collection-title">
-            <p class="eyebrow">慢慢收集，不用着急</p><h3 id="collection-title">属于她的<br>小小收藏册。</h3>
-            <dl class="stats"><div><dt>记住的地点</dt><dd id="place-count">—</dd></div><div><dt>收好的故事</dt><dd id="memory-count">—</dd></div></dl>
-            <p id="data-status" class="data-status" role="status" aria-live="polite">正在翻开收藏册…</p>
-            <button class="text-button retry-button" id="retry-button" type="button" hidden>重新读取 ↻</button>
-            <noscript><p class="data-status">请开启 JavaScript，以读取故事数据。目前这是一张空白地图。</p></noscript>
-          </aside>
-        </div>
-        <div id="memory-list" class="memory-list" aria-label="故事列表"></div>
+      <section class="collection" aria-labelledby="collection-title">
+        <div class="collection-heading"><h2 id="collection-title">地点收藏册</h2><span id="result-count">正在翻开…</span></div>
+        <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="place-search" type="search" autocomplete="off" placeholder="寻找一个城市，或一段故事" aria-label="搜索已收录的地点和故事"><kbd aria-hidden="true">/</kbd></div>
+        <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button><button type="button" data-region="wales" aria-pressed="false">威尔士</button><button type="button" data-region="northernIreland" aria-pressed="false">北爱尔兰</button></div>
+        <div class="memory-list" id="memory-list" aria-label="可点开的地点"></div>
+        <div class="collection-tail"><label class="demo-toggle"><input id="show-demos" type="checkbox" checked><span>显示演示地点</span></label><span class="demo-note">不是她的真实行程</span></div>
+        <p class="data-error" id="data-error" role="alert" hidden></p><button type="button" id="retry-data" class="link-button" hidden>重新读取故事 ↻</button>
       </section>
-    </main>
-
-    <footer class="site-footer"><span>为值得记住的日子，留一个地方。</span><span>底座 v0.1 · 地图与故事稍后加入</span></footer>
-  </div>
-
-  <dialog id="about-dialog" aria-labelledby="about-title">
-    <div class="dialog-top"><span class="eyebrow">ABOUT THIS GIFT</span><button id="close-dialog" class="close-button" type="button" aria-label="关闭介绍">×</button></div>
-    <h2 id="about-title">不是攻略，<br>是一份关于她的地图。</h2>
-    <p>想把她在英国遇到的各种事情，一点一点留在这里。以后，轻轻点开一个地点，就能重新走进那一天。</p>
-    <p>现在是第一版网页底座：只有首页、空白地图区域和故事数据入口。还没有真实地图、照片或个人经历。</p>
-    <p class="dialog-footnote">让网页先有一个家，故事再慢慢长出来。</p>
+      <p class="sidebar-footnote">“不是攻略，是一份关于她的地图。”</p>
+    </aside>
+    <section class="map-frame" id="map-frame" aria-label="英国互动地图">
+      <div class="map-surface" id="map-surface">
+        <svg id="atlas-svg" class="atlas-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="英国及周边真实海岸线总览，包括北爱尔兰和北部岛屿"><g id="geographic-layer"></g></svg>
+        <div class="online-map" id="online-map" aria-label="在线街道地图" hidden></div>
+        <div class="labels-layer" id="labels-layer" aria-hidden="true"></div>
+        <div class="marker-layer" id="marker-layer" aria-label="地图上的故事地点"></div>
+      </div>
+      <div class="map-grain" aria-hidden="true"></div>
+      <div class="map-caption"><span class="eyebrow">THE BRITISH CHAPTER</span><span id="map-context">英国全览 <i>／</i> 每个坐标，都等着一个故事</span></div>
+      <div class="map-style-switch" aria-label="底图模式"><button id="overview-button" type="button" aria-pressed="true"><svg class="icon"><use href="#i-map"/></svg>手账总览</button><button id="street-button" type="button" aria-pressed="false"><svg class="icon"><use href="#i-grid"/></svg>街道底图</button></div>
+      <div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 52 62"><path d="M26 7 36 49 26 41 16 49Z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M26 7v34l10 8Z" fill="currentColor"/><path d="M8 33h36M26 0v4M26 53v9" stroke="currentColor" stroke-width=".7"/><circle cx="26" cy="33" r="19" fill="none" stroke="currentColor" stroke-width=".5"/></svg></div>
+      <div class="map-controls" aria-label="地图操作"><button id="zoom-in" type="button" aria-label="放大地图" title="放大地图">＋</button><button id="zoom-out" type="button" aria-label="缩小地图" title="缩小地图">−</button><span></span><button id="reset-map" type="button" aria-label="回到英国全览" title="回到英国全览"><svg class="icon"><use href="#i-reset"/></svg></button></div>
+      <div class="map-dedication" id="map-dedication" aria-hidden="true"><span class="dedication-line"></span><p>Some places stay<br><em>with us.</em></p><small>留给那些，不想忘记的日子。</small></div>
+      <div class="map-key"><span class="key-dot"></span><span id="map-key-label">演示地点</span><i></i><span class="map-hint">拖动探索 · 滚轮缩放</span></div>
+      <div class="scale-wrap" id="scale-wrap"><span id="scale-text">200 km</span><span class="scale-line" id="scale-line"></span></div>
+      <div class="geo-attribution" id="geo-attribution"><button type="button" id="sources-button">GSHHG 2.3.6 · 简化地理总览 ⓘ</button></div>
+      <div class="map-status" id="map-status" role="status" aria-live="polite">正在展开地图…</div>
+      <dialog class="story-panel" id="story-panel" aria-labelledby="story-place">
+        <div class="story-head"><span id="story-kind" class="eyebrow">DEMO POSTCARD / 演示卡片</span><button id="close-story" class="icon-button" type="button" aria-label="关闭故事"><svg class="icon"><use href="#i-close"/></svg></button></div>
+        <div class="story-art" id="story-art"><span id="story-art-en" class="story-art-en">London</span><span class="story-photo-note"><svg class="icon"><use href="#i-photo"/></svg>照片等你放进来</span><span class="postmark" id="story-postmark">UK<br><small>MEMORIES</small></span></div>
+        <div class="story-body"><p class="story-region" id="story-region"></p><h2 id="story-place" tabindex="-1"></h2><h3 id="story-title"></h3><p id="story-description" class="story-description"></p><div class="story-location"><svg class="icon"><use href="#i-pin"/></svg><span id="story-location"></span></div><p id="story-disclaimer" class="story-disclaimer">仅为交互与排版示例，不代表真实经历。</p><button type="button" id="story-street" class="story-street">靠近一点 · 查看街道<svg class="icon"><use href="#i-arrow"/></svg></button></div>
+        <div class="story-pagination"><button type="button" id="previous-story" aria-label="上一个地点">← 上一页</button><span id="story-index"></span><button type="button" id="next-story" aria-label="下一个地点">下一页 →</button></div>
+      </dialog>
+      <noscript><div class="no-script">请开启 JavaScript，才能拖动地图和阅读故事。</div></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.2 示范版</span></footer>
+  <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-top"><span class="eyebrow">A GIFT, NOT A GUIDE.</span><button id="close-about" class="icon-button" type="button" aria-label="关闭介绍"><svg class="icon"><use href="#i-close"/></svg></button></div>
+    <h2 id="about-title">一张地图，<br>装下那些小小的日子。</h2>
+    <p>以后，轻轻点开一个地点，就能重新走进那一天。现在先把地图展开，故事慢慢来。</p>
+    <div class="about-note"><strong>这一版，先看地图与交互。</strong><p>8 个演示地点只用于试用，不是她的真实行程。没有编造旅行日期、照片或个人经历。搜索只查找本站已有记录，不是全球地址搜索。</p></div>
+    <h3>两种底图</h3><p><b>手账总览：</b>随网页附带的真实海岸线数据，可拖动、缩放；它经过概括化，不是街道或测绘级地图。陆地颜色不表示国家归属，周边岛屿和国家仅作地理参照。</p><p><b>街道底图：</b>按需加载 MapLibre GL JS 与 OpenFreeMap。需要联网；加载失败时会保留总览，不会变成一张空白页面。</p>
+    <h3>地图来源与隐私</h3><p>总览：GSHHG 2.3.6 / basemap-data 2.0.0（LGPL-3.0-or-later），海岸线来源与转换脚本随代码提供。在线底图：OpenFreeMap / OpenMapTiles / OpenStreetMap contributors。</p><p>本站没有登录、定位和分析追踪。点击街道底图后，浏览器会连接地图服务与脚本 CDN。公开仓库或公开网址不适合存放私密地址、未获同意的照片；禁止搜索引擎收录不等于访问加密。</p>
+    <p class="source-links"><a href="https://github.com/matplotlib/basemap" target="_blank" rel="noopener noreferrer">总览数据来源 ↗</a><a href="https://openfreemap.org/quick_start/" target="_blank" rel="noopener noreferrer">街道底图来源 ↗</a></p>
   </dialog>
 </body>
 </html>

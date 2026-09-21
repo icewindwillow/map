@@ -1,0 +1,42 @@
+UK MEMORY ATLAS v0.2 — GEOGRAPHIC DATA PROVENANCE
+
+File: uk-overview.geojson
+Input: GSHHG 2.3.6, distributed with basemap-data 2.0.0.
+Software used for extraction: matplotlib Basemap 2.0.0.
+License for this derived geographic data: LGPL-3.0-or-later.
+Included license text: licenses/COPYING and licenses/COPYING.LESSER.
+
+Source and upstream notices:
+https://github.com/matplotlib/basemap
+https://pypi.org/project/basemap-data/2.0.0/
+https://www.soest.hawaii.edu/pwessel/gshhg/
+
+Modifications for this project:
+- Intermediate-resolution data clipped to longitude -17..12, latitude 46..65.
+- Kept all available intermediate-resolution land and water polygons (area_thresh=0).
+- Included available country-border line segments from the same package.
+- Converted source coordinates to GeoJSON WGS84 [longitude, latitude].
+- Rounded coordinates to 5 decimal places for storage. This does NOT imply survey accuracy.
+- Removed irrelevant attributes; added feature kind/level and provenance metadata.
+- No illustrative/manual coastline points were added.
+
+The readable GeoJSON itself is supplied as editable source data.
+The extraction source code is included in scripts/generate-geography.py in the project package.
+This is generalized geographical overview data, not current navigation, street,
+property, or survey data. It has not been individually audited for every small island.
+Neighbouring land uses the same neutral fill; fill does not imply UK membership.
+
+DEMO LOCATION DATA
+The 8 demo coordinates are approximate city-centre reference points, not verified event
+locations, and do not assert that the recipient visited any of the cities.
+No personal travel dates or photographs were supplied or invented.
+
+OPTIONAL ONLINE STREET DATA (not redistributed in this package)
+MapLibre GL JS 5.6.1 — browser rendering library.
+https://maplibre.org/maplibre-gl-js/docs/
+OpenFreeMap / OpenMapTiles / OpenStreetMap contributors — live street-map sources.
+https://openfreemap.org/quick_start/
+https://www.openmaptiles.org/
+https://www.openstreetmap.org/copyright
+Attribution is retained in the online map. Read the upstream licenses and terms
+for any further redistribution or bulk use of their data.
