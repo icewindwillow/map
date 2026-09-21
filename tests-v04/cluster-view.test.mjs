@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
+import {clusterBounds,coincident,OVERVIEW_MAX_ZOOM} from '../public/assets/cluster-view.v0.6.js';
+import {project,clusterPoints} from '../public/assets/geo.v0.5.js';
+const places=JSON.parse(readFileSync(new URL('../public/data/memories.json',import.meta.url))).memories;
+test('Edinburgh central eight have unique coordinates and split at fitted city scale',()=>{const items=places.filter(p=>p.locationLabel==='Edinburgh'&&p.id!=='royal-yacht-britannia');assert.equal(items.length,8);assert.equal(new Set(items.map(p=>p.coordinates.join(','))).size,8);const b=clusterBounds(items),a=project([b[0],b[3]]),c=project([b[2],b[1]]);assert(b[2]-b[0]<.06);const scale=Math.min(700/(c[0]-a[0]),550/(c[1]-a[1]));assert.equal(clusterPoints(items,p=>project(p).map(x=>x*scale),31).length,8);assert(OVERVIEW_MAX_ZOOM>18);});
+test('only deliberate library/workshop reference overlap; pending locations stay unpinned',()=>{const duplicates=[];for(let i=0;i<places.length;i++)for(let j=i+1;j<places.length;j++)if(coincident([places[i],places[j]]))duplicates.push([places[i].id,places[j].id]);assert.deepEqual(duplicates,[['bodleian-bibliographical-press','bodleian-library']]);assert.equal(places.filter(p=>!p.coordinates).length,2);});

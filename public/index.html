@@ -9,8 +9,9 @@
   <title>谢老师的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.v0.4.css">
-  <script type="module" src="./assets/app.v0.5.4.js"></script>
+  <script type="module" src="./assets/app.v0.6.js"></script>
   <link rel="stylesheet" href="./assets/collection.v0.5.css">
+  <link rel="stylesheet" href="./assets/place-style.v0.6.css">
 </head>
 <body>
   <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -46,11 +47,13 @@
       <section class="collection" aria-labelledby="collection-title">
         <div class="collection-heading"><h2 id="collection-title">地点收藏册</h2><span id="result-count">正在翻开…</span></div>
         <label class="sort-control" for="rating-sort">排列方式 <select id="rating-sort"><option value="default">默认顺序</option><option value="rating-desc">星级从高到低</option><option value="rating-asc">星级从低到高</option></select></label>
+        <label class="sort-control" for="category-filter">地点分类 <select id="category-filter"><option value="all">全部分类</option><option value="博物馆">博物馆</option><option value="修道院">修道院</option><option value="城堡">城堡</option><option value="教堂">教堂</option><option value="美术馆">美术馆</option><option value="其他">其他</option></select></label>
         <div class="search-field"><svg class="icon"><use href="#i-search"/></svg><input id="place-search" type="search" autocomplete="off" placeholder="寻找一个城市，或一段故事" aria-label="搜索已收录的地点和故事"><kbd aria-hidden="true">/</kbd></div>
         <div class="region-filters" aria-label="按地区筛选"><button type="button" data-region="all" aria-pressed="true">全部</button><button type="button" data-region="england" aria-pressed="false">英格兰</button><button type="button" data-region="scotland" aria-pressed="false">苏格兰</button><button type="button" data-region="wales" aria-pressed="false">威尔士</button><button type="button" data-region="northernIreland" aria-pressed="false">北爱尔兰</button></div>
         <div class="memory-list" id="memory-list" aria-label="可点开的地点"></div>
         <p class="data-error" id="data-error" role="alert" hidden></p><button type="button" id="retry-data" class="link-button" hidden>重新读取故事 ↻</button>
       </section>
+      <details class="visual-legend"><summary>图标与评分色阶</summary><div class="legend-categories" id="legend-categories"></div><div class="legend-ratings"><span data-rating-tone="forest"><i></i>4.5–5 星</span><span data-rating-tone="sage"><i></i>3.5–4 星</span><span data-rating-tone="ochre"><i></i>2–3 星</span><span data-rating-tone="clay"><i></i>0–1.5 星</span><span data-rating-tone="unrated"><i></i>未评分</span></div><p>图标表示分类，色阶表示评分；数量圆标表示多个地点。</p></details>
       <p class="sidebar-footnote">“不是攻略，是一份关于她的地图。”</p>
     </aside>
     <section class="map-frame" id="map-frame" aria-label="英国互动地图">
@@ -85,7 +88,7 @@
             <div id="photo-thumbnails" class="photo-thumbnails" role="group" aria-label="选择相册照片"></div>
             <p class="album-note" id="album-note">原比例展示 · 点开可看大图</p>
           </section>
-          <div class="story-body">
+          <div class="story-body"><div class="story-category" id="story-category"></div>
             <p class="story-region" id="story-region"></p><h2 id="story-place" tabindex="-1"></h2>
             <section class="author-review" aria-label="作者评价"><div class="review-heading"><span class="eyebrow">作者评价</span><span id="review-author"></span></div><div id="story-rating" class="rating-display"></div><blockquote id="review-comment"></blockquote><p class="review-empty" id="review-empty" hidden>这个地方的感受，还没有写下。</p></section>
             <div class="story-writing" id="story-writing"><h3 id="story-title"></h3><p id="story-description" class="story-description"></p></div>

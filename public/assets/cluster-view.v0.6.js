@@ -1,0 +1,3 @@
+export const OVERVIEW_MAX_ZOOM=4096;
+export function clusterBounds(items){const points=items.map(p=>p.coordinates).filter(Boolean);if(!points.length)return null;const xs=points.map(p=>p[0]),ys=points.map(p=>p[1]),west=Math.min(...xs),east=Math.max(...xs),south=Math.min(...ys),north=Math.max(...ys);const xpad=Math.max(.00015,(east-west)*.12),ypad=Math.max(.00015,(north-south)*.12);return [west-xpad,south-ypad,east+xpad,north+ypad];}
+export function coincident(items){const first=items[0]?.coordinates;return !!first&&items.every(p=>p.coordinates&&Math.hypot(p.coordinates[0]-first[0],p.coordinates[1]-first[1])<.0001);}
