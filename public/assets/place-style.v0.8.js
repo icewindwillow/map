@@ -1,5 +1,5 @@
 import {categoryOf} from './categories.v0.8.js';
-export {CATEGORIES,categoryOf,normalizeCategory} from './categories.v0.8.js';
+export {CATEGORIES,categoryOf,normalizeCategory} from './categories.v0.8.js?v=0.9.2';
 export function ratingTone(value){return typeof value!=='number'||!Number.isFinite(value)||value<0||value>5?'unrated':value<2?'clay':value<3.5?'ochre':value<4.5?'sage':'forest';}
 const paths={
  '博物馆':'M3 9 12 4l9 5H3Zm2 3v7m5-7v7m4-7v7m5-7v7M3 21h18',

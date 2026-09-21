@@ -1,4 +1,4 @@
-import {normalizeDetails} from './details.v0.8.js';
+import {normalizeDetails} from './details.v0.8.js?v=0.9.2';
 import {normalizeVisits} from './visits.v0.7.js';
 // Legacy categories are normalized without changing any other author content.
 export const CATEGORIES=["修道院","教堂","墓地","城堡","宫殿","城市","博物馆","展览"];
