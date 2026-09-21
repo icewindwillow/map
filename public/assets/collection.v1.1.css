@@ -1,0 +1,10 @@
+.collection>.sort-inline{display:flex;align-items:center;gap:8px;height:30px;color:#7d8579;font-size:11px;line-height:30px}
+.sort-buttons{display:flex;align-items:center;gap:4px;height:30px}
+.sort-buttons button{height:30px;padding:0 8px;border:1px solid transparent;border-radius:4px;color:#7d8579;font-size:11px;line-height:30px;white-space:nowrap}
+.sort-buttons button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.sort-buttons button:hover{border-color:var(--line);background:#ebece3}
+.category-filters{align-items:center;height:34px;gap:5px}
+.category-filters button{width:31px;height:31px;min-width:31px;padding:0;border-radius:5px}
+.category-filters button span{font-family:Georgia,serif;font-size:19px;line-height:31px}
+.category-filters button small{display:none}
+@media(max-width:760px){.collection>.sort-inline{height:34px;line-height:34px}.sort-buttons{height:34px}.sort-buttons button{height:34px;line-height:34px;padding:0 7px}.category-filters{height:36px}.category-filters button{width:33px;height:33px;min-width:33px}.category-filters button span{line-height:33px}}

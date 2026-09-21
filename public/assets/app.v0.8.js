@@ -199,6 +199,7 @@ function refreshCollection(){
   });
   if(!state.filtered.length){const e=text('div','empty-state');e.append(text('strong','',state.query?'还没找到这个地点。':'留白，是故事的开始。'),document.createTextNode(state.query?'试试别的名字。这里只搜索已经收录的内容。':state.items.length?'这个地区暂时没有记录。':'还没有公开的旅行记忆。'));f.append(e);}
   document.querySelectorAll('#category-filters [data-category]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.category===($('category-filter').value||'all'))));
+  document.querySelectorAll('#sort-buttons [data-sort]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.sort===$('rating-sort').value)));
   $('memory-list').replaceChildren(f);
   if(state.selected&&!state.filtered.some(m=>m.id===state.selected.id))closeStory(false);
   renderOverlays();
@@ -313,6 +314,7 @@ document.querySelectorAll('#category-filters [data-category]').forEach(button=>b
 for(const [button,target]of [['read-official','official-section'],['read-guests','guest-section']])$(button).onclick=()=>$(target).scrollIntoView({behavior:'smooth',block:'start'});
 for(const category of CATEGORIES){const span=text('span','');span.append(categoryIcon(category),document.createTextNode(category));$('legend-categories').append(span);}
 $('rating-sort').addEventListener('change',()=>{refreshCollection();try{localStorage.setItem('atlas-sort',$('rating-sort').value);}catch{}});
+document.querySelectorAll('#sort-buttons [data-sort]').forEach(button=>button.addEventListener('click',()=>{$('rating-sort').value=button.dataset.sort;refreshCollection();try{localStorage.setItem('atlas-sort',button.dataset.sort);}catch{}}));
 try{const saved=localStorage.getItem('atlas-sort');if(['default','rating-desc','rating-asc'].includes(saved))$('rating-sort').value=saved;}catch{}
 for(const button of document.querySelectorAll('[data-region]'))button.addEventListener('click',()=>{state.region=button.dataset.region;document.querySelectorAll('[data-region]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));refreshCollection();closeStory(false);if(state.region==='all')resetView();else if(state.filtered.some(m=>m.coordinates)){if(state.online)expandCluster(state.filtered.filter(m=>m.coordinates));else atlas.fit(state.filtered);}});
 $('retry-data').addEventListener('click',()=>loadStories());
