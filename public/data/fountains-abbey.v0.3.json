@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "memories": [
+    {
+      "id": "fountains-abbey",
+      "placeId": "fountains-abbey",
+      "place": "流水修道院",
+      "placeEn": "Fountains Abbey",
+      "aliases": [
+        "喷泉修道院",
+        "芳泉修道院",
+        "Ripon",
+        "里彭",
+        "North Yorkshire",
+        "北约克郡"
+      ],
+      "region": "england",
+      "locationLabel": "Ripon · North Yorkshire",
+      "coordinates": [
+        -1.58033,
+        54.1096
+      ],
+      "category": "修道院",
+      "title": "流水修道院",
+      "description": "",
+      "date": "",
+      "locationPrecision": "景区参考位置 · 不是照片拍摄点",
+      "coordinateSource": {
+        "name": "National Trust 官网地图链接",
+        "url": "https://www.nationaltrust.org.uk/visit/yorkshire/fountains-abbey-and-studley-royal-water-garden",
+        "mapUrl": "https://www.google.com/maps/dir/?api=1&destination=54.1096%2C-1.58033"
+      },
+      "photos": [
+        {
+          "src": "./assets/photos/fountains-abbey/exterior.v0.3.jpg",
+          "thumbnail": "./assets/photos/fountains-abbey/exterior-thumb.v0.3.jpg",
+          "alt": "流水修道院的石砌遗址、尖拱与塔楼，天空中有云。",
+          "caption": "修道院外景",
+          "width": 1364,
+          "height": 1024
+        },
+        {
+          "src": "./assets/photos/fountains-abbey/nave.v0.3.jpg",
+          "thumbnail": "./assets/photos/fountains-abbey/nave-thumb.v0.3.jpg",
+          "alt": "从流水修道院内部望向尖拱，阳光穿过石柱，在草地上投下影子。",
+          "caption": "修道院内部",
+          "width": 1279,
+          "height": 1706
+        }
+      ],
+      "review": {
+        "author": "谢老师",
+        "rating": 5,
+        "comment": "破旧的修道院比完整的好看多了！"
+      }
+    }
+  ]
+}

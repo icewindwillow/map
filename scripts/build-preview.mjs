@@ -20,10 +20,26 @@ if (!helperImport) throw new Error('Cannot find local geographic helper import.'
 const helperPath = path.posix.join(path.posix.dirname(appTag[1]), helperImport[1]);
 const helpers = (await read(helperPath)).replaceAll(/^export /gm, '');
 app = app.slice(helperImport[0].length);
+const memoryData = JSON.parse(await read('data/memories.json'));
+const firstMemory = JSON.parse(await read('data/fountains-abbey.v0.3.json'));
+const embeddedAssets={};
+for(const memory of [...firstMemory.memories,...memoryData.memories]){
+ const photos=Array.isArray(memory.photos)?memory.photos:(memory.photo?[{src:memory.photo}]:[]);
+ for(const photo of photos){for(const key of ['src','thumbnail']){
+  const src=photo[key];if(!src||embeddedAssets[src])continue;
+  const target=path.resolve(publicRoot,src);if(!target.startsWith(publicRoot+path.sep))throw new Error('Image outside project: '+src);
+  const content=await readFile(target);const ext=path.extname(target).toLowerCase();
+  const mime={'.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp','.avif':'image/avif'}[ext];
+  if(!mime)throw new Error('Unsupported preview image: '+src);
+  embeddedAssets[src]=`data:${mime};base64,${content.toString('base64')}`;
+ }}
+}
 const embedded = JSON.stringify({
   geography: JSON.parse(await read('data/uk-overview.geojson')),
   demos: JSON.parse(await read('data/demos.json')),
-  memories: JSON.parse(await read('data/memories.json')),
+  memories: memoryData,
+  firstMemory,
+  assets: embeddedAssets,
 }).replaceAll('<', '\\u003c');
 const favicon = 'data:image/svg+xml,' + encodeURIComponent(await read('assets/favicon.svg'));
 html = html.replace(cssTag[0], () => `<style>\n${css}\n</style>`)
