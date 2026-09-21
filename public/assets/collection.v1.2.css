@@ -1,0 +1,7 @@
+.collection>.filter-pair{grid-column:1/-1;display:flex;justify-content:flex-end;align-items:center}
+.filter-pair label{display:flex;align-items:center;gap:8px;color:#7d8579;font-size:11px}
+.filter-pair select{height:32px;min-width:132px;padding:0 25px 0 9px;border:1px solid var(--line);border-radius:4px;background:#fffdf8;color:var(--ink);font-size:11px}
+.category-filters{display:flex;align-items:center;gap:5px;height:34px;padding:2px 0 8px;border-bottom:1px solid var(--line)}
+.category-filters button{width:31px;height:31px;min-width:31px;padding:0;border:1px solid transparent;border-radius:5px;color:#718177;background:transparent;cursor:pointer}
+.category-filters button span{font:19px/31px Georgia,serif}.category-filters button[aria-pressed=true]{background:var(--ink);color:var(--paper)}.category-filters button:hover{border-color:var(--line);background:#ebece3}
+@media(max-width:760px){.filter-pair label{font-size:12px}.filter-pair select{height:36px;font-size:12px}.category-filters{height:36px;overflow-x:auto}.category-filters button{width:33px;height:33px;min-width:33px}.category-filters button span{line-height:33px}}
