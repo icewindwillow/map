@@ -308,6 +308,7 @@ $('previous-story').addEventListener('click',()=>{const i=state.filtered.findInd
 $('next-story').addEventListener('click',()=>{const i=state.filtered.findIndex(m=>m.id===state.selected?.id);if(i>=0&&i<state.filtered.length-1)openStory(state.filtered[i+1]);});
 $('about-button').addEventListener('click',()=>$('about-dialog').showModal());$('sources-button').addEventListener('click',()=>$('about-dialog').showModal());$('close-about').addEventListener('click',()=>$('about-dialog').close());
 $('about-dialog').addEventListener('click',e=>{const r=$('about-dialog').getBoundingClientRect();if(e.target===$('about-dialog')&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))$('about-dialog').close();});
+$('legend-button').addEventListener('click',()=>$('legend-dialog').showModal());$('close-legend').addEventListener('click',()=>$('legend-dialog').close());$('legend-dialog').addEventListener('click',e=>{const r=$('legend-dialog').getBoundingClientRect();if(e.target===$('legend-dialog')&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))$('legend-dialog').close();});
 $('place-search').addEventListener('input',e=>{state.query=e.target.value;refreshCollection();});
 $('category-filter').addEventListener('change',refreshCollection);$('city-filter').addEventListener('change',refreshCollection);
 document.querySelectorAll('#category-filters [data-category]').forEach(button=>button.addEventListener('click',()=>{$('category-filter').value=button.dataset.category;refreshCollection();}));
@@ -442,8 +443,7 @@ async function refreshCloudReviews(){
     const selected=state.selected?.id;
     refreshCollection();
     if(selected){const m=state.real.find(x=>x.id===selected);if(m)openStory(m);}
-    $('cloud-read-status').textContent='地点与评价 · 云端已发布版本';$('cloud-read-status').title='草稿不会出现在公开地图中。';
-  }catch(error){$('cloud-read-status').textContent='评价 · 当前副本（云端未连接）';$('cloud-read-status').title=error.message;}
+  }catch(error){/* cloud reviews are optional; keep the public page quiet when unavailable */}
   finally{cloudBusy=false;}
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&document.documentElement.dataset.state==='ready')refreshCloudReviews();});
