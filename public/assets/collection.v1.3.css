@@ -6,6 +6,13 @@
 .header-author,.about-button{height:38px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}
 .header-author{padding:0 12px}
 .about-button{padding:0 13px}
+.sidebar-intro{margin-top:-14px}
+.sidebar-intro h1{font-size:34px;line-height:1.42;margin-bottom:11px}
+.sidebar-intro .intro-description{line-height:1.85;margin-bottom:20px}
+.ledger{align-items:center;min-height:58px;padding:11px 0}
+.ledger>div{align-items:center;line-height:1}
+.ledger>div span{line-height:1.2;white-space:nowrap}
+.ledger-icon{align-self:center}
 .legend-dialog{width:min(600px,calc(100vw - 32px));max-width:600px;padding:24px 26px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 24px 80px #233d3033}
 .legend-dialog::backdrop{background:#233d3040;backdrop-filter:blur(3px)}
 .legend-dialog h2{margin:22px 0 18px;font-family:var(--serif);font-size:28px;font-weight:400}
@@ -15,4 +22,4 @@
 .legend-dialog .legend-ratings{display:flex;flex-wrap:wrap;gap:14px;padding-top:18px}
 .legend-dialog .legend-ratings i{width:12px;height:12px;border-radius:50%;background:var(--accent)}
 .legend-dialog p{margin:22px 0 0;color:var(--muted);font-size:12px;line-height:1.7}
-@media(max-width:760px){.collection>.category-filters{order:3}.collection>.filter-pair{order:4;padding-top:0;gap:8px}.collection>.filter-pair label{display:block;font-size:11px}.collection>.filter-pair select{display:block;width:100%;height:36px;margin-top:5px;font-size:12px}.collection>.memory-list{order:5}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
+@media(max-width:760px){.sidebar-intro{margin-top:0}.sidebar-intro h1{font-size:24px;line-height:1.5}.collection>.category-filters{order:3}.collection>.filter-pair{order:4;padding-top:0;gap:8px}.collection>.filter-pair label{display:block;font-size:11px}.collection>.filter-pair select{display:block;width:100%;height:36px;margin-top:5px;font-size:12px}.collection>.memory-list{order:5}.header-author,.about-button{height:36px;padding:0 8px}.about-button span{display:none}.legend-dialog{padding:20px}.legend-dialog h2{font-size:24px}}
