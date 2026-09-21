@@ -6,12 +6,13 @@
   <meta name="description" content="不是攻略，是一份关于她的地图。把英国的日子，一点一点收好。">
   <meta name="robots" content="noindex,nofollow">
   <meta name="theme-color" content="#f6f3ec">
-  <title>谢老师的英国旅行 · 记忆地图</title>
+  <title>谢曼殊的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/style.v0.4.css">
-  <script type="module" src="./assets/app.v0.6.js"></script>
+  <script type="module" src="./assets/app.v0.7.js"></script>
   <link rel="stylesheet" href="./assets/collection.v0.5.css">
   <link rel="stylesheet" href="./assets/place-style.v0.6.css">
+<link rel="stylesheet" href="./assets/reviews.v0.7.css">
 </head>
 <body>
   <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -32,7 +33,7 @@
   </defs></svg>
   <a class="skip-link" href="#map-frame">跳到地图</a>
   <header class="site-header">
-    <a class="brand" href="./" aria-label="记忆地图首页"><span class="brand-mark">x<span>.</span></span><span class="brand-copy"><strong>谢老师的英国旅行</strong><small>A LITTLE ATLAS OF BRITISH DAYS</small></span></a>
+    <a class="brand" href="./" aria-label="记忆地图首页"><span class="brand-mark">x<span>.</span></span><span class="brand-copy"><strong>谢曼殊的英国旅行</strong><small>A LITTLE ATLAS OF BRITISH DAYS</small></span></a>
     <div class="header-center"><span class="header-rule"></span><span>把日子，慢慢收好。</span><span class="header-rule"></span></div>
     <div class="header-actions"><button type="button" class="header-author" id="header-author">作者登录</button><span class="edition">VOL. 01 <i></i> 地图篇</span><button id="about-button" class="about-button" type="button"><svg class="icon"><use href="#i-letter"/></svg><span>关于这份礼物</span></button></div>
   </header>
@@ -76,7 +77,7 @@
       <div class="map-status" id="map-status" role="status" aria-live="polite">正在展开地图…</div>
       <dialog class="story-panel" id="story-panel" aria-labelledby="story-place">
         <div class="story-head"><span id="story-kind" class="eyebrow">A PLACE TO KEEP / 地点相册</span><button id="close-story" class="story-close" type="button"><span>返回地图</span><svg class="icon"><use href="#i-close"/></svg></button></div>
-        <div class="story-layout">
+        <div class="story-scroll" id="story-scroll"><div class="story-layout">
           <section class="story-gallery" aria-label="地点照片相册">
             <div class="story-art" id="story-art">
               <button class="photo-open" id="photo-open" type="button" aria-label="放大查看当前照片"><img id="story-photo" alt="" decoding="async"><span class="photo-expand-hint"><svg class="icon"><use href="#i-expand"/></svg>放大照片</span></button>
@@ -90,19 +91,20 @@
           </section>
           <div class="story-body"><div class="story-category" id="story-category"></div>
             <p class="story-region" id="story-region"></p><h2 id="story-place" tabindex="-1"></h2>
-            <section class="author-review" aria-label="作者评价"><div class="review-heading"><span class="eyebrow">作者评价</span><span id="review-author"></span></div><div id="story-rating" class="rating-display"></div><blockquote id="review-comment"></blockquote><p class="review-empty" id="review-empty" hidden>这个地方的感受，还没有写下。</p></section>
-            <div class="story-writing" id="story-writing"><h3 id="story-title"></h3><p id="story-description" class="story-description"></p></div>
+            <section class="author-review" aria-label="作者评价"><div class="review-heading"><span class="eyebrow">一句短评</span><span id="review-author"></span></div><div id="story-rating" class="rating-display"></div><blockquote id="review-comment"></blockquote><p class="review-empty" id="review-empty" hidden>这个地方的感受，还没有写下。</p></section>
+            <button type="button" class="read-long-review" id="read-long-review">阅读完整游记 ↓</button>
             <div class="story-location"><svg class="icon"><use href="#i-pin"/></svg><span id="story-location"></span></div>
             <p id="story-disclaimer" class="story-disclaimer">仅为交互与排版示例，不代表真实经历。</p>
             <div class="story-actions"><button type="button" id="story-street" class="story-street">在地图上靠近一点<svg class="icon"><use href="#i-arrow"/></svg></button><button id="story-author" type="button" class="author-tool-link">作者登录 · 编辑评价</button></div>
           </div>
         </div>
+        <article class="story-writing" id="story-writing" tabindex="-1"><span class="eyebrow">TRAVEL JOURNAL / 详细游记</span><h3 id="story-title"></h3><p id="story-description" class="story-description"></p></article></div>
         <div class="story-pagination"><button type="button" id="previous-story" aria-label="上一个地点">← 上一个地点</button><span id="story-index"></span><button type="button" id="next-story" aria-label="下一个地点">下一个地点 →</button></div>
       </dialog>
       <noscript><div class="no-script">请开启 JavaScript，才能拖动地图和阅读故事。</div></noscript>
     </section>
   </main>
-  <footer class="site-footer"><span id="cloud-read-status" class="cloud-read-status">地点与评价 · 正在检查云端</span><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.5 多地点与星级排序</span></footer>
+  <footer class="site-footer"><span id="cloud-read-status" class="cloud-read-status">地点与评价 · 正在检查云端</span><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.7 短评与游记</span></footer>
   <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
     <div class="dialog-top"><span class="eyebrow">A GIFT, NOT A GUIDE.</span><button id="close-about" class="icon-button" type="button" aria-label="关闭介绍"><svg class="icon"><use href="#i-close"/></svg></button></div>
     <h2 id="about-title">一张地图，<br>装下那些小小的日子。</h2>

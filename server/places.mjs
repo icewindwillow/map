@@ -1,3 +1,4 @@
+import {normalizeCategory} from '../public/assets/categories.v0.7.js';
 import {HttpError, SECURITY_HEADERS} from './http.mjs';
 import {dbOf} from './reviews.mjs';
 
@@ -11,10 +12,10 @@ const missing = e => /no such table: (?:main\.)?map_(places|photos)/i.test(e.mes
 export async function listPlaces(env, privateView = false) {
   try {
     const {results} = await dbOf(env).prepare(privateView ? 'SELECT * FROM map_places ORDER BY id' : 'SELECT published FROM map_places WHERE published IS NOT NULL ORDER BY id').all();
-    return results.map(row => privateView ? record(row) : JSON.parse(row.published));
+    return results.map(row => privateView ? record(row) : normalizeCategory(JSON.parse(row.published)));
   } catch (e) { if (missing(e)) return []; throw e; }
 }
-function record(row) { return {id:row.id, published:row.published ? JSON.parse(row.published) : null, draft:row.draft ? JSON.parse(row.draft) : null, revision:row.revision, updatedAt:row.updated_at}; }
+function record(row) { return {id:row.id, published:row.published ? normalizeCategory(JSON.parse(row.published)) : null, draft:row.draft ? normalizeCategory(JSON.parse(row.draft)) : null, revision:row.revision, updatedAt:row.updated_at}; }
 const bad = message => { throw new HttpError(400, 'BAD_PLACE', message); };
 const idOK = id => typeof id === 'string' && /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,99}$/.test(id);
 export const photoID = src => typeof src === 'string' && /^\/api\/photos\/([a-f0-9-]{36})$/.exec(src)?.[1];
@@ -32,6 +33,10 @@ export function validatePlace(input, id) {
   if (!['england','scotland','wales','northernIreland'].includes(out.region)) bad('请选择所属地区。');
   if (out.date && (!/^\d{4}-\d{2}-\d{2}$/.test(out.date) || !Number.isFinite(Date.parse(out.date)) || new Date(out.date).toISOString().slice(0,10) !== out.date)) bad('旅行日期不正确。');
   const c = input.coordinates;
+  if (input.visitDates != null) {
+    if (!Array.isArray(input.visitDates) || input.visitDates.length > 100 || !input.visitDates.every(d => typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) && Number.isFinite(Date.parse(d)) && new Date(d).toISOString().slice(0,10) === d)) bad('其他到访日期请使用 YYYY-MM-DD，用逗号分隔。');
+    out.visitDates = [...new Set([out.date, ...input.visitDates].filter(Boolean))].sort();
+  }
   if (!Array.isArray(c) || c.length !== 2 || !c.every(Number.isFinite) || c[0] < -15 || c[0] > 12 || c[1] < 46 || c[1] > 65) bad('请在英国及周边地图范围内选择坐标（经度 -15～12，纬度 46～65）。');
   out.coordinates = [...c];
   const r = input.review;
@@ -52,7 +57,7 @@ export function validatePlace(input, id) {
     out.coordinateSource = {};
     for (const key of ['name','url','mapUrl']) if (typeof input.coordinateSource[key] === 'string' && input.coordinateSource[key].length <= 2000) out.coordinateSource[key] = input.coordinateSource[key];
   }
-  return out;
+  return normalizeCategory(out);
 }
 export async function mutatePlace(env, body, author) {
   if (!body || !idOK(body.id) || !Number.isSafeInteger(body.revision) || body.revision < 0 || !['draft','publish','discard-draft'].includes(body.action)) bad('提交动作或版本号不正确。');

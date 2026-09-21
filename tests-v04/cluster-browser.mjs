@@ -1,9 +1,14 @@
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const fixture=JSON.parse(readFileSync(new URL('../public/data/memories.json',import.meta.url)));
+const originalEdinburgh=['greyfriars-kirkyard','st-marys-episcopal-cathedral','edinburgh-castle','scottish-national-portrait-gallery','national-museum-of-scotland','scottish-national-gallery','peoples-story-museum','surgeons-hall-museums','royal-yacht-britannia'];
+fixture.memories=fixture.memories.filter(p=>p.locationLabel!=='Edinburgh'||originalEdinburgh.includes(p.id));
 const {chromium}=await import(process.env.PLAYWRIGHT_MODULE||'playwright');
 const browser=await chromium.launch({headless:true,executablePath:process.env.CHROMIUM_EXECUTABLE});
 for(const width of [1440,390]){
  const page=await browser.newPage({viewport:{width,height:1000},reducedMotion:'reduce'});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.route('**/api/places',r=>r.fulfill({json:{ok:true,schemaVersion:1,memories:[]}}));
+ await page.route('**/data/memories.json?*',r=>r.fulfill({json:fixture}));
  await page.goto('http://127.0.0.1:8794/');await page.waitForFunction(()=>document.documentElement.dataset.state==='ready');
  await page.locator('#place-search').fill('Edinburgh');
  assert.equal(await page.locator('.memory-row').count(),9);

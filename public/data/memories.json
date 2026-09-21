@@ -23,13 +23,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-21",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-21"
+      ]
     },
     {
       "id": "st-marys-episcopal-cathedral",
@@ -53,13 +56,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-23",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-23"
+      ]
     },
     {
       "id": "rosslyn-chapel",
@@ -83,13 +89,16 @@
         "Roslin"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-01",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-01"
+      ]
     },
     {
       "id": "glasgow-necropolis",
@@ -113,13 +122,16 @@
         "Glasgow"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-02",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-02"
+      ]
     },
     {
       "id": "edinburgh-castle",
@@ -143,13 +155,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-26",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-26"
+      ]
     },
     {
       "id": "stirling-castle",
@@ -173,13 +188,16 @@
         "Stirling"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-06",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-06"
+      ]
     },
     {
       "id": "tantallon-castle",
@@ -203,13 +221,16 @@
         "North Berwick"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-07",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-07"
+      ]
     },
     {
       "id": "scottish-national-portrait-gallery",
@@ -218,7 +239,7 @@
       "placeEn": "Scottish National Portrait Gallery",
       "title": "苏格兰肖像博物馆",
       "region": "scotland",
-      "category": "美术馆",
+      "category": "博物馆",
       "locationLabel": "Edinburgh",
       "coordinates": [
         -3.1935919,
@@ -233,13 +254,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-22",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-22"
+      ]
     },
     {
       "id": "national-museum-of-scotland",
@@ -263,13 +287,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-23",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-23"
+      ]
     },
     {
       "id": "scottish-national-gallery",
@@ -278,7 +305,7 @@
       "placeEn": "Scottish National Gallery",
       "title": "苏格兰国家美术馆",
       "region": "scotland",
-      "category": "美术馆",
+      "category": "博物馆",
       "locationLabel": "Edinburgh",
       "coordinates": [
         -3.1956117,
@@ -294,13 +321,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-30",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-30"
+      ]
     },
     {
       "id": "peoples-story-museum",
@@ -324,13 +354,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-25",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-25"
+      ]
     },
     {
       "id": "royal-yacht-britannia",
@@ -355,13 +388,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-27",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-27"
+      ]
     },
     {
       "id": "surgeons-hall-museums",
@@ -385,13 +421,16 @@
         "Edinburgh"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-30",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-30"
+      ]
     },
     {
       "id": "wallace-monument",
@@ -400,7 +439,7 @@
       "placeEn": "Wallace Monument",
       "title": "华莱士纪念碑",
       "region": "scotland",
-      "category": "纪念碑",
+      "category": "展览",
       "locationLabel": "Stirling",
       "coordinates": [
         -3.9176162,
@@ -416,13 +455,16 @@
         "Stirling"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-06",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-06"
+      ]
     },
     {
       "id": "oxford-castle",
@@ -447,13 +489,16 @@
         "Oxford"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-05-23",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-05-23"
+      ]
     },
     {
       "id": "blenheim-palace",
@@ -477,13 +522,16 @@
         "Woodstock"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-05",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-05"
+      ]
     },
     {
       "id": "sheldonian-theatre",
@@ -492,7 +540,7 @@
       "placeEn": "Sheldonian Theatre",
       "title": "谢尔登剧院",
       "region": "england",
-      "category": "剧院",
+      "category": "展览",
       "locationLabel": "Oxford",
       "coordinates": [
         -1.255022,
@@ -507,13 +555,16 @@
         "Oxford"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-05-12",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-05-12"
+      ]
     },
     {
       "id": "bodleian-bibliographical-press",
@@ -522,7 +573,7 @@
       "placeEn": "Bodleian Bibliographical Press",
       "title": "书目印刷工坊",
       "region": "england",
-      "category": "印刷工坊",
+      "category": "展览",
       "locationLabel": "Schola Musicae · Bodleian Old Library · Oxford",
       "coordinates": [
         -1.2546962,
@@ -539,13 +590,16 @@
         "Oxford"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-05-16",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-05-16"
+      ]
     },
     {
       "id": "agatha-christie-house",
@@ -554,18 +608,21 @@
       "title": "阿加莎故居",
       "placeEn": "Agatha Christie House",
       "region": "england",
-      "category": "故居",
+      "category": "博物馆",
       "locationLabel": "清单分组：牛津及周边 · 具体场馆待确认",
       "coordinates": null,
       "locationPrecision": "位置待确认 · 暂不放置图钉",
       "description": "",
-      "date": "",
+      "date": "2026-05-24",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-05-24"
+      ]
     },
     {
       "id": "bodleian-library",
@@ -574,7 +631,7 @@
       "placeEn": "Bodleian Library",
       "title": "博德利图书馆",
       "region": "england",
-      "category": "图书馆",
+      "category": "展览",
       "locationLabel": "Oxford",
       "coordinates": [
         -1.2546962,
@@ -589,13 +646,16 @@
         "Oxford"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-09",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-09"
+      ]
     },
     {
       "id": "history-of-science-museum",
@@ -620,13 +680,16 @@
         "Oxford"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-05",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-05"
+      ]
     },
     {
       "id": "york-minster",
@@ -650,13 +713,16 @@
         "York"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-12",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-12"
+      ]
     },
     {
       "id": "whitby-abbey",
@@ -680,13 +746,16 @@
         "Whitby"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-13",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-13"
+      ]
     },
     {
       "id": "ripon-cathedral",
@@ -710,13 +779,16 @@
         "Ripon"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-19",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-19"
+      ]
     },
     {
       "id": "warwick-castle",
@@ -740,13 +812,17 @@
         "Warwick"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-19",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-19",
+        "2026-08-08"
+      ]
     },
     {
       "id": "harewood-house",
@@ -755,7 +831,7 @@
       "placeEn": "Harewood House",
       "title": "哈伍德庄园",
       "region": "england",
-      "category": "庄园",
+      "category": "宫殿",
       "locationLabel": "Harewood",
       "coordinates": [
         -1.5273143,
@@ -770,13 +846,16 @@
         "Harewood"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-13",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-13"
+      ]
     },
     {
       "id": "alnwick-castle",
@@ -800,13 +879,16 @@
         "Alnwick"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-09-03",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-09-03"
+      ]
     },
     {
       "id": "knaresborough-castle-viaduct",
@@ -815,7 +897,7 @@
       "placeEn": "Knaresborough Castle & Viaduct",
       "title": "纳尔斯伯勒城堡及高架桥",
       "region": "england",
-      "category": "城堡与桥梁",
+      "category": "城堡",
       "locationLabel": "Knaresborough",
       "coordinates": [
         -1.4692612,
@@ -862,13 +944,16 @@
         "Leeds"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-13",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-13"
+      ]
     },
     {
       "id": "york-castle-museum",
@@ -892,13 +977,16 @@
         "York"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-08-18",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-08-18"
+      ]
     },
     {
       "id": "st-pauls-cathedral",
@@ -922,13 +1010,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-06-06",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-06-06"
+      ]
     },
     {
       "id": "westminster-abbey",
@@ -952,13 +1043,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-11",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-11"
+      ]
     },
     {
       "id": "winchester-cathedral",
@@ -982,13 +1076,16 @@
         "Winchester"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-18",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-18"
+      ]
     },
     {
       "id": "windsor-castle",
@@ -1012,13 +1109,16 @@
         "Windsor"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-06-27",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-06-27"
+      ]
     },
     {
       "id": "palace-of-westminster",
@@ -1027,7 +1127,7 @@
       "placeEn": "Palace of Westminster",
       "title": "国会大厦",
       "region": "england",
-      "category": "历史建筑",
+      "category": "宫殿",
       "locationLabel": "London",
       "coordinates": [
         -0.1244812,
@@ -1042,13 +1142,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-11",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-11"
+      ]
     },
     {
       "id": "tower-of-london",
@@ -1072,13 +1175,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-07-12",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-07-12"
+      ]
     },
     {
       "id": "british-museum",
@@ -1102,13 +1208,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-06-14",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-06-14"
+      ]
     },
     {
       "id": "national-gallery",
@@ -1117,7 +1226,7 @@
       "placeEn": "National Gallery",
       "title": "国家美术馆",
       "region": "england",
-      "category": "美术馆",
+      "category": "博物馆",
       "locationLabel": "London",
       "coordinates": [
         -0.1283826,
@@ -1132,13 +1241,16 @@
         "London"
       ],
       "description": "",
-      "date": "",
+      "date": "2026-06-21",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
-      }
+      },
+      "visitDates": [
+        "2026-06-21"
+      ]
     },
     {
       "id": "queens-wardrobe-exhibition",
@@ -1152,12 +1264,1126 @@
       "coordinates": null,
       "locationPrecision": "位置待确认 · 暂不放置图钉",
       "description": "",
-      "date": "",
+      "date": "2026-06-21",
       "photos": [],
       "review": {
         "author": "",
         "rating": null,
         "comment": ""
+      },
+      "visitDates": [
+        "2026-06-21"
+      ]
+    },
+    {
+      "id": "natural-history-museum",
+      "placeId": "natural-history-museum",
+      "place": "自然历史博物馆",
+      "placeEn": "Natural History Museum",
+      "title": "自然历史博物馆",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2556186,
+        51.7586258
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [],
+      "description": "",
+      "date": "2026-04-14",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-04-14"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/25999883"
+      }
+    },
+    {
+      "id": "schwarzman-centre",
+      "placeId": "schwarzman-centre",
+      "place": "施瓦茨曼人文中心",
+      "placeEn": "Stephen A. Schwarzman Centre for the Humanities",
+      "title": "施瓦茨曼人文中心",
+      "region": "england",
+      "category": "展览",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2638735,
+        51.7600226
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "2026-04-25",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-04-25"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/1293659185"
+      }
+    },
+    {
+      "id": "st-sepulchres-cemetery",
+      "placeId": "st-sepulchres-cemetery",
+      "place": "圣墓公墓",
+      "placeEn": "St Sepulchre's Cemetery",
+      "title": "圣墓公墓",
+      "region": "england",
+      "category": "墓地",
+      "locationLabel": "Oxford",
+      "coordinates": [
+        -1.2695891,
+        51.7610131
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "2026-05-09",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-05-09"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/17880269"
+      }
+    },
+    {
+      "id": "textiles-exhibition",
+      "placeId": "textiles-exhibition",
+      "place": "纺织品",
+      "placeEn": "Textiles",
+      "title": "纺织品",
+      "region": "england",
+      "category": "展览",
+      "locationLabel": "Oxford · 自然历史博物馆",
+      "coordinates": [
+        -1.2556186,
+        51.7586258
+      ],
+      "locationPrecision": "展览场馆参考位置 · 与自然历史博物馆共址",
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "2026-05-16",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-05-16"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/25999883"
+      }
+    },
+    {
+      "id": "oxford-free-art-exhibition",
+      "placeId": "oxford-free-art-exhibition",
+      "place": "牛津免费艺术展",
+      "placeEn": "Oxford Free Art Exhibition",
+      "title": "牛津免费艺术展",
+      "region": "england",
+      "category": "展览",
+      "locationLabel": "Summertown · Oxford（场馆待确认）",
+      "coordinates": null,
+      "locationPrecision": "位置待确认 · 暂不显示图钉",
+      "aliases": [
+        "Oxford"
+      ],
+      "description": "",
+      "date": "2026-05-21",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-05-21"
+      ]
+    },
+    {
+      "id": "wallingford-castle",
+      "placeId": "wallingford-castle",
+      "place": "沃灵福德城堡",
+      "placeEn": "Wallingford Castle",
+      "title": "沃灵福德城堡",
+      "region": "england",
+      "category": "城堡",
+      "locationLabel": "Wallingford",
+      "coordinates": [
+        -1.1213588,
+        51.6031236
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Wallingford"
+      ],
+      "description": "",
+      "date": "2026-05-24",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-05-24"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/1374197594"
+      }
+    },
+    {
+      "id": "st-dunstan-east",
+      "placeId": "st-dunstan-east",
+      "place": "圣邓斯坦遗址",
+      "placeEn": "St Dunstan in the East Church Garden",
+      "title": "圣邓斯坦遗址",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.0824802,
+        51.5096815
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "2026-06-06",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-06-06"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/237519508"
+      }
+    },
+    {
+      "id": "royal-mews",
+      "placeId": "royal-mews",
+      "place": "伦敦皇家马厩",
+      "placeEn": "Royal Mews",
+      "title": "伦敦皇家马厩",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.1438144,
+        51.4989214
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "2026-06-21",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-06-21"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/78961"
+      }
+    },
+    {
+      "id": "churchill-war-rooms",
+      "placeId": "churchill-war-rooms",
+      "place": "丘吉尔作战室",
+      "placeEn": "Churchill War Rooms",
+      "title": "丘吉尔作战室",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.129252,
+        51.5022101
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "2026-07-11",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-07-11"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/197206542"
+      }
+    },
+    {
+      "id": "st-cross-church",
+      "placeId": "st-cross-church",
+      "place": "圣十字教堂",
+      "placeEn": "St Cross Church",
+      "title": "圣十字教堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "Winchester",
+      "coordinates": [
+        -1.3219816,
+        51.0470405
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [],
+      "description": "",
+      "date": "2026-07-18",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-07-18"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/100098771"
+      }
+    },
+    {
+      "id": "hampton-court-palace",
+      "placeId": "hampton-court-palace",
+      "place": "汉普顿宫",
+      "placeEn": "Hampton Court Palace",
+      "title": "汉普顿宫",
+      "region": "england",
+      "category": "宫殿",
+      "locationLabel": "London",
+      "coordinates": [
+        -0.3376964,
+        51.4036839
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "London"
+      ],
+      "description": "",
+      "date": "2026-07-26",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-07-26"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/21104"
+      }
+    },
+    {
+      "id": "holy-trinity-church",
+      "placeId": "holy-trinity-church",
+      "place": "圣三一教堂",
+      "placeEn": "Holy Trinity Church",
+      "title": "圣三一教堂",
+      "region": "england",
+      "category": "教堂",
+      "locationLabel": "York · Goodramgate",
+      "coordinates": [
+        -1.0803955,
+        53.9610387
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-16",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-16"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/28752946"
+      }
+    },
+    {
+      "id": "york-city-walls",
+      "placeId": "york-city-walls",
+      "place": "约克城墙",
+      "placeEn": "York City Walls",
+      "title": "约克城墙",
+      "region": "england",
+      "category": "城市",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0844956,
+        53.9630863
+      ],
+      "locationPrecision": "城墙路段参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-16",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-16"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/259489198"
+      }
+    },
+    {
+      "id": "jorvik-viking-centre",
+      "placeId": "jorvik-viking-centre",
+      "place": "约克维京中心",
+      "placeEn": "JORVIK Viking Centre",
+      "title": "约克维京中心",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0802935,
+        53.9573926
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-17",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-17"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/316106165"
+      }
+    },
+    {
+      "id": "national-library-scotland",
+      "placeId": "national-library-scotland",
+      "place": "苏格兰国立图书馆",
+      "placeEn": "National Library of Scotland",
+      "title": "苏格兰国立图书馆",
+      "region": "scotland",
+      "category": "展览",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1917083,
+        55.9486225
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-22",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-22"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/42121791"
+      }
+    },
+    {
+      "id": "old-saint-pauls",
+      "placeId": "old-saint-pauls",
+      "place": "老圣保罗圣公会教堂",
+      "placeEn": "Old Saint Paul's Episcopal Church",
+      "title": "老圣保罗圣公会教堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1870883,
+        55.9509659
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-23",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-23"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/293213570"
+      }
+    },
+    {
+      "id": "st-marys-catholic-cathedral",
+      "placeId": "st-marys-catholic-cathedral",
+      "place": "圣玛丽天主教主教座堂",
+      "placeEn": "St Mary's Catholic Cathedral",
+      "title": "圣玛丽天主教主教座堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1879028,
+        55.9560152
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-23",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-23"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/233934113"
+      }
+    },
+    {
+      "id": "canongate-kirkyard",
+      "placeId": "canongate-kirkyard",
+      "place": "卡农盖特墓园",
+      "placeEn": "Canongate Kirkyard",
+      "title": "卡农盖特墓园",
+      "region": "scotland",
+      "category": "墓地",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1797994,
+        55.9521648
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-25",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-25"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/1110957"
+      }
+    },
+    {
+      "id": "museum-of-edinburgh",
+      "placeId": "museum-of-edinburgh",
+      "place": "爱丁堡博物馆",
+      "placeEn": "Museum of Edinburgh",
+      "title": "爱丁堡博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1795004,
+        55.9512103
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-25",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-25"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/259067386"
+      }
+    },
+    {
+      "id": "duddingston-kirk",
+      "placeId": "duddingston-kirk",
+      "place": "达丁斯顿教堂",
+      "placeEn": "Duddingston Kirk",
+      "title": "达丁斯顿教堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1490425,
+        55.9411934
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-09-01",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-01"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/29209468"
+      }
+    },
+    {
+      "id": "craigmillar-castle",
+      "placeId": "craigmillar-castle",
+      "place": "克雷格米勒城堡",
+      "placeEn": "Craigmillar Castle",
+      "title": "克雷格米勒城堡",
+      "region": "scotland",
+      "category": "城堡",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1407055,
+        55.9257045
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-09-01",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-01"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/61161239"
+      }
+    },
+    {
+      "id": "glasgow-cathedral",
+      "placeId": "glasgow-cathedral",
+      "place": "格拉斯哥大教堂",
+      "placeEn": "Glasgow Cathedral",
+      "title": "格拉斯哥大教堂",
+      "region": "scotland",
+      "category": "教堂",
+      "locationLabel": "Glasgow",
+      "coordinates": [
+        -4.2346182,
+        55.863013
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Glasgow"
+      ],
+      "description": "",
+      "date": "2026-09-02",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-02"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/102152591"
+      }
+    },
+    {
+      "id": "kelvingrove-museum",
+      "placeId": "kelvingrove-museum",
+      "place": "凯尔文格罗夫艺术博物馆",
+      "placeEn": "Kelvingrove Art Gallery and Museum",
+      "title": "凯尔文格罗夫艺术博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Glasgow",
+      "coordinates": [
+        -4.2906278,
+        55.8685825
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Glasgow"
+      ],
+      "description": "",
+      "date": "2026-09-02",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-02"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/26605473"
+      }
+    },
+    {
+      "id": "st-mungo-museum",
+      "placeId": "st-mungo-museum",
+      "place": "圣芒戈宗教生活与艺术博物馆",
+      "placeEn": "St Mungo Museum of Religious Life and Art",
+      "title": "圣芒戈宗教生活与艺术博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Glasgow",
+      "coordinates": [
+        -4.2363819,
+        55.8624549
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Glasgow"
+      ],
+      "description": "",
+      "date": "2026-09-02",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-02"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/82117067"
+      }
+    },
+    {
+      "id": "old-calton-burial-ground",
+      "placeId": "old-calton-burial-ground",
+      "place": "老卡尔顿墓地",
+      "placeEn": "Old Calton Burial Ground",
+      "title": "老卡尔顿墓地",
+      "region": "scotland",
+      "category": "墓地",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1860116,
+        55.9534699
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-09-03",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-03"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/relation/2344206"
+      }
+    },
+    {
+      "id": "st-andrews-castle",
+      "placeId": "st-andrews-castle",
+      "place": "圣安德鲁斯城堡",
+      "placeEn": "St Andrews Castle",
+      "title": "圣安德鲁斯城堡",
+      "region": "scotland",
+      "category": "城堡",
+      "locationLabel": "St Andrews",
+      "coordinates": [
+        -2.7904764,
+        56.3421521
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "St Andrews"
+      ],
+      "description": "",
+      "date": "2026-09-05",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-05"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/134642441"
+      }
+    },
+    {
+      "id": "wardlaw-museum",
+      "placeId": "wardlaw-museum",
+      "place": "圣安德鲁斯大学沃德劳博物馆",
+      "placeEn": "Wardlaw Museum",
+      "title": "圣安德鲁斯大学沃德劳博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "St Andrews",
+      "coordinates": [
+        -2.7939691,
+        56.3429876
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "St Andrews"
+      ],
+      "description": "",
+      "date": "2026-09-05",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-05"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/232547085"
+      }
+    },
+    {
+      "id": "writers-museum",
+      "placeId": "writers-museum",
+      "place": "作家博物馆",
+      "placeEn": "The Writers' Museum",
+      "title": "作家博物馆",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1937416,
+        55.9496906
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-09-08",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-08"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/4618730690"
+      }
+    },
+    {
+      "id": "merchant-adventurers-hall",
+      "placeId": "merchant-adventurers-hall",
+      "place": "商人冒险家会馆",
+      "placeEn": "Merchant Adventurers' Hall",
+      "title": "商人冒险家会馆",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0788198,
+        53.9578998
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-16",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-16"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/138371703"
+      }
+    },
+    {
+      "id": "barley-hall",
+      "placeId": "barley-hall",
+      "place": "巴利大厅",
+      "placeEn": "Barley Hall",
+      "title": "巴利大厅",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0825952,
+        53.96091
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-17",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-17"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/457713424"
+      }
+    },
+    {
+      "id": "fairfax-house",
+      "placeId": "fairfax-house",
+      "place": "费尔法克斯宅邸",
+      "placeEn": "Fairfax House",
+      "title": "费尔法克斯宅邸",
+      "region": "england",
+      "category": "博物馆",
+      "locationLabel": "York",
+      "coordinates": [
+        -1.0800703,
+        53.9567441
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "York"
+      ],
+      "description": "",
+      "date": "2026-08-18",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-18"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/131438269"
+      }
+    },
+    {
+      "id": "gladstones-land",
+      "placeId": "gladstones-land",
+      "place": "格拉德斯通故居",
+      "placeEn": "Gladstone's Land",
+      "title": "格拉德斯通故居",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1936847,
+        55.9494286
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-08-31",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-08-31"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/node/4618730691"
+      }
+    },
+    {
+      "id": "dr-neils-garden",
+      "placeId": "dr-neils-garden",
+      "place": "尼尔医生花园",
+      "placeEn": "Dr Neil's Garden",
+      "title": "尼尔医生花园",
+      "region": "scotland",
+      "category": "城市",
+      "locationLabel": "Edinburgh",
+      "coordinates": [
+        -3.1491976,
+        55.9409031
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Edinburgh"
+      ],
+      "description": "",
+      "date": "2026-09-01",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-01"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/29400564"
+      }
+    },
+    {
+      "id": "provands-lordship",
+      "placeId": "provands-lordship",
+      "place": "普罗万德领主府",
+      "placeEn": "Provand's Lordship",
+      "title": "普罗万德领主府",
+      "region": "scotland",
+      "category": "博物馆",
+      "locationLabel": "Glasgow",
+      "coordinates": [
+        -4.2369257,
+        55.8623705
+      ],
+      "locationPrecision": "景点参考位置 · 不是照片拍摄点",
+      "aliases": [
+        "Glasgow"
+      ],
+      "description": "",
+      "date": "2026-09-02",
+      "photos": [],
+      "review": {
+        "author": "",
+        "rating": null,
+        "comment": ""
+      },
+      "visitDates": [
+        "2026-09-02"
+      ],
+      "coordinateSource": {
+        "name": "OpenStreetMap / Photon",
+        "url": "https://www.openstreetmap.org/way/82117906"
       }
     }
   ]
