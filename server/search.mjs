@@ -20,7 +20,7 @@ export function normalizeResults(data){
     const address=[p.housenumber,p.street,p.city||p.town||p.district,p.county,p.state,p.postcode].filter(v=>typeof v==='string').filter((v,i,a)=>a.indexOf(v)===i).join(', ').slice(0,200);
     const osmType={N:'node',W:'way',R:'relation'}[p.osm_type],osmId=Number(p.osm_id);
     const sourceUrl=osmType&&Number.isSafeInteger(osmId)&&osmId>0?`https://www.openstreetmap.org/${osmType}/${osmId}`:'https://www.openstreetmap.org/copyright';
-    results.push({name,address,region,coordinates:c,kind:str(p.osm_value,80),sourceUrl});
+    results.push({name,address,city:str(p.city||p.town||p.village,120),region,coordinates:c,kind:str(p.osm_value,80),sourceUrl});
     if(results.length===8)break;
   }
   return results;

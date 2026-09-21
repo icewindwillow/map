@@ -1,4 +1,4 @@
-import {normalizeCategory} from '../public/assets/categories.v0.7.js';
+import {normalizeCategory} from '../public/assets/categories.v0.8.js';
 import {HttpError, SECURITY_HEADERS} from './http.mjs';
 import {dbOf} from './reviews.mjs';
 
@@ -23,11 +23,12 @@ const asset = src => typeof src === 'string' && /^(?:\.\/|\/)assets\/[a-zA-Z0-9_
 export function validatePlace(input, id) {
   if (!input || typeof input !== 'object' || Array.isArray(input) || input.id !== id || !idOK(id)) bad('地点标识不正确。');
   const out = {id, placeId:id};
-  for (const [key,max] of Object.entries({place:160,placeEn:160,title:160,description:10000,date:10,region:24,category:80,locationLabel:200,locationPrecision:200})) {
+  for (const [key,max] of Object.entries({place:160,placeEn:160,title:160,description:10000,officialIntroduction:10000,officialSource:2000,city:120,date:10,region:24,category:80,locationLabel:200,locationPrecision:200})) {
     const value = input[key] ?? '';
     if (typeof value !== 'string' || value.length > max) bad(`${key} 内容过长或格式不正确。`);
     out[key] = value.trim();
   }
+  if(out.officialSource){let url;try{url=new URL(out.officialSource);}catch{bad('官方来源须为有效 HTTPS 链接。');}if(url.protocol!=='https:'||url.username||url.password)bad('官方来源须为 HTTPS 链接。');}
   if (!out.place) bad('请填写地点名称。');
   out.title ||= out.place;
   if (!['england','scotland','wales','northernIreland'].includes(out.region)) bad('请选择所属地区。');

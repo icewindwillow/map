@@ -1,3 +1,4 @@
+import {onRequest as guestRoute} from '../functions/api/guest-reviews.js';
 /** LOCAL TEST HARNESS ONLY. Never deploy this file. Binds to 127.0.0.1.
  * Uses signed fixture JWTs + SQLite + conspicuously labelled test tiles.
  * Production functions contain none of these fixture hooks.
@@ -26,12 +27,14 @@ http.createServer(async(req,res)=>{
   if(headers.get('Origin')?.startsWith('http://127.0.0.1:'))headers.set('Origin',envBase.AUTHOR_ORIGIN);
   if(headers.get('Referer')?.startsWith('http://127.0.0.1:'))headers.set('Referer',envBase.AUTHOR_ORIGIN+'/');
   if(headers.get('Cookie')?.includes('atlas_fixture_author=1'))headers.set('Cf-Access-Jwt-Assertion',jwt);
+  headers.set('CF-Connecting-IP','127.0.0.1');
   const request=new Request(target,{method:req.method,headers,body:['GET','HEAD'].includes(req.method)?undefined:Buffer.concat(parts)});
   const context={request,env,waitUntil:p=>p.catch(()=>{})};const pathname=new URL(target).pathname;
   let response;
   if(pathname==='/api/health')response=await healthRoute(context);
   else if(pathname==='/api/maps')response=await mapsRoute(context);
   else if(pathname==='/api/reviews')response=await reviewsRoute(context);
+  else if(pathname==='/api/guest-reviews')response=await guestRoute(context);
   else if(pathname==='/api/places')response=await placesRoute(context);
   else if(pathname.startsWith('/api/photos/'))response=await photosRoute({...context,params:{id:pathname.split('/').at(-1)}});
   else if(pathname.startsWith('/api/tiles/'))response=await serveTile(context,{cache:null,fetcher:async()=>new Response(png,{headers:{'Content-Type':'image/png','Cache-Control':'public, max-age=604800'}})});

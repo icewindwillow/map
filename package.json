@@ -1,6 +1,6 @@
 {
   "name": "uk-memory-map",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "private": true,
   "description": "UK memory atlas: protected multi-place map editor, photo albums, D1 drafts and publishing, star sorting.",
   "type": "module",
