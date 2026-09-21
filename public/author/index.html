@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><title>作者书桌 · 英国记忆地图</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/author.v0.4.css"><script type="module" src="/assets/author.v0.4.js"></script></head>
+<body>
+  <header class="desk-header"><a class="desk-brand" href="/"><span class="desk-logo">x.</span><span>谢老师的英国旅行<small>THE AUTHOR’S DESK</small></span></a><nav><a href="/" target="_blank" rel="noopener">查看公开地图 ↗</a><a id="logout" href="/cdn-cgi/access/logout">退出登录</a></nav></header>
+  <main class="desk-shell">
+    <div class="desk-heading"><div><span class="kicker">A LITTLE NOTE, KEPT SAFE.</span><h1>把这段感受，留在地图上。</h1><p>先写给自己看，准备好了，再公开分享。</p></div><div class="identity"><span class="identity-dot"></span><span id="identity-label">正在验证作者身份…</span></div></div>
+    <div id="desk-message" class="message" role="status" aria-live="polite">正在读取云端记录。请稍等。</div>
+    <div id="login-help" class="login-help" hidden><a class="button" href="/author/" id="relogin">重新进入作者登录</a><a href="/diagnostics.html" target="_blank" rel="noopener">查看部署诊断 ↗</a><span>重新登录前，请先备份未保存的文字。</span></div>
+    <div class="desk-grid">
+      <aside class="place-sheet">
+        <div class="place-photo"><img id="desk-photo" src="/assets/photos/fountains-abbey/exterior.v0.3.jpg" alt="流水修道院外景，石砌尖拱与塔楼。"></div>
+        <div class="desk-thumbs" aria-label="查看现有照片"><button class="thumb active" type="button" data-photo="exterior" aria-pressed="true"><img src="/assets/photos/fountains-abbey/exterior-thumb.v0.3.jpg" alt="修道院外景"></button><button class="thumb" type="button" data-photo="nave" aria-pressed="false"><img src="/assets/photos/fountains-abbey/nave-thumb.v0.3.jpg" alt="修道院内部"></button><span>2 张照片<br><small>本轮保留原相册</small></span></div>
+        <div class="place-caption"><span class="kicker">RIPON · NORTH YORKSHIRE</span><h2>流水修道院</h2><p class="place-en">Fountains Abbey</p><p class="place-note">照片、位置和地图标记保持不变。<br>这一页只编辑作者的署名、评分和感受。</p></div>
+        <section class="published-box"><div class="section-label"><span>当前公开版本</span><span id="published-version">—</span></div><div id="published-stars" class="stars" aria-label="正在读取评分"></div><blockquote id="published-comment">正在读取已发布评价…</blockquote><p id="published-author"></p><p class="timestamp" id="published-time"></p></section>
+      </aside>
+      <section class="editing-sheet" aria-labelledby="edit-title">
+        <div class="editor-heading"><span class="kicker">YOUR WORDS, YOUR RATING.</span><span id="draft-badge" class="draft-badge">等待连接</span></div>
+        <h2 id="edit-title">这一次，感觉怎么样？</h2>
+        <form id="cloud-form"><fieldset id="editor-fields" disabled>
+          <label for="review-author">评价署名</label><input id="review-author" name="author" maxlength="80" autocomplete="off" value="谢老师">
+          <div class="rating-title"><label for="review-rating">作者评分</label><output id="rating-output" for="review-rating">5.0 / 5</output></div>
+          <div id="rating-preview" class="stars stars-large" role="img" aria-label="5 星"></div>
+          <div class="slider-row"><button id="half-minus" type="button" aria-label="减少半星">−</button><input id="review-rating" type="range" min="0" max="5" step="0.5" value="5"><button id="half-plus" type="button" aria-label="增加半星">＋</button></div>
+          <div class="slider-legend"><span>0 星</span><span>每格半星</span><span>5 星</span></div>
+          <label class="check-label"><input id="review-unrated" type="checkbox"> 暂不评分 <small>和 0 星是两回事</small></label>
+          <div class="comment-title"><label for="review-comment">留下你的感受</label><span id="character-count">0 / 10000</span></div>
+          <textarea id="review-comment" rows="5" maxlength="10000" placeholder="不用写成攻略，一句真心话就很好。"></textarea>
+          <p class="field-note">保存草稿只有作者能看到；发布后，访客重新打开地图就能看到。</p>
+          <div class="editor-actions"><button id="save-cloud-draft" class="button secondary" type="button">保存云端草稿</button><button id="publish-review" class="button primary" type="button">发布到地图 ↗</button></div>
+        </fieldset></form>
+        <div class="editor-tools"><button id="reload-cloud" type="button">读取云端最新版</button><button id="download-review" type="button">备份当前文字 ↓</button><button id="discard-draft" type="button" disabled>丢弃云端草稿</button></div>
+        <section class="review-preview"><span class="kicker">LIVE PREVIEW / 正在编辑 · 尚未发布</span><blockquote id="live-comment">写下你的感受…</blockquote><span id="live-author"></span></section>
+      </section>
+    </div>
+    <footer class="desk-footer"><span id="save-detail">云端保存结果会显示在这里。</span><span>MEMORY ATLAS · v0.4</span></footer>
+  </main>
+</body></html>

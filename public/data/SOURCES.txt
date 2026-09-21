@@ -31,12 +31,18 @@ The 8 demo coordinates are approximate city-centre reference points, not verifie
 locations, and do not assert that the recipient visited any of the cities.
 No personal travel dates or photographs were supplied or invented.
 
-OPTIONAL ONLINE STREET DATA (not redistributed in this package)
-MapLibre GL JS 5.6.1 — browser rendering library.
-https://maplibre.org/maplibre-gl-js/docs/
-OpenFreeMap / OpenMapTiles / OpenStreetMap contributors — live street-map sources.
-https://openfreemap.org/quick_start/
-https://www.openmaptiles.org/
+ONLINE STREET DATA — v0.4 (NOT REDISTRIBUTED IN THIS PACKAGE)
+Native, dependency-free 2D Web Mercator rendering; no MapLibre/CDN runtime.
+OpenStreetMap Standard raster tiles, via a fixed same-origin Pages Function.
+https://operations.osmfoundation.org/policies/tiles/
 https://www.openstreetmap.org/copyright
-Attribution is retained in the online map. Read the upstream licenses and terms
-for any further redistribution or bulk use of their data.
+Attribution is visible on the map. Only current viewport tiles are requested.
+No offline tile archive, bulk downloader or geographical fixture is included.
+Respect upstream Cache-Control/Expires/ETag, keep identifying User-Agent and Referer.
+No availability guarantee; reassess provider before significantly increasing traffic.
+
+FIRST REAL MEMORY — v0.3 retained
+Two photographs supplied by the user with permission for this public gift website.
+Fountains Abbey location provenance is in fountains-abbey.v0.3.json.
+The point is a scenic-area reference point, not an asserted photography location.
+Do not generalize the image permission to commercial reuse or other projects.

@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#f6f3ec">
   <title>谢老师的英国旅行 · 记忆地图</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./assets/style.v0.3.css">
-  <script type="module" src="./assets/app.v0.3.js"></script>
+  <link rel="stylesheet" href="./assets/style.v0.4.css">
+  <script type="module" src="./assets/app.v0.4.js"></script>
 </head>
 <body>
   <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
@@ -32,7 +32,7 @@
   <header class="site-header">
     <a class="brand" href="./" aria-label="记忆地图首页"><span class="brand-mark">x<span>.</span></span><span class="brand-copy"><strong>谢老师的英国旅行</strong><small>A LITTLE ATLAS OF BRITISH DAYS</small></span></a>
     <div class="header-center"><span class="header-rule"></span><span>把日子，慢慢收好。</span><span class="header-rule"></span></div>
-    <div class="header-actions"><span class="edition">VOL. 01 <i></i> 地图篇</span><button id="about-button" class="about-button" type="button"><svg class="icon"><use href="#i-letter"/></svg><span>关于这份礼物</span></button></div>
+    <div class="header-actions"><button type="button" class="header-author" id="header-author">作者登录</button><span class="edition">VOL. 01 <i></i> 地图篇</span><button id="about-button" class="about-button" type="button"><svg class="icon"><use href="#i-letter"/></svg><span>关于这份礼物</span></button></div>
   </header>
   <main class="workspace" id="main">
     <aside class="sidebar" aria-label="地点与故事收藏册">
@@ -68,6 +68,7 @@
       <div class="map-key"><span class="key-dot"></span><span id="map-key-label">演示地点</span><i></i><span class="map-hint">拖动探索 · 滚轮缩放</span></div>
       <div class="scale-wrap" id="scale-wrap"><span id="scale-text">200 km</span><span class="scale-line" id="scale-line"></span></div>
       <div class="geo-attribution" id="geo-attribution"><button type="button" id="sources-button">GSHHG 2.3.6 · 简化地理总览 ⓘ</button></div>
+      <div class="street-attribution" id="street-attribution" hidden>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener">报告地图问题</a></div><button type="button" class="street-retry" id="street-retry" hidden>重试街道图片</button>
       <div class="map-status" id="map-status" role="status" aria-live="polite">正在展开地图…</div>
       <dialog class="story-panel" id="story-panel" aria-labelledby="story-place">
         <div class="story-head"><span id="story-kind" class="eyebrow">A PLACE TO KEEP / 地点相册</span><button id="close-story" class="story-close" type="button"><span>返回地图</span><svg class="icon"><use href="#i-close"/></svg></button></div>
@@ -89,7 +90,7 @@
             <div class="story-writing" id="story-writing"><h3 id="story-title"></h3><p id="story-description" class="story-description"></p></div>
             <div class="story-location"><svg class="icon"><use href="#i-pin"/></svg><span id="story-location"></span></div>
             <p id="story-disclaimer" class="story-disclaimer">仅为交互与排版示例，不代表真实经历。</p>
-            <div class="story-actions"><button type="button" id="story-street" class="story-street">在地图上靠近一点<svg class="icon"><use href="#i-arrow"/></svg></button><button id="story-author" type="button" class="author-tool-link">作者工具 · 编辑评价</button></div>
+            <div class="story-actions"><button type="button" id="story-street" class="story-street">在地图上靠近一点<svg class="icon"><use href="#i-arrow"/></svg></button><button id="story-author" type="button" class="author-tool-link">作者登录 · 编辑评价</button></div>
           </div>
         </div>
         <div class="story-pagination"><button type="button" id="previous-story" aria-label="上一个地点">← 上一个地点</button><span id="story-index"></span><button type="button" id="next-story" aria-label="下一个地点">下一个地点 →</button></div>
@@ -97,36 +98,22 @@
       <noscript><div class="no-script">请开启 JavaScript，才能拖动地图和阅读故事。</div></noscript>
     </section>
   </main>
-  <footer class="site-footer"><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.3 相册与评价</span></footer>
+  <footer class="site-footer"><span id="cloud-read-status" class="cloud-read-status">评价 · 正在检查云端</span><span>一段英国时光，许多值得收藏的坐标。</span><span>MEMORY ATLAS <i>·</i> v0.4 街道与云端评价</span></footer>
   <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
     <div class="dialog-top"><span class="eyebrow">A GIFT, NOT A GUIDE.</span><button id="close-about" class="icon-button" type="button" aria-label="关闭介绍"><svg class="icon"><use href="#i-close"/></svg></button></div>
     <h2 id="about-title">一张地图，<br>装下那些小小的日子。</h2>
     <p>轻轻点开一个地点，翻翻照片，读读她留下的评价。这份地图可以公开分享，但不是一份推广用的旅行攻略。</p>
     <div class="about-note"><strong>第一段真实记忆，已经放进来了。</strong><p>流水修道院已收录作者提供的两张照片、原文评价与 5 星评分。没有补写旅行日期。8 个演示地点继续独立保留，默认隐藏；它们不是她的真实行程。搜索仅查本站已收录内容。</p></div>
-    <h3>作者的评价，不是游客投票</h3><p>评分为 0～5 星，支持半星；0 星和未评分分开显示。作者工具可在本机编辑评价、保存草稿并导出文件，提交到仓库后才会公开更新。它不是登录后台，也不会让访客修改网站上的记录。</p><button type="button" id="about-author" class="author-tool-link">打开作者工具 ↗</button>
-    <h3>两种底图</h3><p><b>手账总览：</b>随网页附带的真实海岸线数据，可拖动、缩放；它经过概括化，不是街道或测绘级地图。陆地颜色不表示国家归属，周边岛屿和国家仅作地理参照。</p><p><b>街道底图：</b>按需加载 MapLibre GL JS 与 OpenFreeMap。需要联网；加载失败时会保留总览，不会变成一张空白页面。</p>
-    <h3>地图来源与隐私</h3><p>总览：GSHHG 2.3.6 / basemap-data 2.0.0（LGPL-3.0-or-later），海岸线来源与转换脚本随代码提供。在线底图：OpenFreeMap / OpenMapTiles / OpenStreetMap contributors。</p><p>本站没有登录、定位和分析追踪。点击街道底图后，浏览器会连接地图服务与脚本 CDN。公开仓库或公开网址不适合存放私密地址、未获同意的照片；禁止搜索引擎收录不等于访问加密。</p>
-    <p class="source-links"><a href="https://github.com/matplotlib/basemap" target="_blank" rel="noopener noreferrer">总览数据来源 ↗</a><a href="https://openfreemap.org/quick_start/" target="_blank" rel="noopener noreferrer">街道底图来源 ↗</a></p>
+    <h3>作者的评价，不是游客投票</h3><p>评分为 0～5 星，支持半星；0 星和未评分分开显示。作者登录后，可以保存云端草稿或发布评价。草稿只对作者可见；公开地图只读取已发布版本。普通访客不能修改云端记录。</p><button type="button" id="about-author" class="author-tool-link">进入作者后台 ↗</button>
+    <h3>两种底图</h3><p><b>手账总览：</b>随网页附带的真实海岸线数据，可拖动、缩放；它经过概括化，不是街道或测绘级地图。陆地颜色不表示国家归属，周边岛屿和国家仅作地理参照。</p><p><b>街道底图：</b>使用真实的 OpenStreetMap 街道图，通过本站接口按需加载。无需外部脚本 CDN 或 WebGL。需要联网；失败会显示具体提示并保留总览。</p>
+    <h3>地图来源与隐私</h3><p>总览：GSHHG 2.3.6 / basemap-data 2.0.0（LGPL-3.0-or-later），海岸线来源与转换脚本随代码提供。街道底图：© OpenStreetMap contributors。仅加载当前可见区域，不提供离线街道下载。</p><p>公开地图不要求登录，不申请设备定位，也不含分析追踪脚本。作者入口使用 Cloudflare Access，身份验证由 Cloudflare 处理；D1 保存评价和操作账户。街道通过本站后端向 OpenStreetMap 取图。公开仓库或公开网址不适合存放私密地址、未获同意的照片；禁止搜索引擎收录不等于访问加密。</p>
+    <p class="source-links"><a href="https://github.com/matplotlib/basemap" target="_blank" rel="noopener noreferrer">总览数据来源 ↗</a><a href="https://operations.osmfoundation.org/policies/tiles/" target="_blank" rel="noopener noreferrer">街道底图来源 ↗</a></p>
   </dialog>
 
   <dialog id="photo-viewer" class="photo-viewer" aria-labelledby="viewer-title">
     <header class="viewer-header"><div><span class="eyebrow">THE PHOTO ALBUM</span><h2 id="viewer-title"></h2></div><button id="close-viewer" type="button" class="viewer-close" aria-label="关闭大图"><svg class="icon"><use href="#i-close"/></svg></button></header>
     <div class="viewer-stage" id="viewer-stage"><img id="viewer-image" alt="" decoding="async"><p id="viewer-error" hidden>照片暂时没有加载成功，请返回相册重试。</p><button id="viewer-prev" type="button" class="photo-arrow photo-arrow-prev" aria-label="上一张大图">‹</button><button id="viewer-next" type="button" class="photo-arrow photo-arrow-next" aria-label="下一张大图">›</button></div>
     <footer class="viewer-footer"><span id="viewer-caption"></span><span id="viewer-index" aria-live="polite"></span><span class="viewer-tip">← → 翻页 · Esc 返回</span></footer>
-  </dialog>
-  <dialog id="author-dialog" class="author-dialog" aria-labelledby="author-title">
-    <div class="dialog-top"><span class="eyebrow">THE AUTHOR’S DESK / 作者工具</span><button type="button" id="close-author" class="icon-button" aria-label="关闭作者工具"><svg class="icon"><use href="#i-close"/></svg></button></div>
-    <h2 id="author-title">把这个地方的感受，写下来。</h2>
-    <p class="author-explainer"><strong>本机草稿，不会直接修改线上内容。</strong>编辑后导出文件，替换仓库的 <code>public/data/memories.json</code> 并推送，访客才会看到更新。不需要在这里输入密码或密钥。</p>
-    <div class="author-layout"><form id="author-form">
-      <label class="field-label" for="author-place">选择地点</label><select id="author-place"></select>
-      <label class="field-label" for="author-name">评价署名</label><input id="author-name" type="text" maxlength="80" autocomplete="off">
-      <div class="rating-field"><div class="field-label">作者评分 <output id="author-rating-value" for="author-rating"></output></div><div id="author-star-preview" class="rating-display"></div><div class="rating-slider-row"><button type="button" id="rating-minus" aria-label="减少半星">−</button><input id="author-rating" type="range" min="0" max="5" step="0.5" value="5" aria-label="作者评分，0 至 5 星，每次半星"><button type="button" id="rating-plus" aria-label="增加半星">＋</button></div><div class="range-labels"><span>0 星</span><span>每格半星</span><span>5 星</span></div><label class="unrated-check"><input id="author-unrated" type="checkbox">暂不评分（与 0 星不同）</label></div>
-      <label class="field-label" for="author-comment">评价正文</label><textarea id="author-comment" rows="4" maxlength="10000" placeholder="写下真正的感受，不必像一篇攻略。"></textarea>
-    </form><aside class="author-preview"><span class="eyebrow">评价预览 · 未发布</span><h3 id="author-preview-place"></h3><div id="author-preview-rating" class="rating-display"></div><blockquote id="author-preview-comment"></blockquote><p id="author-preview-name"></p><p class="author-preview-note">公开页面只显示已发布的作者评价。<br>此处预览只在你的浏览器中变化。</p></aside></div>
-    <div class="author-actions"><button id="save-author-draft" type="button" class="secondary-button">保存本机草稿</button><button id="export-memories" type="button" class="primary-button">导出 memories.json ↗</button></div>
-    <div class="author-utilities"><button id="restore-author-draft" type="button" class="link-button">载入本机草稿</button><label class="link-button import-label">导入已有故事文件<input id="import-memories" type="file" accept="application/json,.json" hidden></label></div>
-    <p id="author-status" class="author-status" role="status" aria-live="polite"></p>
   </dialog>
 
 </body>

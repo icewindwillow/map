@@ -1,0 +1,59 @@
+{
+  "release": "0.4.0",
+  "checkedDate": "2026-09-21",
+  "unitTests": {
+    "command": "node --test tests-v04/*.test.mjs",
+    "environment": "Node.js 22.16.0; native Web Crypto; local SQLite D1-shaped adapter",
+    "passed": 51,
+    "failed": 0
+  },
+  "browserTests": {
+    "environment": "Offline Chromium UI tests, bridged to local signed-JWT/SQLite fixture server.\nBrowser navigation/network is unavailable in this runtime. Production files are\ninjected without imports, supplied photographs embedded, fetch bridged to loopback.\nThis is NOT a real Cloudflare Access, D1 or online OSM acceptance test.\n",
+    "results": [
+      {
+        "name": "desktop map, album, street switch with clearly labelled fixture tiles, zoom, overview return",
+        "passed": true
+      },
+      {
+        "name": "local backend rejects anonymous author page and writes",
+        "passed": true
+      },
+      {
+        "name": "local signed-JWT backend: draft persists new context, public isolation, publish visible to independent reader, original restored",
+        "passed": true
+      },
+      {
+        "name": "390x844: no horizontal overflow, portrait photo shown",
+        "passed": true
+      },
+      {
+        "name": "768x1024: no horizontal overflow, portrait photo shown",
+        "passed": true
+      },
+      {
+        "name": "1024x768: no horizontal overflow, portrait photo shown",
+        "passed": true
+      },
+      {
+        "name": "mobile author page no horizontal overflow",
+        "passed": true
+      }
+    ],
+    "browserErrors": []
+  },
+  "notVerified": [
+    "GitHub push / Cloudflare production deployment",
+    "Cloudflare Functions bundle build on the user account",
+    "Real OpenStreetMap upstream fetch from Cloudflare",
+    "Mainland-China real-browser network performance",
+    "Real Cloudflare Access email OTP delivery and login",
+    "Production D1 binding and persistence"
+  ],
+  "dataSafety": {
+    "memoriesJsonIncluded": false,
+    "seedUsesInsertOrIgnore": true,
+    "originalPhotosRetained": true,
+    "originalReview": "破旧的修道院比完整的好看多了！",
+    "originalRating": 5
+  }
+}

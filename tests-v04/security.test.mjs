@@ -1,0 +1,16 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {testAuth,envBase} from './auth-fixtures.mjs';
+import {verifyAccessToken,requireAuthor,requireWrite,csrfFor} from '../server/auth.mjs';
+import {limitedJson} from '../server/http.mjs';
+const auth=await testAuth();
+const reject=async(p,code)=>assert.rejects(p,e=>e.code===code);
+test('valid signed Access JWT and exact email are accepted',async()=>{const u=await verifyAccessToken(await auth.token(),envBase,{fetcher:auth.fetcher});assert.equal(u.email,'author@example.test');});
+test('no token, no config and bad issuer configuration fail closed',async()=>{await reject(verifyAccessToken(null,envBase),'LOGIN_REQUIRED');await reject(verifyAccessToken('a.b.c',{}),'ACCESS_CONFIG_REQUIRED');await reject(verifyAccessToken('a.b.c',{...envBase,ACCESS_TEAM_DOMAIN:'https://evil.example'}),'ACCESS_CONFIG_REQUIRED');});
+for(const [name,claims]of [['expired',{exp:1}],['wrong issuer',{iss:'https://evil.example'}],['wrong audience',{aud:['another-audience']}],['future not-before',{nbf:Date.now()/1000+600}],['missing sub',{sub:''}],['string expiration',{exp:'9999999999'}],['future issued-at',{iat:Date.now()/1000+600}]])
+ test(`reject ${name}`,async()=>reject(verifyAccessToken(await auth.token(claims),envBase,{fetcher:auth.fetcher}),'LOGIN_REQUIRED'));
+for(const header of [{alg:'none'},{alg:'HS256'},{jku:'https://evil.example'},{crit:['b64']},{b64:false}])test(`reject header ${JSON.stringify(header)}`,async()=>reject(verifyAccessToken(await auth.token({},header),envBase,{fetcher:auth.fetcher}),'LOGIN_REQUIRED'));
+test('a different signed email is not an author',async()=>reject(verifyAccessToken(await auth.token({email:'guest@example.test'}),envBase,{fetcher:auth.fetcher}),'NOT_AN_AUTHOR'));
+test('changed payload cannot keep its old signature',async()=>{const token=await auth.token();const p=token.split('.');const data=JSON.parse(Buffer.from(p[1],'base64url'));data.email='attacker@example.test';p[1]=Buffer.from(JSON.stringify(data)).toString('base64url');await reject(verifyAccessToken(p.join('.'),envBase,{fetcher:auth.fetcher}),'LOGIN_REQUIRED');});
+test('pages.dev cannot bypass canonical author host even with a valid token',async()=>reject(requireAuthor(new Request('https://map-9yd.pages.dev/author/api/session',{headers:{'Cf-Access-Jwt-Assertion':await auth.token()}}),envBase,{fetcher:auth.fetcher}),'AUTHOR_ORIGIN_ONLY'));
+test('CSRF requires exact origin AND a session-bound token',async()=>{const token=await auth.token(),csrf=await csrfFor(token);const request=(origin,csrfValue)=>new Request(envBase.AUTHOR_ORIGIN+'/author/api/review',{method:'POST',headers:{Origin:origin,'Content-Type':'application/json','Cf-Access-Jwt-Assertion':token,'X-Atlas-CSRF':csrfValue},body:'{}'});await requireWrite(request(envBase.AUTHOR_ORIGIN,csrf),envBase);await reject(requireWrite(request('https://evil.example',csrf),envBase),'ORIGIN_REJECTED');await reject(requireWrite(request(envBase.AUTHOR_ORIGIN,'bad'),envBase),'CSRF_REJECTED');});
+test('JSON rejects wrong type and oversized bodies',async()=>{await reject(limitedJson(new Request('https://x.test',{method:'POST',body:'{}'})),'JSON_REQUIRED');await reject(limitedJson(new Request('https://x.test',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify('x'.repeat(200))}),100),'TOO_LARGE');});
