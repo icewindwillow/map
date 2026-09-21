@@ -1,34 +1,44 @@
 {
-  "method": "Offline Chromium rendering of the generated self-contained preview; no successful live online map or Cloudflare deployment was claimed.",
-  "checks": [
-    "Desktop loads 8 demos, 0 personal stories and 794 real geography features",
-    "Zoom in changes the geographic transform",
-    "Full UK reset restores initial camera",
-    "Cluster expansion reveals demo-bath in the viewport",
-    "Cluster expansion reveals demo-cardiff in the viewport",
-    "Mouse drag pans the geography",
-    "Regional filter shows only 2 Scotland examples",
-    "English name search works",
-    "Empty search has clear empty state",
-    "Hiding demos leaves no fabricated real stories",
-    "Opening a story shows a clearly marked demo card",
-    "Next-page story navigation works",
-    "Escape closes the story and restores focus",
-    "About opens a native modal",
-    "Unavailable online assets do not blank the local map",
-    "Failed online map returns a readable error state",
-    "Mobile 390px has no horizontal overflow",
-    "Mobile 390px story sheet stays within screen",
-    "Mobile 390px story can be closed",
-    "Mobile 320px has no horizontal overflow",
-    "Mobile 320px story sheet stays within screen",
-    "Mobile 320px story can be closed",
-    "Legacy real stories are kept and demos default off",
-    "A story without coordinates is readable without inventing a pin",
-    "User content is text, not executable HTML",
-    "No browser JavaScript exceptions"
+  "nodeTests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "offlineBrowserTests": [
+    {
+      "viewport": [
+        1568,
+        983
+      ],
+      "demoRows": 8,
+      "coastPaths": 794,
+      "storyOpened": true,
+      "horizontalOverflow": false,
+      "pageErrors": []
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "demoRows": 8,
+      "coastPaths": 794,
+      "storyOpened": true,
+      "horizontalOverflow": false,
+      "pageErrors": []
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "demoRows": 8,
+      "coastPaths": 794,
+      "storyOpened": true,
+      "horizontalOverflow": false,
+      "pageErrors": []
+    }
   ],
-  "browserErrors": [],
-  "liveOnlineStreetsVerified": false,
-  "cloudflareDeploymentVerified": false
+  "liveCustomDomainVerified": false,
+  "dataFilesIncludedInPatch": false,
+  "notes": "Offline preview tests, not a live HTTP, redirect, CDN or CSP validation. Patch does not change layout, stories or domain settings."
 }
