@@ -206,8 +206,14 @@ let lastFocus=null;
 function openStory(m,trigger=null){
   state.selected=m;
   $('story-city').textContent=m.city||'所属城市待确认';
-  $('official-text').textContent=m.officialIntroduction||'官方介绍尚未补充。';
-  const source=$('official-link');source.hidden=true;try{const url=new URL(m.officialSource);if(url.protocol==='https:'){source.href=url.href;source.hidden=false;}}catch{}
+  const officialText=String(m.officialIntroduction||'').trim();
+  const officialSection=$('official-section');
+  const officialJump=$('read-official');
+  const hasOfficial=Boolean(officialText);
+  officialSection.hidden=!hasOfficial;
+  officialJump.hidden=!hasOfficial;
+  $('official-text').textContent=officialText;
+  const source=$('official-link');source.hidden=true;try{const url=new URL(m.officialSource);if(hasOfficial&&url.protocol==='https:'){source.href=url.href;source.hidden=false;}}catch{}
   showGuests(m.id);
   const panel=$('story-panel');
   if(trigger)lastFocus=trigger;else if(!panel.open)lastFocus=document.activeElement;
