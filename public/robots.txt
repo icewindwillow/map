@@ -1,0 +1,3 @@
+# Requests search engines not to index. This is NOT access control.
+User-agent: *
+Disallow: /

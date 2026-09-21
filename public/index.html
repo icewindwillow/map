@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把在英国遇见的人、走过的路，和舍不得忘记的小事，慢慢放回地图上。">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f5ef">
+  <title>英国 · 记忆地图</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="记忆地图首页">
+        <span class="brand-symbol" aria-hidden="true">m.</span>
+        <span><strong>英国 · 记忆地图</strong><small>MEMORY ATLAS</small></span>
+      </a>
+      <div class="header-right"><span class="edition">序章 / 001</span><button class="text-button" id="about-button" type="button" hidden>关于这份礼物 <span aria-hidden="true">↗</span></button></div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="short-rule" aria-hidden="true"></span>写给那段英国时光</p>
+          <h1 id="hero-title">有些日子，<br>值得<span>再走一遍。</span></h1>
+          <p class="hero-description">把遇见的人、走过的路，<br>和那些舍不得忘记的小事，慢慢放回地图上。</p>
+          <a class="primary-button" href="#atlas">从这里开始 <span aria-hidden="true">↘</span></a>
+          <p class="hero-note">先留一张空白地图，再把故事慢慢写进去。</p>
+        </div>
+        <div class="keepsake" aria-label="记忆卡片：一段时光，许多坐标。">
+          <div class="paper-back" aria-hidden="true"></div>
+          <div class="postcard">
+            <div class="postcard-top"><span>TO THE DAYS<br>WE KEEP.</span><span class="stamp" aria-hidden="true">UK<br><small>MEMORIES</small></span></div>
+            <div class="postcard-center"><span class="chapter-no">01</span><p>一段时光，<br>许多坐标。</p></div>
+            <div class="postcard-bottom"><span>故事从这里开始</span><span aria-hidden="true">✳</span></div>
+          </div>
+          <span class="card-caption">A small atlas of unforgettable things.</span>
+        </div>
+      </section>
+
+      <section class="atlas-section" id="atlas" aria-labelledby="atlas-title">
+        <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="atlas-title">留给回忆的位置</h2></div><p class="section-caption">尚未写下，也是一种开始。</p></div>
+        <div class="atlas-grid">
+          <div class="map-placeholder">
+            <div class="placeholder-header"><span>地图画布</span><span>下一章展开</span></div>
+            <div class="placeholder-content"><span class="location-mark" aria-hidden="true"><i></i></span><h3>每一个地点，都可以是故事的入口。</h3><p>这里将放上英国地图。<br>下一步，再一起标记那些值得记住的地方。</p></div>
+            <div class="placeholder-footer"><span>MAP / NOT YET DRAWN</span><span aria-hidden="true">＋</span></div>
+          </div>
+          <aside class="collection-card" aria-labelledby="collection-title">
+            <p class="eyebrow">慢慢收集，不用着急</p><h3 id="collection-title">属于她的<br>小小收藏册。</h3>
+            <dl class="stats"><div><dt>记住的地点</dt><dd id="place-count">—</dd></div><div><dt>收好的故事</dt><dd id="memory-count">—</dd></div></dl>
+            <p id="data-status" class="data-status" role="status" aria-live="polite">正在翻开收藏册…</p>
+            <button class="text-button retry-button" id="retry-button" type="button" hidden>重新读取 ↻</button>
+            <noscript><p class="data-status">请开启 JavaScript，以读取故事数据。目前这是一张空白地图。</p></noscript>
+          </aside>
+        </div>
+        <div id="memory-list" class="memory-list" aria-label="故事列表"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>为值得记住的日子，留一个地方。</span><span>底座 v0.1 · 地图与故事稍后加入</span></footer>
+  </div>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-top"><span class="eyebrow">ABOUT THIS GIFT</span><button id="close-dialog" class="close-button" type="button" aria-label="关闭介绍">×</button></div>
+    <h2 id="about-title">不是攻略，<br>是一份关于她的地图。</h2>
+    <p>想把她在英国遇到的各种事情，一点一点留在这里。以后，轻轻点开一个地点，就能重新走进那一天。</p>
+    <p>现在是第一版网页底座：只有首页、空白地图区域和故事数据入口。还没有真实地图、照片或个人经历。</p>
+    <p class="dialog-footnote">让网页先有一个家，故事再慢慢长出来。</p>
+  </dialog>
+</body>
+</html>
