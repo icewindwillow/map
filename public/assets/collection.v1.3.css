@@ -1,4 +1,4 @@
-.collection>.filter-pair{grid-column:1/-1;grid-row:5;width:100%;box-sizing:border-box;justify-content:flex-end;padding-top:8px;border-top:1px solid var(--line)}
+.collection>.filter-pair{grid-column:1/-1;grid-row:5;width:100%;box-sizing:border-box;justify-content:flex-end;padding-top:8px;border-top:0}
 .collection>.memory-list{grid-row:6}
 .filter-pair label{font-size:11px}
 .header-actions{align-items:center}
