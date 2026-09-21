@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {testDB} from './sqlite-adapter.mjs';
+import {searchQuery,normalizeResults,searchPlaces} from '../server/search.mjs';
+const feature={geometry:{type:'Point',coordinates:[-3.2,55.94]},properties:{name:'Edinburgh Castle',countrycode:'GB',state:'Scotland',osm_type:'W',osm_id:4301292}};
+test('query aliases and invalid searches',()=>{assert.equal(searchQuery(' 爱丁堡城堡 ').upstreamQuery,'Edinburgh Castle');for(const v of ['',null,'a','x'.repeat(161)])assert.throws(()=>searchQuery(v));});
+test('normalizes locations, removes duplicates and rejects foreign/invalid coordinates',()=>{const results=normalizeResults({features:[feature,feature,{...feature,geometry:{type:'Point',coordinates:[999,0]}},{...feature,properties:{...feature.properties,countrycode:'US'}}]});assert.equal(results.length,1);assert.equal(results[0].region,'scotland');assert.equal(results[0].sourceUrl,'https://www.openstreetmap.org/way/4301292');});
+test('explicit upstream query, persistent cache, shared rate gate',async()=>{const DB=testDB();let calls=0;const fetcher=async(url,options)=>{calls++;assert.equal(new URL(url).hostname,'photon.komoot.io');assert.equal(new URL(url).searchParams.get('q'),'Edinburgh Castle');assert.equal(options.headers.Cookie,undefined);return Response.json({features:[feature]});};const first=await searchPlaces({DB},{query:'爱丁堡城堡'},{fetcher});assert.equal(first.cached,false);assert.equal((await searchPlaces({DB},{query:'Edinburgh Castle'},{fetcher})).cached,true);assert.equal(calls,1);await assert.rejects(searchPlaces({DB},{query:'Oxford'},{fetcher}),e=>e.status===429);});
+test('upstream errors and redirects do not return successful locations',async()=>{for(const status of [302,429,500])await assert.rejects(searchPlaces({DB:testDB()},{query:'Oxford'},{fetcher:async()=>new Response('',{status})}),e=>e.status===(status===429?429:502));});

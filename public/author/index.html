@@ -1,10 +1,17 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>地图编辑室 · 英国记忆地图</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/editor.v0.5.css"><script type="module" src="/assets/editor.v0.5.js"></script></head>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>地图编辑室 · 英国记忆地图</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/editor.v0.5.1.css"><script type="module" src="/assets/editor.v0.5.1.js"></script></head>
 <body>
 <header class="desk-header"><a class="desk-brand" href="/">x. 英国记忆地图 · 编辑室</a><nav><a href="/" target="_blank" rel="noopener">查看公开地图 ↗</a><a href="/cdn-cgi/access/logout">退出登录</a></nav></header>
 <main class="desk-shell">
-<div class="desk-heading"><div><span class="kicker">PLACES, PHOTOS & LITTLE STORIES</span><h1>把新的故事，放到地图上。</h1><p>选择地点，点击地图定位，再添加照片与评价。</p></div><span id="identity-label">正在验证身份…</span></div>
+<div class="desk-heading"><div><span class="kicker">PLACES, PHOTOS & LITTLE STORIES</span><h1>搜到那个地方，写下你的故事。</h1><p>搜索地名 → 选择地点 → 添加照片与评价。不需要知道经纬度。</p></div><span id="identity-label">正在验证身份…</span></div>
 <p id="message" class="message" role="status" aria-live="polite">正在读取云端…</p>
+<section class="place-search-panel" aria-labelledby="search-heading">
+<h2 id="search-heading">先找一个地方</h2>
+<form id="location-search-form"><label for="location-query">城市、景点、餐厅或街道名称</label><div class="search-input-row"><input id="location-query" type="search" minlength="2" maxlength="160" required placeholder="例如：爱丁堡城堡 / Edinburgh Castle" autocomplete="off" disabled><button id="location-search-button" class="button primary" disabled>搜索地名</button></div></form>
+<p class="search-hint">搜索英国地名库，不限于已收录地点。常见中文名可直接搜索；找不到时试试英文名＋城市。</p>
+<p id="location-search-status" role="status" aria-live="polite"></p><div id="location-results" class="location-results"></div>
+<small>点击搜索才会将搜索词发送至 Photon，结果在本站缓存 7 天。请勿输入私人敏感地址。地名数据 © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a> · 搜索服务 <a href="https://photon.komoot.io" target="_blank" rel="noopener">Photon</a></small>
+</section>
 <div class="place-toolbar"><label for="place-select">编辑地点</label><select id="place-select" disabled></select><button id="new-place" class="button" disabled>＋ 新增地点</button><button id="reload" class="button" disabled>读取云端最新版</button></div>
 <div class="workspace">
 <aside class="map-column">
@@ -15,13 +22,13 @@
 <p id="attribution" hidden>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></p>
 <section class="published-box"><span id="record-status">未选择地点</span><p id="published-summary"></p><a id="public-link" href="/" target="_blank" rel="noopener">在公开地图中查看 ↗</a></section>
 </aside>
-<section class="editing-sheet"><form id="place-form"><fieldset id="fields" disabled>
+<section class="editing-sheet"><form id="place-form" novalidate><fieldset id="fields" disabled>
 <h2>地点与位置</h2>
 <div class="two-col"><div><label for="place-name">地点名称 *</label><input id="place-name" maxlength="160" required placeholder="例如：爱丁堡城堡"></div><div><label for="place-en">英文名称</label><input id="place-en" maxlength="160" placeholder="Edinburgh Castle"></div></div>
-<div class="two-col"><div><label for="region">所属地区 *</label><select id="region"><option value="england">英格兰</option><option value="scotland">苏格兰</option><option value="wales">威尔士</option><option value="northernIreland">北爱尔兰</option></select></div><div><label for="category">类别</label><input id="category" maxlength="80" placeholder="城堡、咖啡馆、散步…"></div></div>
+<div class="two-col"><div><label for="region">所属地区 *</label><select id="region" required><option value="">请选择所属地区</option><option value="england">英格兰</option><option value="scotland">苏格兰</option><option value="wales">威尔士</option><option value="northernIreland">北爱尔兰</option></select></div><div><label for="category">类别</label><input id="category" maxlength="80" placeholder="城堡、咖啡馆、散步…"></div></div>
 <label for="address">位置说明／地址</label><input id="address" maxlength="200" placeholder="城市、街道或地标（此项不会自动定位）">
-<div class="two-col"><div><label for="longitude">经度（东西方向）*</label><input id="longitude" type="number" step="any" min="-15" max="12" required placeholder="-3.1999"></div><div><label for="latitude">纬度（南北方向）*</label><input id="latitude" type="number" step="any" min="46" max="65" required placeholder="55.9486"></div></div>
-<p class="field-note">先在左侧点选位置；放大到街道可精确定位。英国西侧的经度通常为负数。</p>
+<p id="selected-location" class="selected-location">请先搜索并选择地点，也可以在地图上点选。</p>
+<details id="advanced-location"><summary>高级定位：查看／手动填写经纬度（备用）</summary><div class="two-col"><div><label for="longitude">经度（东西方向）*</label><input id="longitude" type="number" step="any" min="-15" max="12" required placeholder="-3.1999"></div><div><label for="latitude">纬度（南北方向）*</label><input id="latitude" type="number" step="any" min="46" max="65" required placeholder="55.9486"></div></div><p class="field-note">搜索选点会自动填写。只有需要校正时才手工修改。</p></details>
 <label for="trip-date">旅行日期（可不填）</label><input id="trip-date" type="date">
 <label for="description">地点故事</label><textarea id="description" rows="3" maxlength="10000" placeholder="这次遇见了什么？"></textarea>
 <h2>照片相册</h2><p class="field-note">最多 8 张。自动缩小至最长边 1280 像素、200 KB 以内，去除原照片元数据。原图请自己保留；未发布照片仅作者可见。</p>
@@ -32,5 +39,5 @@
 <p class="field-note">保存草稿不会改变公开地图；发布会更新此地点、坐标、照片和评价。</p>
 <div class="editor-actions"><button type="button" id="save-draft" class="button secondary">保存云端草稿</button><button type="submit" class="button primary">发布到地图 ↗</button></div>
 </fieldset></form><div class="editor-tools"><button id="backup">备份当前内容 ↓</button><button id="discard" disabled>丢弃云端草稿</button></div></section>
-</div><footer class="desk-footer">MEMORY ATLAS · v0.5 · 多地点编辑室</footer>
+</div><footer class="desk-footer">MEMORY ATLAS · v0.5.1 · 地名搜索与多地点编辑室</footer>
 </main></body></html>

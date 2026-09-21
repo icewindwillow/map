@@ -1,5 +1,5 @@
 /** Shared server-only responses. Never copy bindings or Access tokens into JSON. */
-export const VERSION = '0.5.0';
+export const VERSION = '0.5.1';
 export class HttpError extends Error {
   constructor(status, code, message) { super(message); this.status = status; this.code = code; }
 }

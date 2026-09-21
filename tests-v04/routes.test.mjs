@@ -13,7 +13,7 @@ const req=(path,options={})=>new Request(envBase.AUTHOR_ORIGIN+path,options);
 const environment=()=>({...envBase,DB:testDB(),ASSETS:{fetch:async r=>new Response('<!doctype html><title>Author shell</title>',{headers:{'Content-Type':'text/html'}})}});
 test('new place and photo routes enforce signed identity, origin and CSRF',async()=>{
   const env=environment(),jwt=await auth.token();
-  for(const path of ['/author/api/place','/author/api/photo']) {
+  for(const path of ['/author/api/place','/author/api/photo','/author/api/search']) {
     assert.equal((await authorRoute({env,request:req(path,{method:'POST'})})).status,401);
     assert.equal((await authorRoute({env,request:req(path,{method:'POST',headers:{'Cf-Access-Jwt-Assertion':jwt,Origin:envBase.AUTHOR_ORIGIN,'Content-Type':'application/json'},body:'{}'})})).status,403);
   }
