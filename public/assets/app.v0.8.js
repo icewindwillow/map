@@ -9,6 +9,9 @@ const $=id=>document.getElementById(id);
 const svgNS='http://www.w3.org/2000/svg';
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const small=()=>matchMedia('(max-width: 760px)').matches;
+// A slightly tighter opening composition keeps Britain and the place clusters
+// visually present without losing the atlas-style breathing room.
+const DEFAULT_OVERVIEW_ZOOM=1.15;
 const state={real:[],demos:[],items:[],filtered:[],region:'all',query:'',selected:null,online:false,loadingStreet:false};
 const icon=name=>{const s=document.createElementNS(svgNS,'svg');s.setAttribute('class','icon');s.setAttribute('aria-hidden','true');const u=document.createElementNS(svgNS,'use');u.setAttribute('href',`#i-${name}`);s.append(u);return s;};
 const text=(tag,className,value)=>{const el=document.createElement(tag);if(className)el.className=className;if(value!=null)el.textContent=value;return el;};
@@ -37,7 +40,7 @@ class OverviewMap{
     const w=this.surface.clientWidth,h=this.surface.clientHeight;if(!w||!h||w===this.width&&h===this.height)return;
     const previous=this.width?this.toGeo([this.width/2,this.height/2]):null;
     const relative=this.camera.s/this.base;this.width=w;this.height=h;
-    const full=this.cameraFor(UK_BOUNDS,false);this.base=full.s;
+    const full=this.defaultCamera();this.base=full.s/DEFAULT_OVERVIEW_ZOOM;
     if(previous&&relative>1.12){const p=project(previous);this.camera={s:full.s*relative,x:w/2-p[0]*full.s*relative,y:h/2-p[1]*full.s*relative};}
     else this.camera=full;
     this.render();if(streetMap)streetMap.resize();
@@ -47,6 +50,12 @@ class OverviewMap{
     const left=small()?29:68,right=panel&&!small()?365:(small()?29:78),top=small()?90:88,bottom=small()?62:67;
     const s=Math.min((this.width-left-right)/Math.max(.0001,b[0]-a[0]),(this.height-top-bottom)/Math.max(.0001,b[1]-a[1]));
     return {s,x:left+(this.width-left-right)/2-(a[0]+b[0])*s/2,y:top+(this.height-top-bottom)/2-(a[1]+b[1])*s/2};
+  }
+  defaultCamera(){
+    const full=this.cameraFor(UK_BOUNDS,false),zoom=DEFAULT_OVERVIEW_ZOOM;
+    const left=small()?29:68,right=small()?29:78,top=small()?90:88,bottom=small()?62:67;
+    const cx=left+(this.width-left-right)/2,cy=top+(this.height-top-bottom)/2;
+    return {s:full.s*zoom,x:cx-(cx-full.x)*zoom,y:cy-(cy-full.y)*zoom};
   }
   screen(coords){const p=project(coords),c=this.camera;return [p[0]*c.s+c.x,p[1]*c.s+c.y];}
   toGeo([x,y]){const c=this.camera;return unproject([(x-c.x)/c.s,(y-c.y)/c.s]);}
@@ -58,7 +67,7 @@ class OverviewMap{
     const step=now=>{const t=Math.min(1,(now-started)/650),k=1-(1-t)**3;this.camera={s:from.s+(target.s-from.s)*k,x:from.x+(target.x-from.x)*k,y:from.y+(target.y-from.y)*k};this.render();if(t<1)this.animation=requestAnimationFrame(step);};
     this.animation=requestAnimationFrame(step);
   }
-  reset(animated=true){const c=this.cameraFor(UK_BOUNDS);this.base=c.s;this.animate(c,animated);}
+  reset(animated=true){const c=this.defaultCamera();this.base=c.s/DEFAULT_OVERVIEW_ZOOM;this.animate(c,animated);}
   focus(coords,multiplier=2.5){
     const p=project(coords);const s=Math.max(this.base,Math.min(this.base*18,this.base*multiplier));
     const reserve=0;
