@@ -571,13 +571,13 @@
           "height": 1200
         },
         {
-          "src": "./assets/photos/blenheim-palace/web-20260923/victory-column.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/web-20260923/victory-column-thumb.jpg",
+          "src": "./assets/photos/blenheim-palace/web-20260923/victory-column-parkland.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/web-20260923/victory-column-parkland-thumb.jpg",
           "alt": "胜利之柱",
           "caption": "胜利之柱：高耸于开阔的庄园中轴线草地上，远观便能感到它的体量。",
-          "width": 1200,
-          "height": 1200,
-          "sourceUrl": "https://www.blenheimpalace.com/visitus/what-to-do/walks.html",
+          "width": 1600,
+          "height": 855,
+          "sourceUrl": "https://www.blenheimpalace.com/stories/the-first-duchess/",
           "credit": "图片来源：Blenheim Palace 官网"
         },
         {
@@ -623,14 +623,14 @@
           "height": 1200
         },
         {
-          "src": "./assets/photos/blenheim-palace/web-20260923/chapel-tomb.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/web-20260923/chapel-tomb-thumb.jpg",
+          "src": "./assets/photos/blenheim-palace/web-20260923/chapel-interior-wide.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/web-20260923/chapel-interior-wide-thumb.jpg",
           "alt": "礼拜堂与公爵墓碑",
           "caption": "礼拜堂与公爵墓碑：庄园内部的独立礼拜堂，白色大理石公爵墓碑立于高窗之下。",
-          "width": 980,
-          "height": 880,
-          "sourceUrl": "https://www.minube.net/place/blenheim-castle-chapel--a48243",
-          "credit": "图片来源：minube"
+          "width": 1200,
+          "height": 630,
+          "sourceUrl": "https://nickcoxarchitects.co.uk/projects/blenheim-palace-chapel",
+          "credit": "图片来源：Nick Cox Architects / Andrew Ogilvy Photography"
         },
         {
           "src": "./assets/photos/blenheim-palace/import-20260922/399298600d66c1f1-e89a2a0d.jpg",
