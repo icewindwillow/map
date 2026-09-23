@@ -581,12 +581,14 @@
           "credit": "图片来源：Blenheim Palace 官网"
         },
         {
-          "src": "./assets/photos/blenheim-palace/import-20260922/2c4bee65359e4ebd-78b59de9.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2c4bee65359e4ebd-78b59de9-thumb.jpg",
+          "src": "./assets/photos/blenheim-palace/web-20260923/water-terraces-traveler.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/web-20260923/water-terraces-traveler-thumb.jpg",
           "alt": "水之阶地（Water Terraces）",
           "caption": "水之阶地（Water Terraces）：层次分明的露天石造水景庭院，是庄园最具标志性的户外景观之一。",
           "width": 1600,
-          "height": 1200
+          "height": 1067,
+          "sourceUrl": "https://happywonderer.com/2023/02/27/blenheim-palace-park-and-gardens/",
+          "credit": "图片来源：The Happy Wonderer / Ellen B"
         },
         {
           "src": "./assets/photos/blenheim-palace/import-20260922/e4e6fa6d8992ee38-3bcaf1db.jpg",

@@ -316,7 +316,7 @@ $('street-retry').addEventListener('click',()=>{if(state.online){streetMap.retry
 async function loadStories(first=false){
   $('data-error').hidden=true;$('retry-data').hidden=true;
   const failures=[];
-  for(const [key,path] of [['firstMemory','./data/fountains-abbey.v0.3.json'],['memories','./data/memories.json?v=0.8']]){
+  for(const [key,path] of [['firstMemory','./data/fountains-abbey.v0.3.json'],['memories','./data/memories.json?v=0.9']]){
     try{const data=await readJson(path,key);const validated=validateMemories(data);if(key==='firstMemory')state.seed=validated;else {state.saved=validated;savedRoot={...data};delete savedRoot.memories;}}
     catch(error){failures.push(error.message);}
   }
