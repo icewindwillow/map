@@ -553,7 +553,1048 @@
       ],
       "description": "",
       "date": "2026-07-05",
-      "photos": [],
+      "photos": [
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2f31039f556a6429-859ead38.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2f31039f556a6429-859ead38-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/399298600d66c1f1-e89a2a0d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/399298600d66c1f1-e89a2a0d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/7b922812214a516f-fd94b313.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/7b922812214a516f-fd94b313-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/d51cc4a8a531668b-bb6a11b6.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/d51cc4a8a531668b-bb6a11b6-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/45bc9ab8c75c9af6-f66f759c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/45bc9ab8c75c9af6-f66f759c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/5c009e5c52cc45ff-b5090722.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/5c009e5c52cc45ff-b5090722-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c35e17c9bbdbe74b-0473c098.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c35e17c9bbdbe74b-0473c098-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/42c03f3809c63d21-c508fad5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/42c03f3809c63d21-c508fad5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f1778fb45a0279a5-3119366e.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f1778fb45a0279a5-3119366e-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e6f191f353952a31-cb4d356c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e6f191f353952a31-cb4d356c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2dbce3ce2b2ec48e-3f6cbbb0.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2dbce3ce2b2ec48e-3f6cbbb0-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/856824fbec780350-115818ab.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/856824fbec780350-115818ab-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/eabab357e78036ad-59065261.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/eabab357e78036ad-59065261-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/bba595f0c602427b-aa86e9d1.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/bba595f0c602427b-aa86e9d1-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/efac2139bae54d98-e6cc1634.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/efac2139bae54d98-e6cc1634-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/b9172780b27c1122-cffd2480.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/b9172780b27c1122-cffd2480-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/23e88c7a3863af88-009a9e3a.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/23e88c7a3863af88-009a9e3a-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/dde6d9aaa2b0457c-f0bb7da3.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/dde6d9aaa2b0457c-f0bb7da3-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/77d2e79167f741a8-9bb0c800.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/77d2e79167f741a8-9bb0c800-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e0fac9d4a199b0ba-8f994900.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e0fac9d4a199b0ba-8f994900-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/80643cb6c08e3f0e-050dbe2f.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/80643cb6c08e3f0e-050dbe2f-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/a1e591f996851508-2e258d23.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/a1e591f996851508-2e258d23-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/a4fd8ed4f20de784-c279b31c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/a4fd8ed4f20de784-c279b31c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/cfbb5b563bcdddc9-74946f5a.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/cfbb5b563bcdddc9-74946f5a-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/d27aad7e57b3794a-8ad6568b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/d27aad7e57b3794a-8ad6568b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/41b8ffe93f7064d4-668a356a.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/41b8ffe93f7064d4-668a356a-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/ce21f4280136991e-0e8ab606.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/ce21f4280136991e-0e8ab606-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/6df62bec42730faa-91993f0c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6df62bec42730faa-91993f0c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/3d6d102f0c0df9df-afb8663c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/3d6d102f0c0df9df-afb8663c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/87fe66f30f4d1768-de67c850.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/87fe66f30f4d1768-de67c850-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/b3b1b705111ddfbf-3d72a184.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/b3b1b705111ddfbf-3d72a184-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/254c838b97638041-f934219f.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/254c838b97638041-f934219f-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/8cf88da56ff21aee-061c0bf8.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/8cf88da56ff21aee-061c0bf8-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e673d5ff4a046ff1-28a5e269.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e673d5ff4a046ff1-28a5e269-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/76e6b34e1fe036c8-a15de310.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/76e6b34e1fe036c8-a15de310-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/0043427258ee2257-e9fec6fc.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/0043427258ee2257-e9fec6fc-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/056b6264929a635f-88c10718.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/056b6264929a635f-88c10718-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/42943f47ecf9d696-383ec21e.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/42943f47ecf9d696-383ec21e-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/35c3427053f8d4f5-9cbad948.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/35c3427053f8d4f5-9cbad948-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/3efc8a74e51f791b-6f3d65b7.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/3efc8a74e51f791b-6f3d65b7-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f473c3cbd1fdcf9c-65afe23c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f473c3cbd1fdcf9c-65afe23c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/218205ad200950e1-311e77ed.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/218205ad200950e1-311e77ed-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/69c6e1e75f5db12f-16c129b6.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/69c6e1e75f5db12f-16c129b6-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/784c50dac8d7bc1b-2a81e00f.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/784c50dac8d7bc1b-2a81e00f-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/dbf5a9c7fea68212-c38868a9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/dbf5a9c7fea68212-c38868a9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f7d1e85b12c76351-10cd5e13.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f7d1e85b12c76351-10cd5e13-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/79412020802bfe38-6ce73365.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/79412020802bfe38-6ce73365-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e73b5a7086809692-2c7b96c4.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e73b5a7086809692-2c7b96c4-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/37b3933473f80847-aafa63f1.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/37b3933473f80847-aafa63f1-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e2a1e44ffbb12a9b-6e3986a9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e2a1e44ffbb12a9b-6e3986a9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/b8f83ab9ae776642-923f3bc0.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/b8f83ab9ae776642-923f3bc0-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/cae49a52036fd63f-c0d5ee1f.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/cae49a52036fd63f-c0d5ee1f-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2fba2b1947f12c09-d9703a72.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2fba2b1947f12c09-d9703a72-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/efd4186ee5c83f09-0860bb5d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/efd4186ee5c83f09-0860bb5d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/511721aa0385eacf-04d40753.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/511721aa0385eacf-04d40753-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/d489091cd9cc65d9-8139d964.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/d489091cd9cc65d9-8139d964-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f98f4ebdb084df96-0e781e6d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f98f4ebdb084df96-0e781e6d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/20868d8339d5dc38-031761e6.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/20868d8339d5dc38-031761e6-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/448ae0b9bf012893-fb4c7ade.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/448ae0b9bf012893-fb4c7ade-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/71be7b7132bd76eb-b65cbac2.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/71be7b7132bd76eb-b65cbac2-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/483ea7e4ad5a3547-4484fce5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/483ea7e4ad5a3547-4484fce5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/ee71e23afb8f920e-730226fa.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/ee71e23afb8f920e-730226fa-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/221eac65e6e30a4a-70da88ee.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/221eac65e6e30a4a-70da88ee-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2bc933f16cd8429f-4ad48a56.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2bc933f16cd8429f-4ad48a56-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/94eaf9e1aaf9a1fa-d18f57a7.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/94eaf9e1aaf9a1fa-d18f57a7-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/429226c74a5bee0c-d2398981.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/429226c74a5bee0c-d2398981-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2917d99c59e4421b-9b786d9d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2917d99c59e4421b-9b786d9d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/abc8fd9679fcfca7-349b792d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/abc8fd9679fcfca7-349b792d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/e4e6fa6d8992ee38-3bcaf1db.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/e4e6fa6d8992ee38-3bcaf1db-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/fbc4a85226a0f1bd-76bf7c2b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/fbc4a85226a0f1bd-76bf7c2b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/96de3617b6324ed9-b709dcd9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/96de3617b6324ed9-b709dcd9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/a0e5df2bee5c0f6d-e81d8023.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/a0e5df2bee5c0f6d-e81d8023-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c5bf85328923b1ba-202f46d5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c5bf85328923b1ba-202f46d5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/b4f742a467762725-66833fc3.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/b4f742a467762725-66833fc3-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/5e71dbe99c244ca6-4151eb1e.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/5e71dbe99c244ca6-4151eb1e-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/280d4601255e2dee-ee2608bc.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/280d4601255e2dee-ee2608bc-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f9028a81952341d2-076180a0.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f9028a81952341d2-076180a0-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/6efe1222241fe92f-57a204a6.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6efe1222241fe92f-57a204a6-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c95ccb2493604344-9e99f322.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c95ccb2493604344-9e99f322-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/5b467797dfb5bf2c-7c0d7346.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/5b467797dfb5bf2c-7c0d7346-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/6d9f34234d1bc416-7e473266.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6d9f34234d1bc416-7e473266-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/4b68ad9bc43dc38f-8c750df5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4b68ad9bc43dc38f-8c750df5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/8f84ccfd0a3e3af3-5003cf88.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/8f84ccfd0a3e3af3-5003cf88-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/310e1c78fd0639f2-9006591c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/310e1c78fd0639f2-9006591c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/f72a89f21e06885c-e05afc62.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/f72a89f21e06885c-e05afc62-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/3cb685bfe9539597-845051f1.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/3cb685bfe9539597-845051f1-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/7823042e695a4a8c-1b0de828.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/7823042e695a4a8c-1b0de828-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/0daee178f9b7991f-5161871b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/0daee178f9b7991f-5161871b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2548f136a0eb925f-e6964b66.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2548f136a0eb925f-e6964b66-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/539f1218d78779e6-bb0f2127.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/539f1218d78779e6-bb0f2127-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/029d8a09fe17dfb2-f8593f5b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/029d8a09fe17dfb2-f8593f5b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/b33f11cffcfb35fe-8afd72e5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/b33f11cffcfb35fe-8afd72e5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/d1765a60783b6104-8aade5c0.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/d1765a60783b6104-8aade5c0-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/a375e433e0277195-6cb3216c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/a375e433e0277195-6cb3216c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/63cf3d374b41ba91-2701cd0e.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/63cf3d374b41ba91-2701cd0e-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/4ce40f177d191076-c01205b2.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4ce40f177d191076-c01205b2-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/bbc30c956a26522e-f9417cb5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/bbc30c956a26522e-f9417cb5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/23ef081c25ac1afb-70d04263.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/23ef081c25ac1afb-70d04263-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/ade6b4ffaef2f24a-d0c8bd14.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/ade6b4ffaef2f24a-d0c8bd14-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/ffc333710fdd4c79-2adebddc.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/ffc333710fdd4c79-2adebddc-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2db7a39ae0d895cd-1c69a8de.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2db7a39ae0d895cd-1c69a8de-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/4fb08fb322d10089-2d543111.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4fb08fb322d10089-2d543111-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/1ec035020cd2738f-d6553768.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/1ec035020cd2738f-d6553768-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c04f5f2f53cb7e38-3f1e6cff.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c04f5f2f53cb7e38-3f1e6cff-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/098ed86143ae2c74-75614f94.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/098ed86143ae2c74-75614f94-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/4f2c8bd17c35fde7-0003b9e5.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4f2c8bd17c35fde7-0003b9e5-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/6e2e02f29b32d228-fb311c15.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6e2e02f29b32d228-fb311c15-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/46a53026d80da8ca-825dcee9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/46a53026d80da8ca-825dcee9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/43c19c6262b2b4c7-0ceb3491.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/43c19c6262b2b4c7-0ceb3491-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/66d3dfe82a4f7dc8-ff1dcd07.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/66d3dfe82a4f7dc8-ff1dcd07-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/231ce12db25a2c52-94ca578b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/231ce12db25a2c52-94ca578b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/22670045ae32d8e4-39983cb9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/22670045ae32d8e4-39983cb9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/203572a57ac6e250-c758838d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/203572a57ac6e250-c758838d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c523bf72318534eb-4071eb5c.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c523bf72318534eb-4071eb5c-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/51ca9acb43cf589f-7951c3d2.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/51ca9acb43cf589f-7951c3d2-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/6a00873a8f90357b-12123553.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6a00873a8f90357b-12123553-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/8b1f0efff72cec53-174fa68d.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/8b1f0efff72cec53-174fa68d-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/615dd0937faaa06b-9bf3bf84.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/615dd0937faaa06b-9bf3bf84-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2f640bd256fa6891-3b249e62.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2f640bd256fa6891-3b249e62-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/d228bf6b06c4c505-56afe09b.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/d228bf6b06c4c505-56afe09b-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/5ad3b6df52537470-282283fb.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/5ad3b6df52537470-282283fb-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/463d5c284d9161ab-22907c80.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/463d5c284d9161ab-22907c80-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/065e14f15fb3ede3-dd04fa90.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/065e14f15fb3ede3-dd04fa90-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2c4bee65359e4ebd-78b59de9.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2c4bee65359e4ebd-78b59de9-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/c6d4e4390951fa9b-16f0b708.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/c6d4e4390951fa9b-16f0b708-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/2f86de1a929a9d6b-d66be151.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/2f86de1a929a9d6b-d66be151-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/a4009d2a2448184a-5b0e2a78.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/a4009d2a2448184a-5b0e2a78-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1600,
+          "height": 1200
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/3b1a71660d98338f-b37cf3a4.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/3b1a71660d98338f-b37cf3a4-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/09abde38124609a4-9cca9569.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/09abde38124609a4-9cca9569-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "src": "./assets/photos/blenheim-palace/import-20260922/4523cb22cf41d6c7-4d031a74.jpg",
+          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4523cb22cf41d6c7-4d031a74-thumb.jpg",
+          "alt": "丘吉尔庄园的照片",
+          "caption": "",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
       "review": {
         "author": "",
         "rating": null,
