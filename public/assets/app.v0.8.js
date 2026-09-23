@@ -205,6 +205,29 @@ function refreshCollection(){
   renderOverlays();
 }
 let lastFocus=null;
+function appendOfficialText(node,value){
+  const parts=String(value||'').split(/(\*\*[^*]+\*\*)/g);
+  for(const part of parts){
+    const strong=/^\*\*([^*]+)\*\*$/.exec(part);
+    if(strong){const el=document.createElement('strong');el.textContent=strong[1];node.append(el);}
+    else node.append(document.createTextNode(part));
+  }
+}
+function renderOfficialIntroduction(value){
+  const target=$('official-text');target.replaceChildren();
+  const lines=String(value||'').replace(/\r\n?/g,'\n').split('\n');let list=null;
+  const finishList=()=>{list=null;};
+  for(const raw of lines){
+    const line=raw.trim();
+    if(!line){finishList();continue;}
+    const fact=/^[-*]\s+\*\*([^*]+)\*\*[：:]\s*(.+)$/.exec(line);
+    if(fact){
+      if(!list){list=document.createElement('ul');list.className='official-facts';target.append(list);}
+      const item=document.createElement('li'),heading=document.createElement('strong');heading.textContent=fact[1];item.append(heading,document.createTextNode(`：${fact[2]}`));list.append(item);continue;
+    }
+    finishList();const paragraph=document.createElement('p');appendOfficialText(paragraph,line);target.append(paragraph);
+  }
+}
 function openStory(m,trigger=null){
   state.selected=m;
   $('story-city').textContent=m.city||'所属城市待确认';
@@ -214,7 +237,7 @@ function openStory(m,trigger=null){
   const hasOfficial=Boolean(officialText);
   officialSection.hidden=!hasOfficial;
   officialJump.hidden=!hasOfficial;
-  $('official-text').textContent=officialText;
+  renderOfficialIntroduction(officialText);
   const source=$('official-link');source.hidden=true;try{const url=new URL(m.officialSource);if(hasOfficial&&url.protocol==='https:'){source.href=url.href;source.hidden=false;}}catch{}
   showGuests(m.id);
   const panel=$('story-panel');
