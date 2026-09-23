@@ -71,7 +71,8 @@ export function safePhotoPath(value){
   if(typeof value!=='string')return false;
   if(/^\/api\/photos\/[a-f0-9-]{36}$/.test(value))return true;
   let decoded;try{decoded=decodeURIComponent(value);}catch{return false;}
-  return /^\.\/assets\/[a-zA-Z0-9_./-]+\.(png|jpe?g|webp|avif)$/i.test(decoded)&&!decoded.includes('..')&&!decoded.includes('\\');
+  if(/^\.\/assets\/[a-zA-Z0-9_./-]+\.(png|jpe?g|webp|avif)$/i.test(decoded)&&!decoded.includes('..')&&!decoded.includes('\\'))return true;
+  try{const url=new URL(decoded);return url.protocol==='https:'&&!url.username&&!url.password&&/\.(png|jpe?g|webp|avif)$/i.test(url.pathname);}catch{return false;}
 }
 export function photosOf(memory){
   if(Array.isArray(memory.photos))return memory.photos;

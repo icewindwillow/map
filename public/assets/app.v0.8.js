@@ -2,7 +2,7 @@ import {showGuests} from './guests.v0.8.js';
 import {normalizeCategory,categoryOf,categoryIcon,ratingTone,CATEGORIES} from './place-style.v0.8.js?v=0.9.2';
 import {OVERVIEW_MAX_ZOOM,clusterBounds,coincident} from './cluster-view.v0.6.js';
 import {StreetMap, GeoBounds, readStreetConfig} from './streets.v0.4.js';
-import {UK_BOUNDS,REGIONS,project,unproject,validateMemories,filterMemories,clusterPoints,featurePath,validRating,starFills,photosOf,mergeMemories,publishableMemories} from './geo.v0.5.js';
+import {UK_BOUNDS,REGIONS,project,unproject,validateMemories,filterMemories,clusterPoints,featurePath,validRating,starFills,photosOf,mergeMemories,publishableMemories} from './geo.v0.5.js?v=1.0.1';
 import {sortMemories} from './collection.v0.5.js';
 
 const $=id=>document.getElementById(id);
@@ -386,7 +386,6 @@ function renderAlbum(){
   });
   $('story-art-en').textContent=state.selected?.placeEn||'A little memory';
   $('photo-thumbnails').hidden=photos.length<2;
-  $('photo-credit').textContent=state.selected?.demo?'演示卡片 · 尚无照片':'作者提供的照片';
   $('photo-credit').hidden=!photos.length;
   $('album-note').textContent=photos.length?`${photos.length} 张照片 · 原比例展示 · 点开可看大图`:'没有照片的记忆，也可以留在这里。';
   setPhoto(0);
@@ -394,6 +393,7 @@ function renderAlbum(){
 function setPhoto(index){
   const photos=currentPhotos();const count=photos.length;photoIndex=count?Math.max(0,Math.min(count-1,index)):0;
   const current=photos[photoIndex];
+  $('photo-credit').textContent=current?.credit|| (state.selected?.demo?'演示卡片 · 尚无照片':'作者提供的照片');
   $('story-art').style.setProperty('--photo-ratio',current?.width&&current?.height?`${current.width}/${current.height}`:'4/3');
   $('photo-open').hidden=!current;$('photo-placeholder').hidden=!!current;
   $('photo-placeholder-note').textContent='这里留给下一张照片。';

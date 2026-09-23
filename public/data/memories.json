@@ -571,12 +571,14 @@
           "height": 1200
         },
         {
-          "src": "./assets/photos/blenheim-palace/import-20260922/51ca9acb43cf589f-7951c3d2.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/51ca9acb43cf589f-7951c3d2-thumb.jpg",
+          "src": "https://www.blenheimpalace.com/assets/components/phpthumbof/cache/column-victory.6fa27f6208caa1ac5400326da35f24ac.jpg",
+          "thumbnail": "https://www.blenheimpalace.com/assets/components/phpthumbof/cache/column-victory.6fa27f6208caa1ac5400326da35f24ac.jpg",
           "alt": "胜利之柱",
           "caption": "胜利之柱：高耸于开阔的庄园中轴线草地上，远观便能感到它的体量。",
-          "width": 1200,
-          "height": 1600
+          "width": 1600,
+          "height": 900,
+          "sourceUrl": "https://www.blenheimpalace.com/visitus/what-to-do/walks.html",
+          "credit": "图片来源：Blenheim Palace 官网"
         },
         {
           "src": "./assets/photos/blenheim-palace/import-20260922/2c4bee65359e4ebd-78b59de9.jpg",
@@ -603,12 +605,14 @@
           "height": 1200
         },
         {
-          "src": "./assets/photos/blenheim-palace/import-20260922/4ce40f177d191076-c01205b2.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/4ce40f177d191076-c01205b2-thumb.jpg",
+          "src": "https://www.blenheimpalace.com/assets/components/phpthumbof/cache/full-long-libary-view.05913a65a0ac83903a2b73e68567baa6.jpg",
+          "thumbnail": "https://www.blenheimpalace.com/assets/components/phpthumbof/cache/full-long-libary-view.05913a65a0ac83903a2b73e68567baa6.jpg",
           "alt": "Willis 管风琴",
           "caption": "Willis 管风琴：二战期间，寄宿于此的马尔文学院学生曾取走三根小管；多年后，它们随匿名来信归还。",
-          "width": 1200,
-          "height": 1600
+          "width": 1600,
+          "height": 900,
+          "sourceUrl": "https://www.blenheimpalace.com/stories/five-things-about-the-willis-organ/",
+          "credit": "图片来源：Blenheim Palace 官网"
         },
         {
           "src": "./assets/photos/blenheim-palace/import-20260922/b33f11cffcfb35fe-8afd72e5.jpg",
@@ -619,12 +623,14 @@
           "height": 1200
         },
         {
-          "src": "./assets/photos/blenheim-palace/import-20260922/6e2e02f29b32d228-fb311c15.jpg",
-          "thumbnail": "./assets/photos/blenheim-palace/import-20260922/6e2e02f29b32d228-fb311c15-thumb.jpg",
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Blenheim_Palace_IMG_3676.JPG/640px-Blenheim_Palace_IMG_3676.JPG",
+          "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Blenheim_Palace_IMG_3676.JPG/640px-Blenheim_Palace_IMG_3676.JPG",
           "alt": "礼拜堂与公爵墓碑",
           "caption": "礼拜堂与公爵墓碑：庄园内部的独立礼拜堂，白色大理石公爵墓碑立于高窗之下。",
-          "width": 1200,
-          "height": 1600
+          "width": 640,
+          "height": 480,
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blenheim_Palace_IMG_3676.JPG",
+          "credit": "图片来源：Wikimedia Commons"
         },
         {
           "src": "./assets/photos/blenheim-palace/import-20260922/399298600d66c1f1-e89a2a0d.jpg",
