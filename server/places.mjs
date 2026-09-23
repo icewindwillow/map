@@ -21,7 +21,6 @@ const idOK = id => typeof id === 'string' && /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,99}$/.
 export const photoID = src => typeof src === 'string' && /^\/api\/photos\/([a-f0-9-]{36})$/.exec(src)?.[1];
 const asset = src => typeof src === 'string' && /^(?:\.\/|\/)assets\/[a-zA-Z0-9_./-]+\.(?:jpe?g|png|webp|avif)$/i.test(src) && !src.includes('..');
 const httpsURL = src => {try{const url=new URL(src);return url.protocol==='https:'&&!url.username&&!url.password;}catch{return false;}};
-const remoteAsset = src => httpsURL(src) && /\.(?:jpe?g|png|webp|avif)$/i.test(new URL(src).pathname);
 export function validatePlace(input, id) {
   if (!input || typeof input !== 'object' || Array.isArray(input) || input.id !== id || !idOK(id)) bad('地点标识不正确。');
   const out = {id, placeId:id};
@@ -47,10 +46,10 @@ export function validatePlace(input, id) {
   out.review = {author:r.author.trim(),rating:r.rating,comment:r.comment};
   if (!Array.isArray(input.photos) || input.photos.length > 15) bad('每个地点最多 15 张照片。');
   out.photos = input.photos.map(p => {
-    if (!p || !(asset(p.src) || photoID(p.src) || remoteAsset(p.src))) bad('照片必须来自本站相册或可信 HTTPS 图片来源。');
+    if (!p || !(asset(p.src) || photoID(p.src))) bad('照片必须来自本站相册。');
     const result = {src:p.src};
     for (const key of ['alt','caption']) { if (p[key] != null && (typeof p[key] !== 'string' || p[key].length > 500)) bad('照片说明最多 500 字。'); result[key] = p[key] || ''; }
-    if (p.thumbnail && (asset(p.thumbnail) || remoteAsset(p.thumbnail))) result.thumbnail = p.thumbnail;
+    if (p.thumbnail && asset(p.thumbnail)) result.thumbnail = p.thumbnail;
     if (p.credit != null) { if (typeof p.credit !== 'string' || p.credit.length > 300) bad('图片来源说明最多 300 字。'); result.credit = p.credit.trim(); }
     if (p.sourceUrl != null) { if (!httpsURL(p.sourceUrl)) bad('图片来源须为有效 HTTPS 链接。'); result.sourceUrl = p.sourceUrl; }
     for (const key of ['width','height']) if (Number.isInteger(p[key]) && p[key] > 0 && p[key] <= 30000) result[key] = p[key];

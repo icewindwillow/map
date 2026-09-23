@@ -2,7 +2,7 @@ import {showGuests} from './guests.v0.8.js';
 import {normalizeCategory,categoryOf,categoryIcon,ratingTone,CATEGORIES} from './place-style.v0.8.js?v=0.9.2';
 import {OVERVIEW_MAX_ZOOM,clusterBounds,coincident} from './cluster-view.v0.6.js';
 import {StreetMap, GeoBounds, readStreetConfig} from './streets.v0.4.js';
-import {UK_BOUNDS,REGIONS,project,unproject,validateMemories,filterMemories,clusterPoints,featurePath,validRating,starFills,photosOf,mergeMemories,publishableMemories} from './geo.v0.5.js?v=1.0.1';
+import {UK_BOUNDS,REGIONS,project,unproject,validateMemories,filterMemories,clusterPoints,featurePath,validRating,starFills,photosOf,mergeMemories,publishableMemories} from './geo.v0.5.js?v=1.0.2';
 import {sortMemories} from './collection.v0.5.js';
 
 const $=id=>document.getElementById(id);
