@@ -246,7 +246,13 @@ function openStory(m,trigger=null){
   $('story-category').replaceChildren(categoryIcon(m.category),document.createTextNode(categoryOf(m.category)));
   $('story-region').textContent=[m.locationLabel||REGIONS[m.region],m.category,(m.visitDates?.length?m.visitDates.join(' · '):m.date)].filter(Boolean).join(' · ');
   $('story-place').replaceChildren(document.createTextNode(m.place||'地点待补'));if(m.placeEn)$('story-place').append(text('small','',m.placeEn));
-  $('story-writing').hidden=!m.description;$('read-long-review').hidden=!m.description;$('story-scroll').scrollTop=0;$('story-title').hidden=!m.title||m.title===m.place;
+  const hasLongReview=Boolean(m.description?.trim());
+  $('story-writing').hidden=!hasLongReview;
+  $('read-long-review').hidden=false;
+  $('read-long-review').disabled=!hasLongReview;
+  $('read-long-review').textContent=hasLongReview?'作者长评 ↓':'作者长评 · 待写';
+  $('read-long-review').title=hasLongReview?'查看作者长评':'作者尚未写下长评；可在编辑后台的“故事与评价”中填写。';
+  $('story-scroll').scrollTop=0;$('story-title').hidden=!m.title||m.title===m.place;
   $('story-title').textContent=m.title;$('story-description').textContent=m.description||'';
   $('review-author').textContent=m.review?.author||'';renderRating($('story-rating'),m.review?.rating);
   $('review-comment').textContent=m.review?.comment||'';$('review-comment').hidden=!m.review?.comment;$('review-empty').hidden=!!m.review?.comment;
@@ -482,4 +488,4 @@ async function boot(){
 }
 boot().catch(e=>{document.documentElement.dataset.state='error';notify('页面初始化失败。请检查文件是否完整上传。',0);console.error(e);});
 
-$('read-long-review').onclick=()=>{$('story-writing').scrollIntoView({behavior:'smooth',block:'start'});$('story-writing').focus({preventScroll:true});};
+$('read-long-review').onclick=()=>{if($('read-long-review').disabled)return;$('story-writing').scrollIntoView({behavior:'smooth',block:'start'});$('story-writing').focus({preventScroll:true});};

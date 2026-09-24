@@ -1,0 +1,5 @@
+.story-jumps button:disabled{
+  color:#98a396;
+  cursor:default;
+  text-decoration:none;
+}
