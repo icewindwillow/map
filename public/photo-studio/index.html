@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>照片审核台 · A Place to Keep</title><link rel="stylesheet" href="/assets/photo-studio.css"><script type="module" src="/assets/photo-studio.js"></script></head>
+<body><header><a href="/author/">A PLACE TO KEEP / 照片审核台</a><a href="/author/">作者编辑室 ↗</a></header>
+<main><section class="intro"><div><p class="eyebrow">THE PHOTO EDIT · 01</p><h1>留下值得记住的十五帧。</h1><p>先选片，再写下它的故事。审核通过后，才交给地图。</p></div><div class="badge"><b id="count">0 / 15</b><span>本次入选</span></div></section>
+<section class="tools"><label>地点名称<input id="place" placeholder="例如 皇家游艇不列颠尼亚号"></label><label>网站地点 ID<input id="place-id" placeholder="例如 royal-yacht-britannia"></label>
+<div class="buttons"><label class="button">选择照片文件夹<input id="folder" type="file" webkitdirectory multiple hidden></label><label class="button">打开审核项目<input id="project-file" type="file" accept="application/json" hidden></label><button id="demo" hidden>加载 Britannia 示例</button><button id="save-project">备份审核项目</button></div></section>
+<p id="status" role="status" aria-live="polite">照片仅在此浏览器处理；审核项目会自动保存在本机。</p>
+<details class="rules"><summary>我们的选片与文案规则</summary><p>每个地点最多 15 张；清晰、美观、尽量无游客；场景有差异；横向画框优先，主体不能裁掉。本地原片优先，不确定归属不入选。说明使用“名称：注释”，避免猜测房间身份或编造历史。网页照片需下载后导入并保留来源。</p><p>技术参考分：细节 40%、曝光 30%、横框适配 20%、分辨率 10%。技术分不代表艺术评价，也不能识别游客或保证场景正确。示例的名称与推荐理由由人工看图整理；新文件夹生成技术初选，文案留待核对。</p></details>
+<nav class="tabs"><button id="selected-tab" aria-pressed="true">入选相册</button><button id="library-tab" aria-pressed="false">备选库</button><button id="auto">按技术分初选</button><input id="search" type="search" placeholder="查找名称、文件名或反馈"><label><input type="checkbox" id="cover"> 预览横框裁切</label></nav>
+<p id="mode-hint">逐张核对名称与说明，可拖动卡片或使用前移／后移。</p><div id="grid" class="grid"></div>
+<footer><div><strong id="progress">尚未开始审核</strong><p>导出已审核相册 → 作者后台导入 → 确认发布</p></div><button id="export" class="primary">审核通过，导出发布包 ↗</button></footer></main>
+<dialog id="lightbox"><button id="close-image">关闭 ×</button><img alt="照片大图" id="large"><p id="large-caption"></p></dialog>
+</body></html>

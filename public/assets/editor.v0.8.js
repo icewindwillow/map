@@ -1,3 +1,4 @@
+import {installPhotoReviewImport} from './photo-review-import.js';
 import {showModeration} from './guests.v0.8.js';
 import {cityFromAddress} from './details.v0.8.js';
 import {normalizeCategory,CATEGORIES,categoryOf,categoryIcon,ratingTone} from './place-style.v0.8.js';
@@ -150,6 +151,7 @@ $('new-place').onclick=()=>{if(!busy&&leaveOK())createPlace();};$('reload').oncl
 $('place-form').onsubmit=e=>{e.preventDefault();save('publish');};$('save-draft').onclick=()=>save('draft');
 $('discard').onclick=()=>{if(confirm('丢弃这个地点的云端草稿及当前未保存修改？已发布版本不会改变。'))save('discard-draft');};
 $('backup').onclick=()=>{if(!current)return;const blob=new Blob([JSON.stringify(draft(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`${selected}-backup.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+installPhotoReviewImport({getPlaceId:()=>selected,isAvailable:()=>ready&&!busy,setPhotos:next=>{photos=next;dirty=true;renderPhotos();},api,compress,lock,message,backup:()=>$('backup').click()});
 window.addEventListener('beforeunload',e=>{if(dirty||busy){e.preventDefault();e.returnValue='';}});
 
 // Always-available coastline overview; street tiles are optional and have their own failure state.
