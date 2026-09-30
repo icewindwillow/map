@@ -1,3 +1,4 @@
+.story-scroll .story-art,.story-art .photo-open{background:#424733}
 .story-art.has-photo-title::after{content:"";position:absolute;inset:48% 0 0;background:linear-gradient(transparent,rgba(16,30,21,.72));pointer-events:none;z-index:1}
 .story-art .photo-title{position:absolute;left:clamp(22px,3vw,46px);bottom:32px;max-width:calc(100% - 210px);margin:0;color:#fffdf5;font-family:"Songti SC","STSong","SimSun",serif;font-size:clamp(28px,3vw,44px);font-weight:400;line-height:1.4;letter-spacing:2px;text-align:left;text-shadow:0 2px 8px #10201535;overflow-wrap:anywhere;pointer-events:none;z-index:2}
 .story-art .photo-title[hidden]{display:none}
