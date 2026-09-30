@@ -4,6 +4,7 @@ import {OVERVIEW_MAX_ZOOM,clusterBounds,coincident} from './cluster-view.v0.6.js
 import {StreetMap, GeoBounds, readStreetConfig} from './streets.v0.4.js';
 import {UK_BOUNDS,REGIONS,project,unproject,validateMemories,filterMemories,clusterPoints,featurePath,validRating,starFills,photosOf,mergeMemories,publishableMemories} from './geo.v0.5.js?v=1.0.2';
 import {sortMemories} from './collection.v0.5.js';
+import {photoText} from './photo-text.v1.js';
 
 const $=id=>document.getElementById(id);
 const svgNS='http://www.w3.org/2000/svg';
@@ -404,7 +405,10 @@ function setPhoto(index){
   $('photo-open').hidden=!current;$('photo-placeholder').hidden=!!current;
   $('photo-placeholder-note').textContent='这里留给下一张照片。';
   $('photo-counter').hidden=!count;$('photo-counter').textContent=count?`${String(photoIndex+1).padStart(2,'0')} / ${String(count).padStart(2,'0')}`:'';
-  $('photo-caption').textContent=current?.caption|| (current?`第 ${photoIndex+1} 张照片`:'');
+  const text=photoText(current,state.selected?.place);
+  $('photo-title').textContent=text.title;$('photo-title').hidden=!current||!text.title;
+  $('story-art').classList.toggle('has-photo-title',!!current&&!!text.title);
+  $('photo-caption').textContent=text.description;
   for(const id of ['photo-prev','photo-next'])$(id).hidden=count<2;
   $('photo-prev').disabled=photoIndex===0;$('photo-next').disabled=photoIndex>=count-1;
   if(current){

@@ -1,0 +1,7 @@
+.story-art.has-photo-title::after{content:"";position:absolute;inset:48% 0 0;background:linear-gradient(transparent,rgba(16,30,21,.72));pointer-events:none;z-index:1}
+.story-art .photo-title{position:absolute;left:clamp(22px,3vw,46px);bottom:32px;max-width:calc(100% - 210px);margin:0;color:#fffdf5;font-family:"Songti SC","STSong","SimSun",serif;font-size:clamp(28px,3vw,44px);font-weight:400;line-height:1.4;letter-spacing:2px;text-align:left;text-shadow:0 2px 8px #10201535;overflow-wrap:anywhere;pointer-events:none;z-index:2}
+.story-art .photo-title[hidden]{display:none}
+.story-art .photo-arrow,.story-art .photo-counter,.story-art .photo-expand-hint{z-index:3}
+.photo-meta{gap:20px;align-items:flex-start;padding-top:18px;padding-bottom:18px}
+#photo-caption{font-family:var(--sans);font-size:14px;line-height:1.9;overflow-wrap:anywhere}
+@media(max-width:760px){.story-art .photo-title{left:22px;bottom:68px;max-width:calc(100% - 44px);font-size:28px;letter-spacing:1px}.photo-meta{gap:8px;flex-wrap:wrap;padding-top:15px;padding-bottom:15px}#photo-caption{font-size:13px;flex-basis:100%}.story-art .photo-expand-hint{bottom:14px}}
