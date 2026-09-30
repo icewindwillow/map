@@ -1,4 +1,35 @@
 export const LIMIT=15;
+export const SCENES=['待分类','外观与全貌','景观与庭院','核心空间','特色展品','人物与故事','生活与后勤'];
+export function supplement(project){
+  const locked=project.selected.filter(id=>project.items.find(x=>x.id===id)?.locked);
+  const chosen=locked.map(id=>project.items.find(x=>x.id===id));
+  const candidates=project.items.filter(x=>!locked.includes(x.id)&&!x.rejected);
+  const result=[...locked];
+  for(const id of recommend([...chosen,...candidates].map(x=>({...x,score:x.locked?10000:x.score})))){
+    if(!result.includes(id)&&result.length<LIMIT)result.push(id);
+  }
+  return result;
+}
+export function orderPhotos(project){
+  return [...project.selected].sort((a,b)=>{
+    const scene=id=>{const n=SCENES.indexOf(project.items.find(x=>x.id===id)?.scene);return n>0?n:SCENES.length;};
+    return scene(a)-scene(b);
+  });
+}
+export function applyResearch(project,report){
+  if(report?.format!=='atlas-photo-research-v1'||report.placeId!==project.placeId||!Array.isArray(report.photos))throw Error('查证结果与当前地点不匹配。');
+  const updates=report.photos.map(p=>{
+    const item=project.items.find(x=>x.id===p.id);
+    if(!item)throw Error('查证结果包含未知照片。');
+    for(const k of ['title','note','evidence','researchUrl','scene','identity'])if(p[k]!=null&&(typeof p[k]!=='string'||p[k].length>2000))throw Error('查证结果文本格式不正确。');
+    if(p.scene&&!SCENES.includes(p.scene))throw Error('场景类别不正确。');
+    if(p.identity&&!['待核实','已确认','仅描述可见画面'].includes(p.identity))throw Error('辨认状态不正确。');
+    if(p.researchUrl){const u=new URL(p.researchUrl);if(u.protocol!=='https:'||u.username||u.password)throw Error('查证链接须为 HTTPS。');}
+    return {item,values:Object.fromEntries(['title','note','evidence','researchUrl','scene','identity'].filter(k=>p[k]!=null).map(k=>[k,p[k]]))};
+  });
+  for(const {item,values} of updates)Object.assign(item,values,{reviewed:false});
+  return project;
+}
 export function assertPackage(p){
   const fail=m=>{throw new Error(m);};
   if(p?.format!=='atlas-photo-review-v1'||!p.approved||!Array.isArray(p.photos)||!p.photos.length||p.photos.length>LIMIT)fail('请选择已审核的相册包，照片数量须为 1–15 张。');
@@ -27,6 +58,6 @@ export function reviewIssues(project){
   const issues=[];
   if(!/^[-a-zA-Z0-9_]{1,100}$/.test(project.placeId||''))issues.push('请填写网站中的地点 ID');
   if(!photos.length||photos.length>LIMIT||new Set(project.selected).size!==photos.length)issues.push('相册须包含 1–15 张不重复的照片');
-  photos.forEach((x,i)=>{if(!x||!x.title?.trim()||!x.note?.trim()||!x.reviewed||(x.title+'：'+x.note).length>500)issues.push(`第 ${i+1} 张需填写名称、注释并勾选审核`);});
+  photos.forEach((x,i)=>{if(!x||!x.title?.trim()||!x.note?.trim()||!x.reviewed||(x.title+'：'+x.note).length>500)issues.push(`第 ${i+1} 张需填写名称、注释并勾选审核`);if(x?.identity==='待核实')issues.push(`第 ${i+1} 张的场景尚待核实`);});
   return issues;
 }
